@@ -3,13 +3,14 @@
    <head>
       <title>IEC</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="index.css">
       <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf" >
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>        
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
       <style>
          body {
          font-family: 'Inter', sans-serif;
@@ -22,22 +23,23 @@
         
         $(document).ready(function() {
 			$('#carousel3').carousel({
-				interval: false
+				interval: 3000,
 			});
-			$('#carousel-list1').on('click', '.carousel-list-item1', function () {
-				$('#carousel-list1 .carousel-list-item1').removeClass('active');
+			$('#carousel-list').on('click', '.carousel-list-item1', function () {
+				$('#carousel-list .carousel-list-item1').removeClass('active');
 				$(this).addClass('active');
 				var index = $(this).index();
 				$('#carousel3').carousel(index);
 			});
 			$('#carousel3').on('slid.bs.carousel', function () {
 				var index = $('#carousel3 .carousel-item.active').index();
-				$('#carousel-list1 .carousel-list-item1').removeClass('active');
-				$('#carousel-list1 .carousel-list-item1').eq(index).addClass('active');
+				$('#carousel-list .carousel-list-item1').removeClass('active');
+				$('#carousel-list .carousel-list-item1').eq(index).addClass('active');
 			});
 		});
          
-        
+         
+      
          
       </script>
    </head>
@@ -281,9 +283,41 @@
             </a>
          </div>
       </div>
+      <section class=" pt-2 d-md-none d-lg-none d-xl-none"></section>
       <!--Why Choose-->
       <section id="why-choose-us">
-         <div class="container">
+         <div class="container d-md-none d-lg-none d-xl-none">
+            <div class="row pt-5 mt-5">
+               <div class="col-md-3">
+               </div>
+               <div class="col-md-3">
+                  <h1>WHY</h1>
+               </div>
+               <div class="col-md-6">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+               </div>
+               <div class="col-md-3">
+                  <h1>CHOOSE</h1>
+               </div>
+               <div class="col-md-5">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-7">
+               </div>
+               <div class="col-md-3">
+                  <h1>US</h1>
+               </div>
+               <div class="col-md-2">
+               </div>
+               <hr class="black-line" id="line">
+            </div>
+         </div>
+
+         <div class="container pt-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
             <div class="row">
                <div class="col-md-3">
                </div>
@@ -313,6 +347,8 @@
                <hr class="black-line" id="line">
             </div>
          </div>
+
+
          <div class="container">
             <div class="row">
                <div class="col-md-2">
@@ -448,8 +484,8 @@
          <h1>OUR LATEST PROJECTS </h1>
       </div>
       <div class="mycontaniner2" >
-         <div class="col-lg-12" style="margin-top: 10px;">
-            <div id="carousel-list1" class="row d-flex">
+         <div class="col-lg-12 text-center" style="margin-top: 10px;">
+            <div id="carousel-list" class="row d-flex">
                <div class="col-lg-3">
                   <div class="carousel-list-item1 active" data-target="#carousel3" data-slide-to="0">
                      <h5>VAPORIZER</h5>
@@ -550,9 +586,500 @@
           
           
       </div>
-      
-    
+      <div class="about">
 
+         <div class="row">
+            <div class="col-lg-12">
+               <p>ABOUT IEC FABCHEM
+               </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6">
+               <img src="img/Home/about.JPG" class="img2">
+            </div>
+            <div class="col-lg-6">
+               <p>IEC undertakes industrial process systems
+                  on turnkey basis in Power, Water and
+                  Chemical sectors. Our scope includes
+                  Design, Engineering, Manufacture, Supply,
+                  Erection, Testing and Commissioning. We
+                  have a successful track record of sixty
+                  years.
+                  Our technologies & systems are capable of
+                  fulfilling the industrial requirements and 
+                  
+                  are backed by unrivalled application
+                  expertise and technical support.
+                  
+                  We strive to meet & exceed customer
+                  expectations consistently through our
+                  Quality
+                  Management System as per ISO
+                  9001 : 2015, ISO 14001 : 2015 and OHSAS
+                  
+                  18001 : 2007   <br><br><span>Read More </span>  &nbsp; <img src="ico/Home/Arrow 11.svg" id="arrow3">         
+               </p>
+             
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4">
+               <h1>60+</h1>
+                 <p> Years Experience</p>
+            </div>
+            <div class="col-lg-4">
+               <h1>2,257+ </h1>
+               <p>  Projects Completed
+               </p>
+            </div>
+            <div class="col-lg-4">
+               <h1>2,196+ </h1>
+                <p>  Satisfied Customers</p>
+            </div>
+         </div>
+      </div>
+      <div class="clients">
+         <div class="row">
+            <div class="col-lg-12">
+               <p>OUR CLIENTS
+               </p> 
+            </div>
+         </div>
+      </div>
+      <div class="clientslogo">
+                  
+         <img src="img/Home/clients/client (1).png">
+         <img src="img/Home/clients/client (2).png">
+         <img src="img/Home/clients/client (3).png">
+         <img src="img/Home/clients/client (4).png">
+         <img src="img/Home/clients/client (5).png">
+         <img src="img/Home/clients/client (6).png">
+         <img src="img/Home/clients/client (7).png">
+         <img src="img/Home/clients/client (8).png">
+         <img src="img/Home/clients/client (9).png">
+         <img src="img/Home/clients/client (10).png">
+
+         <img src="img/Home/clients/client (11).png">
+         <img src="img/Home/clients/client (12).png">
+         <img src="img/Home/clients/client (13).png">
+         <img src="img/Home/clients/client (14).png">
+         <img src="img/Home/clients/client (15).png">
+         <img src="img/Home/clients/client (16).png">
+         <img src="img/Home/clients/client (17).png">
+         <img src="img/Home/clients/client (18).png">
+         <img src="img/Home/clients/client (19).png">
+         <img src="img/Home/clients/client (20).png">
+
+         <img src="img/Home/clients/client (21).png">
+         <img src="img/Home/clients/client (22).png">
+         <img src="img/Home/clients/client (23).png">
+         <img src="img/Home/clients/client (24).png">
+         <img src="img/Home/clients/client (25).png">
+         <img src="img/Home/clients/client (26).png">
+         <img src="img/Home/clients/client (27).png">
+         <img src="img/Home/clients/client (28).png">
+         <img src="img/Home/clients/client (29).png">
+         <img src="img/Home/clients/client (30).png">
+
+         <img src="img/Home/clients/client (31).png">
+         <img src="img/Home/clients/client (32).png">
+         <img src="img/Home/clients/client (33).png">
+         <img src="img/Home/clients/client (34).png">
+         <img src="img/Home/clients/client (35).png">
+         <img src="img/Home/clients/client (36).png">
+         <img src="img/Home/clients/client (37).png">
+         <img src="img/Home/clients/client (38).png">
+         <img src="img/Home/clients/client (39).png">
+         <img src="img/Home/clients/client (40).png">
+
+         <img src="img/Home/clients/client (41).png">
+         <img src="img/Home/clients/client (42).png">
+      
+      </div>
+      
+      <div class="testimonials">
+
+         <h2 class="testimonialstitile">Testimonials</h2>
+         <p class="testimonialspara">What they are saying</p>
+         <div id="carousel4" class="carousel4-class carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-2 text-center">
+                     <img src="img/Home/Testimonials/3.png" class="blurredimage" >
+                   </div>
+                  <div class="col-md-2 text-center">
+                    <img src="img/Home/Testimonials/1.png" alt="Slider Image" class="img-fluid">
+                    <h5>North Eastern Electric Power Corporation Limited<br>A Government of India Enterprise</h5>
+
+                  </div>
+                  <div class="col-md-2 text-center">
+                     <img src="img/Home/Testimonials/2.png" class="blurredimage" >
+                   </div>
+                  <div class="col-md-5">
+                    <p>Chlorination Plant has been supplied, erected and commissioned by IEC Fabchem, Chennai through MC-BHEL, the turn-key contractors for this 291 MW Combined Cycle Power Plant with dosing capacities of 2 x 120 kg/hrs and 2 x 10 kg/hrs for Cooling Water Chlorination System and Raw Water Chlorination System respectively. The systems with all requisite safety features including chlorine leak absorption system of 1 ton/hr capacity were commissioned in July 2000. The performance of the system is found to be satisfactory. Moreover, we have not faced any difficulty in getting the necessary spare parts etc., that are required from time to time. - NEEPCO.</p>
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+                </div>
+              
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-2 text-center">
+                     <img src="img/Home/Testimonials/1.png" class="blurredimage" >
+                   </div>
+                  <div class="col-md-2 text-center">
+                    <img src="img/Home/Testimonials/2.png" alt="Slider Image" class="img-fluid">
+                    <h5>NTPC</h5>
+                  </div>
+                  <div class="col-md-2 text-center">
+                     <img src="img/Home/Testimonials/3.png" class="blurredimage" >
+                   </div>
+                  <div class="col-md-5">
+                    <p>IEC FABCHEM LIMITED, Chennai has Designed, Manufactured, Supplied, Erected & Commissioned Chlorine Dioxide Generator System for the below capacity, Chlorine Dioxide Generator System - 15 kg/hr. The Chlorine Dioxide Generator System is/are commissioned successfully on April 2021 and it is working satisfactorily as on date. This testimonial is issued upon request of M/s. IEC FABCHEM LIMITED without prejudice to our rights under the contract and for the limited purpose of business promotion only. -NTPC.</p>
+                  </div>
+                  <div class="col-md-1">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-2 text-center">
+                     <img src="img/Home/Testimonials/2.png" class="blurredimage" >
+                   </div>
+                  <div class="col-md-2 text-center">
+                    <img src="img/Home/Testimonials/3.png" alt="Slider Image" class="img-fluid">
+                    <h5>BGR Energy Systems Limited</h5>
+                  </div>
+                  <div class="col-md-2 text-center">
+                     <img src="img/Home/Testimonials/1.png" class="blurredimage" >
+                   </div>
+                  <div class="col-md-5">
+                    <p>IEC FABCHEM LIMITED has designed, manufactured, supplied and commissioned Side Stream Filtration System of capacity 6 x 250 m3/hr (Automatic Valveless Gravity Filter) near Cooling Tower at 2 X 500 MW Marwa Thermal Power Project, Chattisgarh. The Side Stream Filtration System (Automatic Valveless Gravity Filter) is meeting the design conditions and working satisfactorily since October 2017. This certificate is issued on the request of M/s. IEC Fabchem Ltd for their tendering / pre-qualification purpose only and is issued without any prejudice to the terms and conditions of the contracts between M/s. BGRESL & M/s IEC Fabchem Ltd - BGR.</p>
+                  </div>
+                  <div class="col-md-1">
+                     </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href=".carousel4-class" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+             </a>
+             <a class="carousel-control-next" href=".carousel4-class" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+             </a>
+          </div>
+          
+          
+
+      </div>
+   
+
+  <!-- Contact form and Google Maps -->
+  <section class="map_ContactForm pt-5 mt-5">
+   <div class="row mt-5">
+      <div class="col-lg-12 px-0 mt-5">
+         <div id="map">
+       </div>
+      
+       </div>
+       <div class="col-lg-3 mt-5 contact px-0 d-none d-md-none d-sm-none d-lg-block d-xl-block">
+         <div class="card-body bg-white">
+            <h2 class="fw-bolder"><strong>
+               GET IN TOUCH
+            </strong></h2>
+         <form action="#" method="post" class="contact-form">
+          
+          
+           <div class="form-group mt-5">
+             <input type="text" class="form-control1  " id="name" name="name" placeholder="Name" required>
+           </div>
+
+           <div class="form-group mt-5">
+            <!-- <label for="name">Name:</label> -->
+            <input type="number" class="form-control1  " id="u_number" name="u_number" placeholder="Phone"  required>
+          </div>
+
+           <div class="form-group mt-5">
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" class="form-control1  " id="email" name="email" placeholder="Email"  required>
+          </div>
+           <div class="form-group mt-5">
+            <input type="text" class="form-control1  " id="c_name" name="c_name" placeholder="Company Name"  required>
+          </div>
+
+           <div class="form-group mt-3 text-center">
+            <button type="submit"class="form-control  fs-3 fw-bolder btn btn-dark text-light" style="width: 50%;" >Submit</button>
+          </div>
+         </form>
+         </div>
+       </div> 
+
+     </div>
+     <div class="row text-center px-0 d-block d-md-block d-sm-block d-lg-none d-xl-none">
+       <div class="col-md-6 contact1 ">
+          <div class="card-body bg-white">
+             <h2 class="fw-bolder"><strong>
+                GET IN TOUCH
+             </strong></h2>
+          <form action="#" method="post" class="contact-form">
+           
+           
+            <div class="form-group mt-5">
+              <input type="text" class="form-control1  " id="name" name="name" placeholder="Name" required>
+            </div>
+ 
+            <div class="form-group mt-5">
+             <!-- <label for="name">Name:</label> -->
+             <input type="number" class="form-control1  " id="u_number" name="u_number" placeholder="Phone"  required>
+           </div>
+ 
+            <div class="form-group mt-5">
+             <!-- <label for="email">Email:</label> -->
+             <input type="email" class="form-control1  " id="email" name="email" placeholder="Email"  required>
+           </div>
+            <div class="form-group mt-5">
+             <input type="text" class="form-control1  " id="c_name" name="c_name" placeholder="Company Name"  required>
+           </div>
+ 
+            <div class="form-group mt-3 text-center">
+             <button type="submit"class="form-control  fs-3 fw-bolder btn btn-dark text-light" style="width: 50%;" >Submit</button>
+           </div>
+          </form>
+          </div>
+        </div> 
+     </div>
+  </section>
+
+        <!--Footer-->
+        <section class="bg-chlo d-block d-sm-block d-md-block d-lg-none d-xl-none">
+         <div class="container">
+            <div class="row pt-3 ">
+            <div class="col-lg-1 clearfix"></div>
+         <div class="col-lg-7">
+            <h4 class="text-light   fw-bolder " style="    border-bottom-style: groove;
+                           width: fit-content;">LOCATION</h4>
+
+                           <h4  class="fs-4 fw-bold text-light text pt-2">
+                              K-32B, Sipcot Industrial Complex,<br>
+                              Gummudipoondi, Chennai, Tamil Nadu, India <br>
+
+                              Pin: 601 201
+                           </h4>
+          </div>
+         </div></div>
+         
+         <div class="pt-4">
+     <div class="container">
+       <div class="row ">
+         <div class="col-lg-3">
+         
+           <span class="mt-2">
+             <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png"></span>
+     
+     
+             <h3   class="fs-4 fw-bold text-light text pt-3"  >
+               Since 1963, IEC FABCHEM LTD is
+               the best Manufacturer of
+               Chlorination, Chlorine-DI-oxide
+               (ClO2), Chemical Vaporizers,
+               Chemical Scrubbers, Automatic
+               valveless gravity filtration, H2S
+               Scrubbers and Odour Control
+               systems. We take pride in being
+               the technology pioneers in our
+               domains. 
+             </h3>
+         </div>
+     
+         <div class="col-lg-4  col-md-6 pt-3">
+             
+     
+           <ul style="list-style-type: none;">
+             <li> <h4 class="text-light   fw-bolder " style="    border-bottom-style: groove;
+               width: fit-content;">PRODUCTS</h4></li>
+             <li> <h4 class="text-light   fw-bolder mt-3">CHLORIDIOX</h4></li>
+             <li><h4 class="text-light   fw-bolder ">STERIFLO</h4></li>
+             <li><h4 class="text-light   fw-bolder ">GAS CHLORINATION</h4></li>
+             <li><h4 class="text-light   fw-bolder ">SEA WATER ELECTRO-CHLORINATION</h4></li>
+             <li><h4 class="text-light   fw-bolder ">BAYONET VAPORIZER</h4></li>
+             <li><h4 class="text-light   fw-bolder ">DRY HEATER</h4></li>
+             <li><h4 class="text-light   fw-bolder ">MACH HEATER</h4></li>
+             <li><h4 class="text-light   fw-bolder ">AVGF</h4></li>
+             <li><h4 class="text-light   fw-bolder ">PURER</h4></li>
+             <li><h4 class="text-light   fw-bolder ">LEAK ABSORPTION </h4></li>
+           </ul>
+         </div>
+         <div class="col-lg-3 col-md-6  pt-3">
+           <ul style="list-style-type: none;">
+             <li> <h4 class="text-light   fw-bolder " style="    border-bottom-style: groove;
+               width: fit-content;">COMPANY</h4></li>
+             <li> <h4 class="text-light   fw-bolder mt-3">HOME</h4></li>
+             <li><h4 class="text-light   fw-bolder ">ABOUT</h4></li>
+             <li> <h4 class="text-light   fw-bolder ">PROJECTS</h4></li>
+             <li><h4 class="text-light   fw-bolder ">CONTACT US</h4></li>
+             </ul>
+     
+             <div class="col-lg-12 pt-3" >
+               <ul style="list-style-type: none;">  
+               <li > <h4 class="text-light   fw-bolder " style=" border-bottom-style: groove;
+                 width: fit-content;">CONTACT US</h4></li>
+     
+                 <li class="d-flex mt-3">
+                   <img src="img/Products/Cholrination/phone_icon.png" alt="">
+                   <span class="">
+                   <h4 class="text-light   fw-bolder ps-2 mt-2">+91-9789635755</h4></li>
+                   
+                 <li  class="d-flex mt-3">
+                   <img src="img/Products/Cholrination/mail_icon.png" alt=""><span >
+                 </span>
+                   <h4 class="text-light   fw-bolder ps-2 mt-2">marketing@iecfabchem.in</h4></li>
+            </ul>
+              </div>
+         </div>
+       </div>
+     </div>
+         </div>
+     
+         <div class="row pt-0">
+           <div class="col-md-2"></div>
+           <div class="col-md-10">
+             <div class="d-flex col-lg-12 col-md-12">
+               <p  class="fs-5 text-light text-center pt-3 mt-5">Stay in the Loop?</p>
+               <span class="px-0 ps-3">  
+                 <img src="img/Products/Cholrination/W_app_icon.png" alt="">
+               </span>
+               <span class="px-0 ps-3">
+                 <img src="img/Products/Cholrination/linked_In.png" alt="">
+               </span>
+             </div>
+           </div>
+         </div>
+         </section>
+
+
+         <section class="bg-chlo-footer d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <div class="row pt-3">
+               <div class="col-lg-1 clearfix"></div>
+            <div class="col-lg-7">
+               <h4 class="text-light   fw-bolder " style="    border-bottom-style: groove;
+                              width: fit-content;">LOCATION</h4>
+
+                              <h4  class="fs-4 fw-bold text-light text pt-2">
+                                 K-32B, Sipcot Industrial Complex,<br>
+                                 Gummudipoondi, Chennai, Tamil Nadu, India <br>
+
+                                 Pin: 601 201
+                              </h4>
+             </div>
+            </div>
+            <div class="pt-4">
+              <div class="row ">
+                <div class="col-lg-1 clearfix"></div>
+                  <div class="col-lg-3 pt-3">
+                  
+                    <span class="mt-2">
+                      <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png"></span>
+          
+          
+                      <h4   class="fs-4 fw-bold text-light text pt-3"  >
+                        Since 1963, IEC FABCHEM LTD is
+                        the best Manufacturer of
+                        Chlorination, Chlorine-DI-oxide
+                        (ClO2), Chemical Vaporizers,
+                        Chemical Scrubbers, Automatic
+                        valveless gravity filtration, H2S
+                        Scrubbers and Odour Control
+                        systems. We take pride in being
+                        the technology pioneers in our
+                        domains. 
+                      </h3>
+                  </div>
+          
+                  <div class="col-lg-4 col-md-6 pt-5">
+                    <div class="pt-5">
+                      
+          
+                    <ul style="list-style-type: none;">
+                      <li> <h4 class="text-light   fw-bolder " style="    border-bottom-style: groove;
+                        width: fit-content;">PRODUCTS</h4></li>
+                      <li> <h4 class="text-light   fw-bolder mt-3">CHLORIDIOX</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">STERIFLO</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">GAS CHLORINATION</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">SEA WATER ELECTRO-CHLORINATION</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">BAYONET VAPORIZER</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">DRY HEATER</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">MACH HEATER</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">AVGF</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">PURER</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">LEAK ABSORPTION </h4></li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6  pt-5">
+                    <ul style="list-style-type: none;" class="pt-5">
+                      <li> <h4 class="text-light   fw-bolder " style="    border-bottom-style: groove;
+                        width: fit-content;">COMPANY</h4></li>
+                      <li> <h4 class="text-light   fw-bolder mt-3">HOME</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">ABOUT</h4></li>
+                      <li> <h4 class="text-light   fw-bolder ">PROJECTS</h4></li>
+                      <li><h4 class="text-light   fw-bolder ">CONTACT US</h4></li>
+                      </ul>
+          
+                      <div class="col-lg-12 pt-5" >
+                        <ul style="list-style-type: none;" class="pt-5">  
+                        <li style=" padding-left: 49px;"> <h4 class="text-light   fw-bolder " style=" border-bottom-style: groove;
+                          width: fit-content;">CONTACT US</h4></li>
+            
+                          <li class="d-flex mt-3">
+                            <img src="img/Products/Cholrination/phone_icon.png" alt="">
+                            <span class="">
+                            <h4 class="text-light   fw-bolder ps-2 mt-2">+91-9789635755</h4></li>
+                            
+                          <li  class="d-flex mt-3">
+                            <img src="img/Products/Cholrination/mail_icon.png" alt=""><span >
+                          </span>
+                            <h4 class="text-light   fw-bolder ps-2 mt-2">marketing@iecfabchem.in</h4></li>
+                     </ul>
+                       </div>
+                  </div>
+                  <div class="col-lg-1 clearfix"></div>
+                </div>
+            </div>
+        
+            <div class="row pt-3">
+              <div class="col-lg-7 clearfix"></div>
+              <div class="d-flex col-lg-5">
+                <p  class="fs-5 text-light text-center pt-3 mt-5">Stay in the Loop?</p>
+                <span class="px-0 ps-3">  
+                  <img src="img/Products/Cholrination/W_app_icon.png" alt="">
+                </span>
+                <span class="px-0 ps-3">
+                  <img src="img/Products/Cholrination/linked_In.png" alt="">
+                </span>
+              </div>
+            </div>
+            </section>  
+
+            <script>
+   // Initialize and add the map
+   function initMap() {
+      // The location of your office
+      var officeLocation = {lat: 37.7749, lng: -122.4194};
+      // The map, centered at your office location
+      var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: officeLocation});
+      // The marker, positioned at your office location
+      var marker = new google.maps.Marker({position: officeLocation, map: map});
+    }
+    // Load the map when the page has finished loading
+    google.maps.event.addDomListener(window, 'load', initMap);
+            </script>
+            
 
       <script>
          $(document).ready(function() {
@@ -572,6 +1099,8 @@
              const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
              $(this).find('span').append(arrowIcon);
            });
+
+
            $('#carousel2').on('slid.bs.carousel', function () {
              var index = $('#carousel2 .carousel-item.active').index();
              $('#carousel-list .carousel-list-item').removeClass('active');
@@ -594,9 +1123,10 @@
        </script>
        
 
-
-
-
-    
+     
+       <script
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+       defer
+     ></script>
    </body>
 </html>
