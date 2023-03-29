@@ -11,7 +11,7 @@
   .headerdesign {
     /* height: 100%;
     width: 100%; */
-    background-image: url("img/Home/1.webp");
+    background-image: url("../img/Home/1.webp");
     background-size: cover;
     background-position: center;
     /* height: 100vh; */
@@ -408,14 +408,14 @@
   .bg-chlo {
     top: 100px;
   
-    background-image: url("img/Home/1\ -\ Copy.jpg");
+    background-image: url("../img/Home/1\ -\ Copy.jpg");
     position: relative;
   }
   
   .bg-chlo-footer {
     top: 0px;
   
-    background-image: url("img/Home/1\ -\ Copy.jpg");
+    background-image: url("../img/Home/1\ -\ Copy.jpg");
     position: relative;
   }
   
