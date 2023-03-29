@@ -30,11 +30,24 @@ body {
   }
 
 
+  .bg-footer{
+    background-color: #ffff;
+  }
 
+  .text-color{
+    color:#2f6b31
+  }
 
+  .text-headColor{
+    color:#2f6b31
+  }
 
-
-
+  .bg-copyRight{
+    background-color: #2f6b31;
+  }
+  .text-copyRight{
+    color: #ffff;
+  }
    
   /* Title text */
   @media only screen and (max-width: 867px) {

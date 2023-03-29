@@ -1,0 +1,17 @@
+
+  
+  /* footer */
+
+  .form-control:focus {
+    background: #223d3c;
+  }
+  /* footer */
+
+  .contact {
+    border-radius: 17px;
+    width: 36px;
+    padding: 4px;
+    padding-right: -29px;
+    margin-left: -39px;
+  }
+  
