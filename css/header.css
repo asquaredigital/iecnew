@@ -2,12 +2,12 @@
   
   /* Navbar */
 
-  #nav-bar {
+  /* #nav-bar {
     top: 0;
     z-index: 10;
     margin-left: 80px;
     margin-right: 90px;
-  }
+  } */
   .navbar-brand img {
     height: 110px;
     width: 110px;
@@ -33,10 +33,12 @@
     font-weight:bold;
     font-size: 16px;
   }
-  @media (min-width: 992px){
-    .navbar-expand-lg .navbar-collapse {
-      display: flex!important;
-      flex-basis: auto;
-      justify-content: flex-end;
+
+
+
+
+   #nav-bar {
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  }
+

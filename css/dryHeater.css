@@ -1,0 +1,539 @@
+/* body */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+    background-color: #081e34;
+}
+
+  /* Color  */
+
+  .bg-chlo {
+    background-color: #63ff99;
+  }
+.bg-dh{
+    background-color: #081e34;
+}
+    .btn-chlo{
+      background-color: #63ff99;
+    }
+  .text-chlo {
+    color: #081e34;
+  }
+  .text-chlo1{
+    color: #63ff99;
+  }
+  .card-body.bg-chlo {
+    height: 81px;
+  }
+
+  .bg-footer{
+    background-color: #081e34;
+  }
+
+  .text-color{
+    color:#63ff99
+  }
+  .text-headColor{
+    color:#63ff99
+  }
+
+  .bg-copyRight{
+    background-color:#63ff99!important;
+  }
+  .text-copyRight{
+    color: #081e34;
+  }
+  
+
+  .bg-navColor{
+    background-color:  #081e34 !important;
+  }
+  /* Navbar */
+
+  #nav-bar {
+    top: 0;
+    z-index: 10;
+    margin-left: 80px;
+    margin-right: 90px;
+  }
+  .navbar-brand img {
+    height: 110px;
+    width: 110px;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;;
+  }
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  .navbar-nav li a {
+    float: right;
+    text-align: left;
+  }
+  #nav-bar ul li a:hover {
+    color: #f8e501!important;
+  }
+  .navbar-toggler {
+    border: none!important;
+  }
+  .nav-link {
+    font-weight:bold;
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+      justify-content: flex-end;
+  }
+  }
+
+
+  /* Title text */
+  @media only screen and (max-width: 1000px) {
+    .title {
+      font-size: 300%;
+      font-weight: 700;
+      padding-top: 8%;
+    }
+    .title1 {
+        font-size: 300%;
+        font-weight: 700;
+        padding-top: 8%;
+        color: #63ff99;
+      }
+    .bg-title {
+      font-size: 300%;
+      font-weight: 700;
+      opacity: 14%;
+      position: absolute;
+    }
+
+    .title-lg {
+      font-size: 200%;
+      font-weight: 700;
+      padding-top: 8%;
+    }
+  
+    .bg-title-lg {
+      font-size: 250%;
+      font-weight: 700;
+      opacity: 14%;
+      position: absolute;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .title1 {
+      font-size: 1028%;
+      font-weight: 700;
+      padding-top: 8%;
+      color: #63ff99;
+    }
+
+    .title {
+        font-size: 1028%;
+        font-weight: 700;
+        padding-top: 8%;
+      }
+    
+  
+    .bg-title {
+      font-size: 1003%;
+      font-weight: 700;
+      opacity: 14%;
+      position: absolute;
+    }
+
+    .title-lg {
+      font-size:420%;
+      font-weight: 700;
+      padding-top: 8%;
+    }
+  
+    .bg-title-lg {
+      font-size: 600%;
+      font-weight: 700;
+      opacity: 14%;
+      position: absolute;
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  
+ 
+  /* Home */
+
+  @media only screen and (min-width: 1390px) {
+    .mobile {
+      display: none;
+    }
+
+    hr {
+      margin: -2rem 0;
+      border: 3px solid;
+      border-top: var(--bs-border-width) solid;
+      opacity: 3.25;
+      color: #081e34;
+      width: 75%;
+      margin-left: 12%;
+    }
+
+    h1.title {
+      font-size: 1125%;
+      font-weight: 700;
+      color: #081e34;
+    }
+
+    h2.v-feed-text {
+      font-size: 308%;
+      color: #081e34;
+    }
+
+
+  }
+
+
+
+  @media only screen and (max-width: 1390px) {
+    .desktop {
+      display: none;
+    }
+
+    hr {
+      margin: 0rem 0;
+      border: 3px solid;
+      border-top: var(--bs-border-width) solid;
+      opacity: 3.25;
+      color: #081e34;
+      width: 72%;
+      margin-left: 12%;
+    }
+  }
+
+  .v-feed {
+    max-width: 98%;
+  }
+
+
+
+
+  /* Carousel */
+
+  
+  .prev-btn,
+  .next-btn {
+    display: inline-block;
+    background-color: #f2f2f2;
+    border: none;
+    color: #666;
+    font-size: 16px;
+    padding: 27px 27px 27px 27px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 32px;
+  }
+
+  .prev-btn .triangle-left,
+  .next-btn .triangle-right {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 35px;
+    border-color: transparent transparent transparent #666;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+
+  .next-btn .triangle-right {
+    border-width: 20px 35px 20px 0;
+    border-color: transparent #666 transparent transparent;
+    left: 13% !important;
+  }
+
+  .prev-btn .triangle-left {
+    left: 26% !important;
+  }
+
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #ddd;
+  }
+
+  .prev-btn:focus,
+  .next-btn:focus {
+    outline: none;
+  }
+
+  .carousel-item img{
+        width: 400px!important;
+        height:600px !important;
+  }
+
+/* Dry Heater 01 */
+.dryHeater01 p{
+    font-size: 1.5rem!important;
+    font-weight: 600!important;
+    color:#081e34;
+}
+
+.dryHeater01 h1{
+    --bs-text-opacity: 1;
+    color: #081e34;
+    font-weight: 700;
+}
+
+/* Dry Heater 03 */
+.dryHeater03 h1{
+    --bs-text-opacity: 1;
+    color: #63ff99;
+    font-weight: 700;
+}
+.dryHeater03 p{
+    font-size: 1.5rem!important;
+    font-weight: 600!important;
+    color:#63ff99!important;
+} 
+
+
+/* Dry Heater 04 */
+.dryHeater04 p{
+    font-size: 1.5rem!important;
+    font-weight: 600!important;
+    color:#63ff99!important;
+} 
+.li{
+    height: 20px;
+    position: relative;
+    padding-top: 7px;
+}
+
+/* Industrial Apps */
+.industrialApps h1{
+    --bs-text-opacity: 1;
+    color: #63ff99;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.industrialApps h2{
+    --bs-text-opacity: 1;
+    color: #081e34;
+    font-weight: 700;
+    font-size: x-large;
+}
+.industrialApps p{
+    font-size: 15px !important;
+    font-weight: 600!important;
+    color:#63ff99!important;
+} 
+
+#with-border-box {
+  box-sizing: border-box;
+  border: 9px solid #63ff99 !important;
+  border-right:none!important;
+  padding: 10px
+}
+
+/* DryHeater 1.5 */
+.dryHeater1_5 h1{
+    --bs-text-opacity: 1;
+    color: #081e34;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.dryHeater1_5 h2{
+    --bs-text-opacity: 1;
+    color: #63ff99;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+
+/* Dry Heater 3 */
+
+.dryHeater3 h1{
+    --bs-text-opacity: 1;
+    color: #63ff99;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.dryHeater3 h2{
+    --bs-text-opacity: 1;
+    color: #081e34;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+
+
+/* Dry Heater 10.5 */
+.dryHeater10_5 h1{
+    --bs-text-opacity: 1;
+    color: #081e34;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.dryHeater10_5 h2{
+    --bs-text-opacity: 1;
+    color: #63ff99;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+@media  only screen and (min-width: 1290px){
+    .dryHeater10_5 img{
+        vertical-align: middle;
+        height: 400px;
+        padding-top: 60px;
+    }
+}
+
+@media  only screen and (max-width: 1290px){
+    .dryHeater10_5 img{
+        vertical-align: middle;
+        height: 400px;
+        padding-top: 60px;
+        display:none;
+    }
+}
+
+
+
+/* Dry Heater 20 */
+.dryHeater20 h1{
+    --bs-text-opacity: 1;
+    color: #63ff99;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.dryHeater20 h2{
+    --bs-text-opacity: 1;
+    color: #081e34;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+@media  only screen and (min-width: 1290px){
+    .dryHeater20 img{
+        vertical-align: middle;
+        height: 400px;
+        padding-top: 60px;
+    }
+}
+
+@media  only screen and (max-width: 1290px){
+    .dryHeater20 img{
+        vertical-align: middle;
+        height: 400px;
+        padding-top: 60px;
+        display:none;
+    }
+}
+
+
+
+@media  only screen and (min-width: 1000px){
+    .dh_l{
+        padding-top: 125px;
+    }
+    .dh_l3{
+        padding-top: 150px;
+    }
+    .dh_r{
+        padding-top: 100px;
+    }
+    
+    
+    .dh_r10_5{
+        padding-top: 150px;
+    }
+}
+
+
+
+.midd{
+    position: absolute;
+    padding-top: 60px;
+}
+.midd h1{
+    font-weight: 700;
+    font-size: xxx-large !important;
+}
+.midd-dh3{
+    position: absolute;
+    padding-top: 60px;
+    padding-right: 61px;
+}
+
+.midd-dh3 h1{
+    font-weight: 700;
+    font-size: xxx-large !important;
+}
+
+.midd-dh20{
+    position: absolute;
+    padding-top: 60px;
+    padding-right: 25px;
+}
+.midd-dh20 h1{
+    font-weight: 700;
+    font-size: xxx-large !important;
+}
+
+
+
+ 
+  /* Form */
+
+  .bg-chlo1 {
+    background-color: #081e34;
+  }
+
+  .btn-chlo {
+    background-color: #081e34;
+    color: #63ff99;
+  }
+
+/* Footer */
+.form-control:focus {
+    background: #081e34;
+  }
+  .bottom_line{
+    border-bottom-style: groove;
+    border-color: #63ff99;
+    width: fit-content;
+  }
+
+
+  /* bottomLine */
+  .bh{
+    color:#081e34 !important;
+    border-bottom-style: groove;
+    border-color: #081e34;
+}
+ 
+.bg{
+  color:#63ff99 !important;
+  border-bottom-style: groove;
+  border-color: #63ff99;
+}

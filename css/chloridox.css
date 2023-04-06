@@ -48,7 +48,8 @@ body {
   }
 
   .text-headColor{
-    color:#000000
+    color: #f4bd01;
+
   }
  .bg-copyRight{
   background-color:#000000
@@ -56,6 +57,53 @@ body {
 .text-copyRight{
   color: #f4bd01;
 }
+
+.bg-navColor{
+  background-color:  #000 !important;
+}
+
+  /* Navbar */
+
+  #nav-bar {
+    top: 0;
+    z-index: 10;
+    margin-left: 80px;
+    margin-right: 90px;
+  }
+  .navbar-brand img {
+    height: 110px;
+    width: 110px;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;;
+  }
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  .navbar-nav li a {
+    float: right;
+    text-align: left;
+  }
+  #nav-bar ul li a:hover {
+    color: #f8e501!important;
+  }
+  .navbar-toggler {
+    border: none!important;
+  }
+  .nav-link {
+    font-weight:bold;
+    font-size: 16px;
+  }
+  @media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+      justify-content: flex-end;
+  }
+  }
+
+
   /* Title text */
   @media only screen and (max-width: 867px) {
     .title {

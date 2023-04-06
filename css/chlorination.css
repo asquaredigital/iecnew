@@ -39,12 +39,16 @@ body {
   }
 
   .bg-copyRight{
-    background-color:#ffff
+    background-color:#ffff!important;
   }
   .text-copyRight{
     color: #223d3c;
   }
   
+
+  .bg-navColor{
+    background-color:  #ffff !important;
+  }
   /* Navbar */
 
   #nav-bar {

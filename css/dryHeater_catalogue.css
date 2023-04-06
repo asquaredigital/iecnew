@@ -1,0 +1,269 @@
+html,
+body {
+  max-width: 100%!important;
+  overflow-x: hidden !important;
+}
+
+.bg-dh{
+    background-color: #002852;
+}
+
+.text-bh{
+    color: #002852;
+}
+
+.bottomLine {
+    border-bottom-style: solid;
+    width: fit-content;
+    border-bottom-width: thick;
+    border-color: #dc3545;
+}
+
+/* Header and Footer */
+
+.bg-footer{
+    background-color: #002852;
+  }
+
+  .text-color{
+    color:#fff
+  }
+  .text-headColor{
+    color:#fff
+  }
+
+  .bg-copyRight{
+    background-color:#ffff!important;
+  }
+  .text-copyRight{
+    color: #002852;
+  }
+  
+  .bg-navColor{
+    background-color:  #002852 !important;
+  }
+  /* Navbar */
+
+  #nav-bar {
+    top: 0;
+    z-index: 10;
+    margin-left: 80px;
+    margin-right: 90px;
+  }
+  .navbar-brand img {
+    height: 110px;
+    width: 110px;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;;
+  }
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  .navbar-nav li a {
+    float: right;
+    text-align: left;
+  }
+  #nav-bar ul li a:hover {
+    color: #f8e501!important;
+  }
+  .navbar-toggler {
+    border: none!important;
+  }
+  .nav-link {
+    font-weight:bold;
+    font-size: 16px;
+  }
+  @media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+      justify-content: flex-end;
+  }
+  }
+
+
+
+/* DRY HEATER */
+.high-purity p{
+    font-style: italic;
+    font-size: 1.5rem!important;
+    padding-top: 0.5rem!important;
+}
+
+.high-purity h1{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 700;
+}
+
+
+
+.high-Pressure p{
+    font-style: italic;
+    font-size: 1.5rem!important;
+    padding-top: 0.5rem!important;
+}
+
+.high-Pressure h1{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 700;
+}
+
+
+
+.conventionalHead p{
+    font-style: italic;
+    font-size: 1.5rem!important;
+    padding-top: 0.5rem!important; 
+}
+
+.conventionalHead h1{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 700;
+}
+
+
+
+.conventionalHead1 p{
+    font-style: italic;
+    font-size: 1.5rem!important;
+}
+
+.conventionalHead1 h1{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 700;
+}
+
+
+
+.industrialApps p{
+    color: #002852 !important;
+    font-style: italic;
+    font-size: 1.5rem!important;
+    padding-top: 1.5rem!important;
+}
+
+
+.li img{
+    color: #002852 !important;
+    font-style: italic;
+    font-size: 1.5rem!important;
+    padding-top: 2rem!important;
+}
+
+
+.industrialApps h1{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 700;
+}
+
+
+.variants h1{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 700;
+}
+
+.variants p{
+    font-style: italic;
+    font-size: 1.5rem!important;
+}
+
+
+.indirectHeater h2{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity));
+    font-weight: 400;
+    font-style: italic;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1.5rem 0.5rem;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+th{
+    background-color: #002852!important;
+    color: #fff!important;
+    font-style: italic;
+    font-size: 1.5rem!important;
+}
+td{
+    font-style: italic;
+    font-size: 1.5rem!important;
+}
+
+
+ @media (max-width: 1330px){
+    .desktop {
+      display: none;
+  }
+}
+
+@media (min-width: 1330px){
+    .desktop {
+      display: block;
+  }
+}
+@media (max-width: 1330px){
+    .mobile {
+      display: block;
+  }
+}
+
+@media (min-width: 1330px){
+    .mobile {
+      display: none;
+  }
+}
+
+/* dryHeater1_5 */
+
+
+
+@media (min-width: 700px){
+  .dryHeater1_5 p{
+    font-weight: bolder!important;
+    color: #002852;
+    font-size: 2.05rem!important;
+    margin-top: 20px;
+  }
+  
+  .dryHeater1_5 h3{
+    margin-top: 20px;
+  }
+  .dryHeater1_5 h4{
+    font-size: 150%;
+    margin-top: 20px;
+    font-style: italic!important;
+  }
+
+  .dryHeater1_5 picture img{ 
+    width: 330px !important;;
+    }
+
+}
+
+@media (max-width: 700px){
+  .dryHeater1_5 p{
+    font-weight: bolder!important;
+    color: #002852;
+    font-size: 1.05rem!important;
+    margin-top: 20px;
+  }
+  
+
+  .dryHeater1_5 h4{
+    font-size: 150%;
+    margin-top: 20px;
+    font-style: italic!important;
+  }
+  .dryHeater1_5 img{
+    width: 50px!important;
+    }
+}

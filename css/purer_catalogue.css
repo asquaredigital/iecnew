@@ -1,0 +1,156 @@
+html,
+body {
+  max-width: 100%!important;
+  overflow-x: hidden;
+}
+.bg-purer{
+  background-color: #022c43!important;
+}
+
+.bg-footer{
+    background-color: #022c43;
+  }
+
+  .text-color{
+    color:#fff
+  }
+  .text-headColor{
+    color:#fff
+  }
+
+  .bg-copyRight{
+    background-color:#ffff!important;
+  }
+  .text-copyRight{
+    color: #022c43;
+  }
+  
+
+  .bg-navColor{
+    background-color:  #022c43 !important;
+  }
+
+  /* Header */
+  .headerdesign {
+    background-image: url("../img/Products/Purer/purer_BG.jpg");
+    height:300px;
+    width: 100%;
+   
+  }
+  .headerdesign1{
+    background-image: url("../img/Products/Purer/purer.png");
+    height: 110vh;
+  }
+
+.font_bio{
+  font-size: 600%;
+  font-family: auto;
+}
+
+.font_fil{
+font-size: 700%;
+font-weight: bolder;
+font-style: italic;
+}
+
+
+.bottom_border{
+    border-bottom-style: solid;
+    border-color: red;
+    border-width: thick;
+    max-width: max-content;
+
+}
+
+.text-purer{
+  color: #022c43;
+}
+    /* Navbar */
+
+    #nav-bar {
+      top: 0;
+      z-index: 10;
+      margin-left: 80px;
+      margin-right: 90px;
+    }
+    .navbar-brand img {
+      height: 110px;
+      width: 110px;
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;;
+    }
+    .navbar-nav li {
+      padding: 0 10px;
+    }
+    .navbar-nav li a {
+      float: right;
+      text-align: left;
+    }
+    #nav-bar ul li a:hover {
+      color: #f8e501!important;
+    }
+    .navbar-toggler {
+      border: none!important;
+    }
+    .nav-link {
+      font-weight:bold;
+      font-size: 16px;
+    }
+    @media (min-width: 992px){
+      .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+    }
+
+
+  
+
+
+  /* odour */
+
+.bottomLine {
+    border-bottom-style: solid;
+    width: fit-content;
+    border-bottom-width: thick;
+    border-color: black;
+}
+
+/* Features */
+/* 
+img.purerNum {
+    height: 590px!important;
+} */
+
+
+
+/* Header */
+
+
+.top-left {
+  position: absolute;
+  top: 40% !important;
+  left: 120px;
+  height:255px
+}
+
+
+.top-right {
+  position: absolute;
+  top: 30px;
+  left: 80%;
+}
+
+.purerImg{
+  position: absolute;
+  right: 66%;
+  
+}
+
+.purerText {
+  position: relative;
+  top: 75% !important;
+}
