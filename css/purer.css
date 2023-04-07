@@ -1,0 +1,449 @@
+/* body */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* Color  */
+
+.bg-chlo {
+  background-color: rgb(15 49 115);
+}
+.bg-purer {
+  background-color: rgb(15 49 115);
+}
+.btn-chlo {
+  background-color: rgb(15 49 115);
+}
+.text-chlo {
+  color: rgb(15 49 115) !important;
+}
+
+.card-body.bg-chlo {
+  height: 110px;
+}
+
+.bg-footer {
+  background-color: #fff !important;
+}
+
+.text-color {
+  color: rgb(15 49 115) !important;
+}
+.text-headColor {
+  color: rgb(15 49 115);
+}
+
+.bg-copyRight {
+  background-color: rgb(15 49 115);
+}
+.text-copyRight {
+  color: #ffff;
+}
+
+.bg-navColor {
+  background-color: #fff !important;
+}
+/* Navbar */
+
+#nav-bar {
+  top: 0;
+  z-index: 10;
+  margin-left: 80px;
+  margin-right: 90px;
+}
+.navbar-brand img {
+  height: 110px;
+  width: 110px;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  float: right;
+  text-align: left;
+}
+#nav-bar ul li a:hover {
+  color: #f8e501 !important;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.nav-link {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}
+
+/* Title text */
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 300%;
+    font-weight: 700;
+    padding-top: 8%;
+  }
+  .title1 {
+    font-size: 300%;
+    font-weight: 700;
+    padding-top: 8%;
+    color: rgb(15 49 115);
+  }
+  .bg-title {
+    font-size: 300%;
+    font-weight: 700;
+    opacity: 14%;
+    position: absolute;
+  }
+
+  .title-lg {
+    font-size: 200%;
+    font-weight: 700;
+    padding-top: 8%;
+  }
+
+  .bg-title-lg {
+    font-size: 250%;
+    font-weight: 700;
+    opacity: 14%;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .title1 {
+    font-size: 1028%;
+    font-weight: 700;
+    padding-top: 8%;
+    color: rgb(15 49 115);
+  }
+
+  .title {
+    font-size: 1028%;
+    font-weight: 700;
+    padding-top: 8%;
+  }
+
+  .bg-title {
+    font-size: 1003%;
+    font-weight: 700;
+    opacity: 14%;
+    position: absolute;
+  }
+
+  .title-lg {
+    font-size: 420%;
+    font-weight: 700;
+    padding-top: 8%;
+  }
+
+  .bg-title-lg {
+    font-size: 600%;
+    font-weight: 700;
+    opacity: 14%;
+    position: absolute;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Home */
+
+@media only screen and (min-width: 1390px) {
+  .mobile {
+    display: none;
+  }
+
+  hr {
+    margin: -2rem 0;
+    border: 3px solid;
+    border-top: var(--bs-border-width) solid;
+    opacity: 3.25;
+    color: #fff;
+    width: 75%;
+    margin-left: 12%;
+  }
+
+  h1.title {
+    font-size: 1125%;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  h2.v-feed-text {
+    font-size: 308%;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .desktop {
+    display: none;
+  }
+
+  hr {
+    margin: 0rem 0;
+    border: 3px solid;
+    border-top: var(--bs-border-width) solid;
+    opacity: 3.25;
+    color: #fff;
+    width: 72%;
+    margin-left: 12%;
+  }
+}
+
+.v-feed {
+  max-width: 98%;
+}
+
+
+
+
+  /* Carousel */
+
+  
+  .prev-btn,
+  .next-btn {
+    display: inline-block;
+    background-color: #f2f2f2;
+    border: none;
+    color: #666;
+    font-size: 16px;
+    padding: 27px 27px 27px 27px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 32px;
+  }
+
+  .prev-btn .triangle-left,
+  .next-btn .triangle-right {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 35px;
+    border-color: transparent transparent transparent #666;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+
+  .next-btn .triangle-right {
+    border-width: 20px 35px 20px 0;
+    border-color: transparent #666 transparent transparent;
+    left: 13% !important;
+  }
+
+  .prev-btn .triangle-left {
+    left: 26% !important;
+  }
+
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #ddd;
+  }
+
+  .prev-btn:focus,
+  .next-btn:focus {
+    outline: none;
+  }
+
+  .carousel-item img{
+        width: 800px!important;
+        height:600px !important;
+  }
+
+
+/* purer process*/
+.purerProcess p{
+  font-size: 1.5rem!important;
+  font-weight: 600!important;
+  color:rgb(15 49 115);
+}
+
+.purerProcess h1{
+  --bs-text-opacity: 1;
+  color: rgb(15 49 115);
+  font-weight: 700;
+}
+
+.purer_lg h2 {
+  position: absolute;
+  right: 100px;
+  font-size: 126px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.purerProcess1 p{
+  font-size: 1.5rem!important;
+  font-weight: 600!important;
+  color: #fff;
+}
+
+.purerProcess1 h1{
+  --bs-text-opacity: 1;
+  color: #fff;
+  font-weight: 700;
+}
+
+.purer_lg1 h2 {
+  position: absolute;
+  left: 100px;
+  font-size: 126px;
+  font-weight: 700;
+  color: rgb(15 49 115);
+}
+
+
+.purerProcess2 p{
+  font-size: 1.5rem!important;
+  font-weight: 600!important;
+  color:rgb(15 49 115);
+}
+
+.purerProcess2 h1{
+  --bs-text-opacity: 1;
+  color: rgb(15 49 115);
+  font-weight: 700;
+}
+
+
+
+
+
+@media only screen and (min-width: 1250px) {
+.purer_top{
+  padding-top: 150px !important;
+}
+.purerProcess2 h2{
+  position: absolute;
+    right: 211px;
+    padding-top: 28%;
+    font-size: 359px;
+    font-weight: 700;
+    color: #0f3173;
+    opacity: 29%;
+
+}
+}
+
+@media only screen and (max-width: 1250px) {
+  .purer_lg {
+    display: none;
+  }
+
+  .purer_lg1 {
+    display: none;
+  }
+  .purerProcess2 h2{
+    display: none;
+  }
+}
+
+
+
+/* features */
+
+.features p{
+  font-size: 1.5rem!important;
+  font-weight: 600!important;
+  color:rgb(15 49 115) !important;
+}
+
+.features img{
+ width: 70px !important;
+ height:70px !important;
+}
+
+
+/* Industrial Apps */
+
+.industrialApps p{
+  font-size: 1.5rem!important;
+  font-weight: 600!important;
+  color:rgb(15 49 115) !important;
+}
+
+.industrialApps img{
+ width: 150px !important;
+ height:150px !important;
+}
+
+
+/* construction */
+.construction h1{
+  --bs-text-opacity: 1;
+  color: #fff;
+  font-weight: 700;
+}
+
+.construction td p{
+color: #fff;
+font-size: x-large;
+font-weight: 700;
+}
+
+
+h2.purer_lg {
+  color: #fff;
+  font-size: 258px;
+  font-weight: 700;
+  opacity: 40%;
+  position: absolute;
+}
+/* Form */
+
+.bg-chlo1 {
+  background-color: rgb(15 49 115);
+}
+
+.form label {
+  font-size: 1.75rem !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+  font-weight: bolder !important;
+}
+
+.form input {
+  border-radius: 14px;
+  height: 75px;
+  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 1;
+  background-color:#fff !important;
+}
+
+/* Footer */
+.form-control:focus {
+  color:rgb(15 49 115);
+}
+.bottom_line {
+  border-bottom-style: groove;
+  border-color: rgb(15 49 115);
+  width: fit-content;
+}
+
+/* bottomLine */

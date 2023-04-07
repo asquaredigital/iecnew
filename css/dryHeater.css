@@ -514,10 +514,31 @@ body{
     color: #63ff99;
   }
 
+     /* Form */
+
+     .form label {
+      font-size: 1.75rem !important;
+      --bs-text-opacity: 1;
+      color: #081e34;
+      font-weight: bolder !important;
+    }
+    
+    .form input {
+      border-radius: 14px;
+      height: 75px !important;
+      --bs-bg-opacity: 1;
+      --bs-bg-opacity: 1;
+      background-color:#081e34 !important;
+      color: #63ff99 !important;
+    }
+    
+    .form-control:focus {
+      background: #081e34 !important;
+      color: #63ff99 !important;
+    }
+
 /* Footer */
-.form-control:focus {
-    background: #081e34;
-  }
+
   .bottom_line{
     border-bottom-style: groove;
     border-color: #63ff99;

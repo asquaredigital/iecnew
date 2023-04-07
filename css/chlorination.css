@@ -343,6 +343,25 @@ body {
     padding-left: 94px;
   }
   
+  /* Form */
+
+
+
+.form label {
+  font-size: 1.75rem !important;
+  --bs-text-opacity: 1;
+  color: #223d3c;
+  font-weight: bolder !important;
+}
+
+.form input {
+  border-radius: 14px;
+  height: 75px !important;
+  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 1;
+  background-color:#223d3c !important;
+  color: #fff;
+}
 
   /* footer */
 
@@ -354,6 +373,7 @@ body {
 
   .form-control:focus {
     background: #223d3c;
+    color: #FFF !important;
   }
   /* footer */
 

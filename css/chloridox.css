@@ -293,6 +293,31 @@ body {
   }
 
 
+
+   /* Form */
+
+
+
+.form label {
+  font-size: 1.75rem !important;
+  --bs-text-opacity: 1;
+  color: #f4bd01;
+  font-weight: bolder !important;
+}
+
+.form input {
+  border-radius: 14px;
+  height: 75px !important;
+  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 1;
+  background-color:#f4bd01 !important;
+  color: #000 !important;
+}
+
+.form-control:focus {
+  background: #f4bd01 !important;
+  color: #000 !important;
+}
 /* footer */
 
 .bottom_line{
