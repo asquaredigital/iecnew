@@ -1,0 +1,307 @@
+/* body */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+    background-color: #000;
+}
+
+  /* Color  */
+
+  .bg-chlo {
+    background-color: #fad91d;
+  }
+.bg-dh{
+    background-color: #000;
+}
+    .btn-chlo{
+      background-color: #fad91d;
+    }
+  .text-chlo {
+    color: #000;
+  }
+  .text-chlo1{
+    color: #fad91d;
+  }
+  .card-body.bg-chlo {
+    height: 81px;
+  }
+
+  .bg-footer{
+    background-color: #000;
+  }
+
+  .text-color{
+    color:#fad91d
+  }
+  .text-headColor{
+    color:#fad91d
+  }
+
+  .bg-copyRight{
+    background-color:#fad91d!important;
+  }
+  .text-copyRight{
+    color: #000;
+  }
+  
+
+  .bg-navColor{
+    background-color:  #000 !important;
+  }
+  /* Navbar */
+
+  #nav-bar {
+    top: 0;
+    z-index: 10;
+    margin-left: 80px;
+    margin-right: 90px;
+  }
+  .navbar-brand img {
+    height: 110px;
+    width: 110px;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;;
+  }
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  .navbar-nav li a {
+    float: right;
+    text-align: left;
+  }
+  #nav-bar ul li a:hover {
+    color: #f8e501!important;
+  }
+  .navbar-toggler {
+    border: none!important;
+  }
+  .nav-link {
+    font-weight:bold;
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+      justify-content: flex-end;
+  }
+  }
+
+/* Home */
+
+.home img{
+    height: 550px;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+
+.home h1{
+    position: absolute;
+    left: 20%;
+    padding-top: 10%;
+    font-size: 200px;
+    font-weight: 700;
+    color: #fad91d;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .home h1{
+        position: absolute;
+        left: 20%;
+        padding-top: 10%;
+        font-size: 155px;
+        font-weight: 700;
+        color: #fad91d;
+        z-index: 1;
+    }
+    .home img{
+        height: 400px;
+        }
+}
+@media only screen and (max-width: 800px) {
+    .home h1{
+        position: absolute;
+        left: 20%;
+        padding-top: 10%;
+        font-size: 100px;
+        font-weight: 700;
+        color: #fad91d;
+        z-index: 1;
+    }
+    .home img{
+    height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home h1{
+        position: absolute;
+        left: 20%;
+        padding-top: 10%;
+        font-size: 50px;
+        font-weight: 700;
+        color: #fad91d;
+        z-index: 1;
+    }
+    .home img{
+        height: 200px;
+        }
+}
+
+
+/* Welcome */
+
+.welcome h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fad91d;
+}
+
+.welcome h2{
+    font-size: xxx-large;
+    font-weight: 600;
+    color: #fad91d;
+  }
+
+  .welcome p{
+    font-size: x-large;
+    font-weight: 600;
+    color: #fad91d;
+  }
+  
+@media only screen and (max-width: 500px) {
+    .welcome img{
+        width:330px;
+    }
+}
+
+  .profile img{
+    height: 260px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fad91d;
+  }
+
+  .profile p{
+    font-size: x-large;
+    font-weight: 600;
+    color: #fad91d;
+    margin-bottom: initial;
+  }
+
+/* achievement */
+.achievement h1{
+    font-weight: 900;
+    font-size: 6.5rem;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+@media only screen and (max-width: 900px) {
+    .achievement h1{
+        font-weight: 900;
+        font-size: 3.5rem;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .achievement h1{
+        font-weight: 900;
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+
+/* achievementsIEC */
+
+.achievementsIEC h1{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #fad91d;
+  }
+
+  .achievementsIEC span{
+    font-weight: 600;
+    color: #fad91d;
+  }
+
+
+  .achievementsIEC .img1 img{
+    height: 240px;
+    width: 165px;
+    border-radius: 85px;
+}
+.achievementsIEC .img img{
+    height: 140px;
+    width: 185px;
+}
+
+
+.achievementsIEC .iso img{
+    height: 260px;
+    width: 165px;
+}
+
+
+.borderLine{
+    border-right: solid;
+    border-color: #fad91d;
+    height: -webkit-fill-available;
+}
+
+
+@media only screen and (max-width: 1000px) {
+.borderLine{
+    border-color: #000;
+}
+}
+
+
+
+
+/* Mission */
+
+.mission h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fad91d;
+}
+.mission p{
+    font-size: x-large;
+    font-weight: 600;
+    color: #fad91d;
+  }
+
+  .mission img{
+    height: 485px;
+    width: 460px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .mission img{
+        height: 385px;
+        width: 340px;
+      }
+    }
+  /* footer */
+
+  .bottom_line {
+    border-bottom-style: solid;
+    width: fit-content;
+    border-bottom-width: thick;
+    border-color: #fad91d !important;
+}
