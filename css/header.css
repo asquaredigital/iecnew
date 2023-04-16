@@ -23,9 +23,7 @@
     float: right;
     text-align: left;
   }
-  #nav-bar ul li a:hover {
-    color: #f8e501!important;
-  }
+ 
   .navbar-toggler {
     border: none!important;
   }

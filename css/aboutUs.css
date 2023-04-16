@@ -12,6 +12,7 @@ body{
 
   /* Color  */
 
+  
   .bg-chlo {
     background-color: #fad91d;
   }
@@ -51,7 +52,7 @@ body{
   
 
   .bg-navColor{
-    background-color:  #000 !important;
+    background-color:  #fad91d !important;
   }
   /* Navbar */
 
@@ -75,10 +76,9 @@ body{
   .navbar-nav li a {
     float: right;
     text-align: left;
+    color: black;
   }
-  #nav-bar ul li a:hover {
-    color: #f8e501!important;
-  }
+  
   .navbar-toggler {
     border: none!important;
   }
@@ -86,6 +86,8 @@ body{
     font-weight:bold;
     font-size: 16px;
   }
+
+ 
 
   @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
@@ -269,9 +271,6 @@ body{
     border-color: #000;
 }
 }
-
-
-
 
 /* Mission */
 

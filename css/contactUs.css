@@ -48,12 +48,10 @@ body {
 }
 
 .bg-blue {
-  background-color: rgb(0 46 137);
+  background-color: black;
 }
 
-.bg-navColor {
-  background-color: #fad91d !important;
-}
+
 /* Navbar */
 
 #nav-bar {
@@ -70,12 +68,15 @@ body {
   display: flex;
   align-items: center;
 }
+
 .navbar-nav li {
   padding: 0 10px;
 }
 .navbar-nav li a {
   float: right;
   text-align: left;
+  color: white;
+  
 }
 #nav-bar ul li a:hover {
   color: #f8e501 !important;

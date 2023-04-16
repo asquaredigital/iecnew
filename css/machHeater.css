@@ -44,10 +44,17 @@ body{
 
   .bg-copyRight{
     background-color:#ed1b33!important;
+    padding: 1rem!important;
+
   }
   .text-copyRight{
     color: #081e34;
   }
+  .text-copyRight a{
+    color: #081e34;
+    text-decoration: none;
+  }
+  
   
 
   .bg-navColor{
