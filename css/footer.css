@@ -1,33 +1,79 @@
+/* footer */
 
-  
-  /* footer */
+.contact {
+  border-radius: 17px;
+  width: 36px;
+  padding: 4px;
+  padding-right: -29px;
+  margin-left: -39px;
+}
 
-  .form-control:focus {
-    background: #223d3c;
-  }
-  /* footer */
+.footerproducts li h4 a {
+  /* color:#fad91d ; */
+  text-decoration: none;
+}
+.footermenus li h4 a {
+  /* color:#fad91d ; */
+  text-decoration: none;
+  line-height: 2px;
+}
+.bg-copyRight .p-3 .text-copyRight .text-center .fw-bolder a {
+  text-decoration: none;
+  color: #000;
+}
 
-  .contact {
-    border-radius: 17px;
-    width: 36px;
-    padding: 4px;
-    padding-right: -29px;
-    margin-left: -39px;
-  }
-  
-  .footerproducts li h4 a
-  {
-    color:#fad91d ;
-    text-decoration:none
-  }
-  .footermenus li h4 a
-  {
-    color:#fad91d ;
-    text-decoration:none;
-    line-height: 2px;
-  }
-  .bg-copyRight .p-3 .text-copyRight .text-center .fw-bolder a
-  {
-    text-decoration: none;
-    color: #000;
-  }
+.social img {
+  height: 75px;
+}
+.contacts img{
+  width: 35px;
+  height: 35px;
+}
+
+h4.bottom_line {
+  font-size: xx-large;
+}
+
+h5.bottom_line {
+  font-size: xx-large;
+}
+
+.chlorination_soc {
+  display: none;
+}
+.aboutUs_soc {
+  display: none;
+}
+.avgf_soc {
+  display: none;
+}
+.chloridiox_soc {
+  display: none;
+}
+.contactUs_soc {
+  display: none;
+}
+.leak_soc {
+  display: none;
+}
+.machHeater_soc {
+  display: none;
+}
+.project_soc {
+  display: none;
+}
+.purer_soc {
+  display: none;
+}
+.steriflo_soc {
+  display: none;
+}
+.swec_soc {
+  display: none;
+}
+.vapourizer_soc {
+  display: none;
+}
+.dryHeater_soc{
+  display: none;
+}

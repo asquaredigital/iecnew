@@ -234,54 +234,18 @@ body{
 
   /* Carousel */
 
+
+  @media only screen and (max-width: 900px) {
+    .prev-btn img{
+      height: 50px;
+      width: 50px;
+    }
   
-  .prev-btn,
-  .next-btn {
-    display: inline-block;
-    background-color: #f2f2f2;
-    border: none;
-    color: #666;
-    font-size: 16px;
-    padding: 27px 27px 27px 27px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 32px;
-  }
-
-  .prev-btn .triangle-left,
-  .next-btn .triangle-right {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 20px 0 20px 35px;
-    border-color: transparent transparent transparent #666;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translateY(-50%);
-  }
-
-  .next-btn .triangle-right {
-    border-width: 20px 35px 20px 0;
-    border-color: transparent #666 transparent transparent;
-    left: 13% !important;
-  }
-
-  .prev-btn .triangle-left {
-    left: 26% !important;
-  }
-
-  .prev-btn:hover,
-  .next-btn:hover {
-    background-color: #ddd;
-  }
-
-  .prev-btn:focus,
-  .next-btn:focus {
-    outline: none;
-  }
+    .next-btn img{
+      height: 50px;
+      width: 50px;
+    }
+    }
 
   .carousel-item img{
         width: 400px!important;
@@ -290,7 +254,7 @@ body{
 
 /* Dry Heater 01 */
 .dryHeater01 p{
-    font-size: 1.5rem!important;
+    font-size: x-large  ;
     font-weight: 600!important;
     color:#081e34;
 }
@@ -298,7 +262,8 @@ body{
 .dryHeater01 h1{
     --bs-text-opacity: 1;
     color: #081e34;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: xx-large;
 }
 
 /* Dry Heater 03 */
@@ -313,6 +278,11 @@ body{
     color:#63ff99!important;
 } 
 
+
+.dryHeater03 li{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 /* Dry Heater 04 */
 .dryHeater04 p{
@@ -404,7 +374,7 @@ body{
     .dryHeater10_5 img{
         vertical-align: middle;
         height: 400px;
-        padding-top: 60px;
+        padding-top: 100px;
     }
 }
 
@@ -412,7 +382,7 @@ body{
     .dryHeater10_5 img{
         vertical-align: middle;
         height: 400px;
-        padding-top: 60px;
+        padding-top: 100px;
         display:none;
     }
 }
@@ -437,7 +407,7 @@ body{
     .dryHeater20 img{
         vertical-align: middle;
         height: 400px;
-        padding-top: 60px;
+        padding-top: 85px;
     }
 }
 
@@ -454,7 +424,7 @@ body{
 
 @media  only screen and (min-width: 1000px){
     .dh_l{
-        padding-top: 125px;
+        padding-top: 150px;
     }
     .dh_l3{
         padding-top: 150px;
@@ -476,8 +446,9 @@ body{
     padding-top: 60px;
 }
 .midd h1{
-    font-weight: 700;
-    font-size: xxx-large !important;
+  font-weight: 700;
+  font-size: 4rem;
+  padding-right: 12px;
 }
 .midd-dh3{
     position: absolute;
@@ -486,8 +457,9 @@ body{
 }
 
 .midd-dh3 h1{
-    font-weight: 700;
-    font-size: xxx-large !important;
+  font-weight: 700;
+  font-size: 4rem;
+  padding-right: 12px;
 }
 
 .midd-dh20{
@@ -496,8 +468,9 @@ body{
     padding-right: 25px;
 }
 .midd-dh20 h1{
-    font-weight: 700;
-    font-size: xxx-large !important;
+  font-weight: 700;
+  font-size: 4rem;
+  padding-right: 12px;
 }
 
 
@@ -535,6 +508,10 @@ body{
     .form-control:focus {
       background: #081e34 !important;
       color: #63ff99 !important;
+    }
+
+    .form-control{
+      border: #081e34;
     }
 
 /* Footer */

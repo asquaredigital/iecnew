@@ -40,11 +40,11 @@ body {
     background-color: #000000;
   }
 .bg-footer{
-  background-color: #f4bd01;
+  background-color: #000;
 }
 
   .text-color{
-    color:#000000
+    color:#f4bd01
   }
 
   .text-headColor{
@@ -52,11 +52,11 @@ body {
 
   }
  .bg-copyRight{
-  background-color:#000000
+  background-color:#f4bd01
 
 }
 .text-copyRight{
-  color: #f4bd01;
+  color: #000;
 }
 
 
@@ -247,54 +247,46 @@ body {
 
   /* Carousel */
 
+  @media only screen and (max-width: 900px) {
+    .prev-btn img{
+      height: 50px;
+      width: 50px;
+    }
   
-  .prev-btn,
-  .next-btn {
-    display: inline-block;
-    background-color: #f2f2f2;
-    border: none;
-    color: #666;
-    font-size: 16px;
-    padding: 27px 27px 27px 27px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 32px;
-  }
+    .next-btn img{
+      height: 50px;
+      width: 50px;
+    }
+    }
 
-  .prev-btn .triangle-left,
-  .next-btn .triangle-right {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 20px 0 20px 35px;
-    border-color: transparent transparent transparent #666;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translateY(-50%);
-  }
 
-  .next-btn .triangle-right {
-    border-width: 20px 35px 20px 0;
-    border-color: transparent #666 transparent transparent;
-    left: 13% !important;
-  }
+    /* table */
+    @media only screen and (min-width: 730px) {
+      .table img{
+        height: 575px;
+        width: 660px;
+      }
+      }
+    @media only screen and (max-width: 730px) {
+      .table img{
+        height: 575px;
+        width: 660px;
+      }
+      }
+      @media only screen and (max-width: 460px) {
+        .table img{
+          height: 450px;
+          width: 450px;
+        }
+        }
+  
+        @media only screen and (max-width: 360px) {
+          .table img{
+            height: 360px;
+            width: 340px;
+          }
+          }
 
-  .prev-btn .triangle-left {
-    left: 26% !important;
-  }
-
-  .prev-btn:hover,
-  .next-btn:hover {
-    background-color: #ddd;
-  }
-
-  .prev-btn:focus,
-  .next-btn:focus {
-    outline: none;
-  }
 
 
 
@@ -305,7 +297,7 @@ body {
 .form label {
   font-size: 1.75rem !important;
   --bs-text-opacity: 1;
-  color: #f4bd01;
+  color: #000;
   font-weight: bolder !important;
 }
 
@@ -314,18 +306,22 @@ body {
   height: 75px !important;
   --bs-bg-opacity: 1;
   --bs-bg-opacity: 1;
-  background-color:#f4bd01 !important;
-  color: #000 !important;
+  background-color:#000 !important;
+  color: #f4bd01 !important;
+}
+.form-control{
+  
+  border: var(--bs-border-width) solid #191919;
 }
 
 .form-control:focus {
-  background: #f4bd01 !important;
-  color: #000 !important;
+  background: #000 !important;
+  color: #f4bd01 !important;
 }
 /* footer */
 
 .bottom_line{
   border-bottom-style: groove;
-  border-color: #000000;
+  border-color: #f4bd01;
   width: fit-content;
 }

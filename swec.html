@@ -11,6 +11,7 @@
 
 
     <link rel="stylesheet" href="css/swec.css   ">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -22,7 +23,7 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -34,329 +35,343 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        .bg-copyRight{
-            padding: 1rem!important;
 
-         }
-        .footerproducts li h4 a{
-            text-decoration:none
+        .bg-copyRight {
+            padding: 1rem !important;
+
         }
-        .footermenus li h4 a{
-            text-decoration:none;
+
+        .footerproducts li h4 a {
+            text-decoration: none;
+            color: #f5f512 !important;
+        }
+
+        .footermenus li h4 a {
+            text-decoration: none;
             line-height: 2px;
+            color: #f5f512 !important;
         }
-        .text-copyRight a{
-            color:green;
+
+        .text-copyRight a {
+            color: green;
             text-decoration: none;
         }
+
         #nav-bar ul li a:hover {
-            color: white!important;
+            color: white !important;
         }
+        .swec_soc {
+  display: block !important;
+}
     </style>
 
     <title>SWEC</title>
 </head>
 
 
-<section class="bg-chlo">
+<section class="bg-chlo py-5">
     <div id="header">
 
     </div>
 </section>
 
-    <!-- Home  -->
-    <div class="home">
-        <div class="bg-chlo pt-5 px-5 mobile">
-            <div class="mx-auto card-body ">
-                <h1 class="text-center">SWEC
-                </h1>
-            </div>
-            <hr>
+<!-- Home  -->
+<div class="home">
+    <div class="bg-chlo pt-5 px-5 mobile">
+        <div class="mx-auto card-body ">
+            <h1 class="text-center">SWEC
+            </h1>
         </div>
+        <hr>
+    </div>
 
 
-        <div class="bg-chlo p-5 px-5 desktop">
-            <div class="mx-auto card-body m-5">
-                <h1 class="text-center " style="font-size: 1077%;
+    <div class="bg-chlo p-5 px-5 desktop">
+        <div class="mx-auto card-body py-3 m-5">
+            <h1 class="text-center " style="font-size: 1077%;
         font-weight: 700;">SWEC
-                </h1>
+            </h1>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container v-feed">
+        <div class="card-body bg-chlo ">
+            <h2 class=" text-center  v-feed-text">SEA WATER ELECTRO CHLORINATION
+
+            </h2>
+        </div>
+    </div>
+</div>
+
+<!-- Home  Ends-->
+<section class="bg-chlo mt-5">
+    <div class="container wrapper">
+        <h1 class="text-chlo text-center bg-title "> PRODUCT </h1>
+        <h1 class="text-chlo text-center title  "> Models </h1>
+    </div>
+</section>
+
+
+<!-- Carousel  -->
+<section class=" bg-black p-3">
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item row active">
+                <img class="text-center" src="img/Products/Sweg/sw04.png" alt="First slide">
             </div>
-            <hr>
+            <div class="carousel-item row">
+                <img class="text-center " src="img/Products/Sweg/sw03.png" alt="Second slide">
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <div class="next-btn">
+                    <img src="img/Products/Sweg/previous.png" alt="">
+                </div>
+
+
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+
+
+                <div class="prev-btn">
+                    <img src="img/Products/Sweg/next.png" alt="">
+                </div>
+            </a>
+        </div>
+</section>
+<!-- Carousel Ends -->
+
+
+
+<div class="productDescription">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="img/Products/Sweg/sw01.png" alt="">
         </div>
 
-        <div class="container v-feed">
-            <div class="card-body bg-chlo ">
-                <h2 class=" text-center  v-feed-text">SEA WATER ELECTRO CHLORINATION
+        <div class="col-lg-8 bg-chlo mt-3">
+            <h1 class=" text-center pt-3 ">PRODUCT DESCRIPTION</h1>
 
-                </h2>
+            <p>Some industrial applications that use seawater for cooling
+                have the potential for the formation of bio-fouling from the
+                various organisms lurching in the oceans. Our simple yet
+                innovative systems use the salt from seawater to generate
+                a dilute sodium hypochlorite (bleach) solution which when
+                dosed in the seawater cooling circuits, kills bio-growth
+                without the need of handling chlorine gas. The only inputs
+                are seawater & electricity.</p>
+
+            <p>Sea water electro-chlorination systems are constructed
+                for high capacity continuous production of sodium
+                hypochlorite solution from sea water. This system can be
+                offered as pre-assembled skids which makes the erection
+                and commissioning process simple. The system contains
+                all necessary instrumentation for automatic operation. PLC
+                controls with required triggers, alarms & sensors allows
+                safe operation
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Benefits -->
+<div class="benefits bg-black">
+    <div class="row">
+        <div class="col-lg-3 text-center">
+            <img src="img/Products/Sweg/sw02.png" alt="">
+        </div>
+
+        <div class="col-lg-9 text-center py-5">
+            <h1 class="  pt-3 ">Why is Sea water electro-chlorination ?
+            </h1>
+            <p>The purpose of the Sea water electro-Chlorination System is to generate
+                and Inject Hypo chlorite solution into Sea Water Intake Structures to
+                inhibit the growth of the biological organisms and to prevent slime
+                deposits on the wall of circulating cooling water pipes.</p>
+            <h1 class="py-3">BENEFITS</h1>
+
+            <p> Safe to operate</p>
+
+            <div class="dot">
+                <div class="d-flex justify-content-center">
+                    <img src="img/Products/Sweg/dot.png" alt="">
+                    <p> No risks associated with delivery or storage of hazardous chemicals
+                        such as high-pressure chlorine</p>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <img src="img/Products/Sweg/dot.png" alt="">
+                    <p> No need to assign qualified staff required by law to handle hazardous
+                        chemicals resulting in cost savings</p>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <img src="img/Products/Sweg/dot.png" alt=""> &nbsp; <p> Low production costs</p>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Home  Ends-->
-    <section class="bg-chlo mt-5">
-        <div class="container wrapper">
-            <h1 class="text-chlo text-center bg-title "> PRODUCT </h1>
-            <h1 class="text-chlo text-center title  "> Models </h1>
-        </div>
-    </section>
+<!-- DESIGN & FEATURES -->
 
-
-        <!-- Carousel  -->
-        <section class=" bg-black p-3">
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner text-center">
-                    <div class="carousel-item row active">
-                        <img class="text-center" src="img/Products/Sweg/sw04.png" alt="First slide">
-                    </div>
-                    <div class="carousel-item row">
-                        <img class="text-center " src="img/Products/Sweg/sw03.png" alt="Second slide">
-                    </div>
-    
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                        <div class="next-btn">
-                            <span class="triangle-right"></span>
-                        </div>
-    
-    
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-    
-    
-                        <div class="prev-btn">
-                            <span class="triangle-left"></span>
-                        </div>
-                        <!-- <span class="sr-only">Next</span> -->
-                    </a>
-                </div>
-        </section>
-        <!-- Carousel Ends -->
-
-
-
-        <div class="productDescription">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="img/Products/Sweg/sw01.png" alt="">
-                </div>
-
-                <div class="col-lg-8 bg-chlo mt-3" >
-                    <h1 class=" text-center pt-3 ">PRODUCT DESCRIPTION</h1>
-
-                    <p>Some industrial applications that use seawater for cooling 
-                        have the potential for the formation of bio-fouling from the 
-                        various organisms lurching in the oceans. Our simple yet 
-                        innovative systems use the salt from seawater to generate 
-                        a dilute sodium hypochlorite (bleach) solution which when 
-                        dosed in the seawater cooling circuits, kills bio-growth 
-                        without the need of handling chlorine gas. The only inputs 
-                        are seawater & electricity.</p>
-
-                        <p>Sea water electro-chlorination systems are constructed 
-                            for high capacity continuous production of sodium 
-                            hypochlorite solution from sea water. This system can be 
-                            offered as pre-assembled skids which makes the erection 
-                            and commissioning process simple. The system contains 
-                            all necessary instrumentation for automatic operation. PLC 
-                            controls with required triggers, alarms & sensors allows 
-                            safe operation
-                        </p>
-                </div>
-            </div>
-        </div>
- 
-<!-- Benefits -->
-        <div class="benefits bg-black">
-            <div class="row">
-                <div class="col-lg-3 text-center">
-                    <img src="img/Products/Sweg/sw02.png" alt="">
-                </div>
-
-                <div class="col-lg-9 text-center">
-                    <h1 class="  pt-3 ">Why is Sea water electro-chlorination ?
-                    </h1>
-                    <p>The purpose of the Sea water electro-Chlorination System is to generate 
-                        and Inject Hypo chlorite solution into Sea Water Intake Structures to 
-                        inhibit the growth of the biological organisms and to prevent slime 
-                        deposits on the wall of circulating cooling water pipes.</p>
-                        <h1>BENEFITS</h1>
-
-                        <p>Safe to operate</p>
-
-                        <ul>
-                            <li><p> No risks associated with delivery or storage of hazardous chemicals 
-                                such as high-pressure chlorine</p></li>
-
-                                <li><p> No need to assign qualified staff required by law to handle hazardous 
-                                    chemicals resulting in cost savings</p></li>
-
-                                    <li><p> Low production costs</p></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- DESIGN & FEATURES -->
-        
 <section class="bg-black">
     <div class="container wrapper">
-      <h1 style="color: #ffffff;" class=" text-center bg-title "> DESIGN </h1>
-      <h1 style="color: #f5f512;" class=" text-center title  "> Features </h1>
+        <h1 style="color: #ffffff;" class=" text-center bg-title "> DESIGN </h1>
+        <h1 style="color: #f5f512;" class=" text-center title  "> Features </h1>
     </div>
-  </section>
+</section>
 
 <div class="features bg-chlo">
     <div class="container ">
-      <div class="row d-flex justify-content-center">
-        <div class=" col-lg-3 bg-black m-3 p-1">
-            <img src="ico/Products/Swec/62.png" alt="">
-            <p>The Electrolyzer cell is 
+        <div class="row d-flex justify-content-center">
+            <div class=" col-lg-3 bg-black m-3 py-2 ps-3">
+                <img src="ico/Products/Swec/62.png" alt="">
+                <p>The Electrolyzer cell is
 
-                housed in a chamber 
-                
-                made of High Grade FRP.</p>
+                    housed in a chamber
+
+                    made of High Grade FRP.</p>
+            </div>
+
+            <div class=" col-lg-3 bg-black m-3 py-2  ps-3">
+                <img src="ico/Products/Swec/57.png" alt="">
+                <p>Heavy-duty transformer-
+
+                    rectifier is built for long
+
+                    hours of operation. </p>
+            </div>
+
+            <div class=" col-lg-3 bg-black  m-3 py-2  ps-3">
+                <img src="ico/Products/Swec/61.png" alt="">
+                <p>Hydrogen blower ensures
+
+                    safe operation and proper
+
+                    venting of hydrogen.</p>
+            </div>
+
+            <div class=" col-lg-3 bg-black m-3 py-2   ps-3">
+                <img src="ico/Products/Swec/58.png" alt="">
+                <p>Advanced cell design
+
+                    ensures long life of
+
+                    electrolyser.</p>
+            </div>
+
+            <div class=" col-lg-3 bg-black m-3  py-2  ps-3">
+                <img src="ico/Products/Swec/59.png" alt="">
+                <p>Compact cell cleaning
+
+                    system for periodic
+
+                    cleaning.</p>
+            </div>
+
+            <div class=" col-lg-3 bg-black  m-3  py-2  ps-3">
+                <img src="ico/Products/Swec/60.png" alt="">
+                <p>Hypo tank level
+
+                    controller controls
+
+                    the dosing.</p>
+            </div>
         </div>
-
-        <div class=" col-lg-3 bg-black m-3  p-1">
-            <img src="ico/Products/Swec/57.png" alt="">
-            <p>Heavy-duty transformer-
-
-                rectifier is built for long 
-                
-                hours of operation. </p>
-        </div>
-
-        <div class=" col-lg-3 bg-black  m-3 p-1">
-            <img src="ico/Products/Swec/61.png" alt="">
-            <p>Hydrogen blower ensures 
-
-                safe operation and proper
-                
-                venting of hydrogen.</p>
-        </div>
-
-        <div class=" col-lg-3 bg-black m-3 p-1 ">
-            <img src="ico/Products/Swec/58.png" alt="">
-            <p>Advanced cell design 
-
-                ensures long life of 
-                
-                electrolyser.</p>
-        </div>
-
-        <div class=" col-lg-3 bg-black m-3  p-1">
-            <img src="ico/Products/Swec/59.png" alt="">
-            <p>Compact cell cleaning 
-
-                system for periodic 
-                
-                cleaning.</p>
-        </div>
-
-        <div class=" col-lg-3 bg-black  m-3 p-1">
-            <img src="ico/Products/Swec/60.png" alt="">
-            <p>Hypo tank level 
-
-                controller controls 
-                
-                the dosing.</p>
-        </div>
-      </div>
     </div>
 </div>
 
 
 <section class="bg-black">
     <div class="container wrapper">
-      <h1 style="color: #ffffff;" class=" text-center bg-title "> Industrial </h1>
-      <h1 style="color: #f5f512;" class=" text-center title  "> Applications </h1>
+        <h1 style="color: #ffffff;" class=" text-center bg-title "> Industrial </h1>
+        <h1 style="color: #f5f512;" class=" text-center title  "> Applications </h1>
     </div>
-  </section>
+</section>
 
-  <div class="apps bg-chlo">
+<div class="apps bg-chlo">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 m-3 text-center bg-black">
-                <img  src="img/Products/Sweg/sw03.png" alt="">
+                <img src="img/Products/Sweg/sw03.png" alt="">
             </div>
             <div class="col-lg-5 d-flex justify-content-center mt-5">
-               <p> - Nuclear Power Plant <br>
+                <p> - Nuclear Power Plant <br>
 
-                   - Petrochemical Plant<br>
-                   
-                   - Thermal Power Plant<br>
-                   
-                   - Wastewater Plant<br>
-                   
-                   - Desalination Plant<br>
-                   
-                   - Offshore Platform<br>
-                   
-                   - Cooling Tower<br>
-                   
-                   - LNG Terminal<br>
-                   
-                   - Iron Works Refinery<br>
-                   
-                   - Refinery</p>
+                    - Petrochemical Plant<br>
+
+                    - Thermal Power Plant<br>
+
+                    - Wastewater Plant<br>
+
+                    - Desalination Plant<br>
+
+                    - Offshore Platform<br>
+
+                    - Cooling Tower<br>
+
+                    - LNG Terminal<br>
+
+                    - Iron Works Refinery<br>
+
+                    - Refinery</p>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
-  
+
 <section class="bg-black">
     <div class="container wrapper">
-      <h1 style="color: #ffffff;" class=" text-center bg-title "> PRODUCT </h1>
-      <h1 style="color: #f5f512;" class=" text-center title  "> BROCHURE </h1>
+        <h1 style="color: #ffffff;" class=" text-center bg-title "> PRODUCT </h1>
+        <h1 style="color: #f5f512;" class=" text-center title  "> BROCHURE </h1>
     </div>
-  </section>
+</section>
 
 
-  <!--Form-->
+<!--Form-->
 
 <div class="form">
     <div class="row">
-      <div class="card bg-chlo">
-        <div class="row mt-3 mb-2">
-          <div class="col-lg-4"></div>
-          <div class="col-lg-5 p-5">
-            <form action="">
-  
-              <div class="form-group mt-3">
-                <label for="_name" class=" fs-3 fw-bolder">Name <sup><i   
-                      class="fa-sharp fa-solid fa fa-star"></i></sup></label> 
-                <input type="name" class="form-control     "
-                  id="u_name">
-              </div>
-  
-              <div class="form-group mt-3">
-                <label for="exampleInputEmail1" class=" fs-3 fw-bolder">Email <sup><i   
-                      class="fa-sharp fa-solid fa fa-star"></i></sup></label>
-                <input type="email" class="form-control    "
-                  id="u_email" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group mt-3">
-                <label for="c_name" class=" fs-3 fw-bolder">Company Name<sup><i   
-                      class="fa-sharp fa-solid fa fa-star"></i></sup></label><br>
-                <input type="text" class="form-control    " 
-                  id="c_Name">
-              </div>
-  
-              <div class="form-group mt-3">
-                <input type="button" style=" border-radius:  14px;height:75px"
-                  class="form-control  fs-3 fw-bolder " value="Download">
-              </div>
-  
-            </form>
-          </div>
-  
+        <div class="card bg-chlo">
+            <div class="row mt-3 mb-2">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-5 p-5">
+                    <form action="">
+
+                        <div class="form-group mt-3">
+                            <label for="_name" class=" fs-3 fw-bolder">Name <sup><i
+                                        class="fa-sharp fa-solid fa fa-star"></i></sup></label>
+                            <input type="name" class="form-control     " id="u_name">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="exampleInputEmail1" class=" fs-3 fw-bolder">Email <sup><i
+                                        class="fa-sharp fa-solid fa fa-star"></i></sup></label>
+                            <input type="email" class="form-control    " id="u_email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="c_name" class=" fs-3 fw-bolder">Company Name<sup><i
+                                        class="fa-sharp fa-solid fa fa-star"></i></sup></label><br>
+                            <input type="text" class="form-control    " id="c_Name">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <input type="button" style=" border-radius:  14px;height:75px"
+                                class="form-control  fs-3 fw-bolder " value="Download">
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!--Form Ends-->
+</div>
+<!--Form Ends-->
 
 
 <!--Footer-->

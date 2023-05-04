@@ -226,63 +226,26 @@ background-color: rgb(0 46 137);
 
   /* Carousel */
 
+  @media only screen and (max-width: 900px) {
+    .prev-btn img{
+      height: 50px;
+      width: 50px;
+    }
   
-  .prev-btn,
-  .next-btn {
-    display: inline-block;
-    background-color: #f2f2f2;
-    border: none;
-    color: #666;
-    font-size: 16px;
-    padding: 27px 27px 27px 27px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 32px;
-  }
-
-  .prev-btn .triangle-left,
-  .next-btn .triangle-right {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 20px 0 20px 35px;
-    border-color: transparent transparent transparent #666;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translateY(-50%);
-  }
-
-  .next-btn .triangle-right {
-    border-width: 20px 35px 20px 0;
-    border-color: transparent #666 transparent transparent;
-    left: 13% !important;
-  }
-
-  .prev-btn .triangle-left {
-    left: 26% !important;
-  }
-
-  .prev-btn:hover,
-  .next-btn:hover {
-    background-color: #ddd;
-  }
-
-  .prev-btn:focus,
-  .next-btn:focus {
-    outline: none;
-  }
-
+    .next-btn img{
+      height: 50px;
+      width: 50px;
+    }
+    }
   .carousel-item img{
-        width: 800px!important;
-        height:600px !important;
+        width: 800px;
+        height:510px ;
   }
 
   @media only screen and (max-width: 400px) {
     .carousel-item img{
-      height:400px !important;
+      height:400px ;
+      width: 340px;
     }
   }
 
@@ -290,7 +253,7 @@ background-color: rgb(0 46 137);
   /* Water Tank */
 
   .waterTank p{
-    font-size: 1.5rem!important;
+    font-size: 20px;
     font-weight: 600!important;
     color:#fff;
   }
@@ -299,6 +262,8 @@ background-color: rgb(0 46 137);
     --bs-text-opacity: 1;
     color:#fff;
     font-weight: 700;
+    font-size: x-large;
+    padding-top: 10px;
   }
   @media only screen and (max-width: 400px) {
     .waterTank img{
@@ -310,7 +275,7 @@ background-color: rgb(0 46 137);
   /* Apps */
 
   .apps p{
-    font-size: 1.5rem!important;
+    font-size: 20px;
     font-weight: 600!important;
     color:#003aac;
   }
@@ -319,13 +284,15 @@ background-color: rgb(0 46 137);
     --bs-text-opacity: 1;
     color:#003aac;
     font-weight: 700;
+    font-size: x-large;
+    padding-top: 10px;
   }
 
   /* ELECTROLYSIS */
 
 
   .electrolysis p{
-    font-size: 1.5rem!important;
+    font-size: 20px;
     font-weight: 600!important;
     color:#fff;
   }
@@ -334,6 +301,8 @@ background-color: rgb(0 46 137);
     --bs-text-opacity: 1;
     color:#fff;
     font-weight: 700;
+    font-size: 20px;
+    font-size: x-large;
   }
 
   .electrolysis img{
@@ -382,7 +351,24 @@ background-color: rgb(0 46 137);
   }
   
   
+  /* Technicla Details */
+
+  .techDetails p{
+    font-size: 20px;
+    font-weight: 600!important;
+    color:#fff;
+    padding: 15px;
+  }
   
+  .techDetails h1{
+    --bs-text-opacity: 1;
+    color:#fff;
+    font-weight: 700;
+    font-size: x-large;
+    padding: 15px;
+  }
+
+
 
   /* Form */
 
@@ -404,11 +390,16 @@ background-color: rgb(0 46 137);
     --bs-bg-opacity: 1;
     background-color:#fff !important;
   }
-  
-  /* Footer */
+
   .form-control:focus {
     color:#003aac;
   }
+  .form-control {
+    color:#003aac;
+  }
+  
+  /* Footer */
+
   .bottom_line {
     border-bottom-style: groove;
     border-color: #003aac;
