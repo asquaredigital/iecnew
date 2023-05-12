@@ -47,3 +47,12 @@
     }
   
   }
+
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+    float: none;
+ }
+
+ .navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+ }
