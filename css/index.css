@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
   }
-  body {
+  html,body {
     font-family: 'Inter', sans-serif;
-    
+    max-width: 100%;
+    overflow-x: hidden;
   }
   /*----------Navigation-------*/
   
@@ -189,7 +190,7 @@
     color: white;
     font-size: 100px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
   }
   #carousel-list1 {
     height: 100px;
@@ -883,6 +884,9 @@
         margin-left: 10px;
         margin-right: 10px;
    }
+
+ 
+ 
    /*----------Carousel-------*/
     #carousel1 {
         top: 30px;

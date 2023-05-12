@@ -66,11 +66,42 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#">HOME</a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html#solutions">SOLUTIONS</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SOLUTIONS
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                        <!-- Add submenu items for SOLUTIONS here -->
+                       
+                        <a class="dropdown-item" href="chloridox.html">CHLORIDIOX</a>
+                        <a class="dropdown-item" href="steriflo.html">STERIFLO</a>
+                        <a class="dropdown-item" href="chlorination.html">GAS CHLORINATION</a>
+                        <a class="dropdown-item" href="swec.html">SEA WATER ELECTRO-CHLORINATION</a>
+                        <a class="dropdown-item" href="vapourizer.html">BAYONET VAPORIZER</a>
+                        <a class="dropdown-item" href="dryHeater.html">DRY HEATER</a>
+                        <a class="dropdown-item" href="machHeater.html">MACH HEATER</a>
+                        <a class="dropdown-item" href="avgf.html">AVGF</a>
+                        <a class="dropdown-item" href="purer.html">PURER</a>
+                        <a class="dropdown-item" href="leakAbsorption.html">LEAK ABSORPTION</a>
+
+
+                     </div>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html#projects">PROJECTS</a>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PROJECTS
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                        <!-- Add submenu items for PROJECTS here -->
+                        <a class="dropdown-item" href="project.html#sebac">Vaporizer</a>
+                        <a class="dropdown-item" href="project.html#chlori">Chlorination</a>
+                        <a class="dropdown-item" href="project.html#steam">AVGF</a>
+                        <a class="dropdown-item" href="project.htmlbrine">Leak Absorption</a>
+
+
+                     </div>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="aboutUs.html">ABOUT</a>
@@ -82,6 +113,7 @@
             </div>
          </nav>
       </div>
+      
       <!--Header Slider-->
 
       <div id="carousel1" class="carousel slide carousel1-class py-5" data-ride="carousel">
@@ -679,7 +711,7 @@
    </div>
    <div class="clientslogo">
       <div class="container">
-         <div class="row">
+         <div class="row text-center">
             <div class="col-lg-2">
                <img src="img/Home/clients/client (1).png">
             </div>
@@ -857,7 +889,7 @@
       <p class="testimonialspara">What they are saying</p>
       <div class="row">
          <div class="col-lg-6">
-            <div id="carousel4" class="carousel4-class carousel slide   d-flex align-items-center" data-ride="carousel">
+            <div id="carousel4" class="carousel4-class carousel slide   d-flex align-items-center" style="pointer-events: none;" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active ">
                      <div class="row">
@@ -934,7 +966,7 @@
          </div>
 
          <div class="col-lg-6">
-            <div id="carousel5" class="carousel5-class carousel slide" data-ride="carousel">
+            <div id="carousel5" class="carousel5-class carousel slide" style="pointer-events: none;" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <div class="row">
@@ -1000,7 +1032,8 @@
    <section class="map_ContactForm pt-5 ">
       <div class="row mt-5">
          <div class="col-lg-12 px-0 mt-5">
-            <div id="map">
+           <div class="map mb-4 mb-lg-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248381.24967397883!2d79.79859489453128!3d13.4149872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d81de81031737%3A0xc72cf09b73edea3e!2sIEC%20FABCHEM%20LIMITED!5e0!3m2!1sen!2sin!4v1683885146809!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
             </div>
 
          </div>
@@ -1104,8 +1137,6 @@
 
                   <span class="mt-2">
                      <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png"></span>
-
-
                   <h3 class="fs-4 fw-bold text-light pt-3">
                      Since 1963, IEC FABCHEM LTD is
                      the best Manufacturer of
@@ -1367,21 +1398,7 @@
 
    </section>
 
-   <script>
-      // Initialize and add the map
-      function initMap() {
-         // The location of your office
-         var officeLocation = { lat: 37.7749, lng: -122.4194 };
-         // The map, centered at your office location
-         var map = new google.maps.Map(
-            document.getElementById('map'), { zoom: 15, center: officeLocation });
-         // The marker, positioned at your office location
-         var marker = new google.maps.Marker({ position: officeLocation, map: map });
-      }
-      // Load the map when the page has finished loading
-      google.maps.event.addDomListener(window, 'load', initMap);
-   </script>
-
+   
 
    <script>
       $(document).ready(function () {
@@ -1427,9 +1444,7 @@
 
 
 
-   <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer></script>
+   
 </body>
 
 </html>
