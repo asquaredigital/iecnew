@@ -1132,7 +1132,7 @@
                <h2 class="fw-bolder"><strong>
                      GET IN TOUCH
                   </strong></h2>
-               <form action="mailer.php" method="post" class="contact-form">
+               <form action="#" method="post" class="contact-form">
 
 
                   <div class="form-group mt-5">
