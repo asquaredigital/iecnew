@@ -1256,6 +1256,7 @@
    color: #666666 ;
    font-weight: 700;
    padding-top: 0.5rem;
+   line-height: 36px;
  }
 
  #carousel-list .active a {

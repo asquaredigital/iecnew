@@ -13,6 +13,8 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
    <style>
       body {
@@ -35,7 +37,35 @@
       .navbar-nav li:hover>ul.dropdown-menu {
          display: block;
       }
-   
+
+      #header #myBtn{
+         display: none !important;
+      }
+
+      #myBtn {
+         display: block;
+         position: fixed;
+         bottom: 20px;
+         right: 30px;
+         z-index: 99;
+         font-size: 18px;
+         border: none;
+         outline: none;
+         background-color: yellow;
+         color: green;
+         cursor: pointer;
+         padding: 3px;
+         border-radius: 15px;
+      }
+
+      #myBtn:hover{
+         background-color: green;
+         color: yellow;
+      }
+
+      .fas{
+         font-size: 25px;
+      }
    </style>
    <script>
 
@@ -60,10 +90,18 @@
 
 
    </script>
-  
+
+
+
 </head>
 
 <body>
+   <a href="#header">
+      <button type="button" id="myBtn">
+         <i class="fas fa-arrow-alt-circle-up"></i>
+      </button>
+   </a>
+
    <div id="header" class="headerdesign">
       <!--Navigation--->
       <div id="nav-bar">
@@ -79,8 +117,8 @@
                      <a class="nav-link" href="index.html">HOME</a>
                   </li>
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="index.html#solutions" id="solutionsDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <a class="nav-link dropdown-toggle" href="index.html#solutions" id="solutionsDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         SOLUTIONS
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
@@ -1396,7 +1434,8 @@
          <div class="d-flex col-lg-5 social">
             <p class="fs-5 text-light text-center  mt-4">Stay in the Loop?</p>
             <span class="px-5 ps-3">
-               <img src="img/Products/Cholrination/W_app_icon.png" alt="">
+               <a href="#" id="whatsapp-icon">
+               <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>
             </span>
             <span class="px-0 ps-3">
                <img src="img/Products/Cholrination/linked_In.png" alt="">
@@ -1456,6 +1495,17 @@
 
 
    </script>
+	<script>
+      $(document).ready(function() {
+         $('#whatsapp-icon').click(function() {
+            var phone = '+91 9786360344'; // Replace with your phone number
+            var message = 'Hello'; // Replace with your message
+            var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
+            window.open(url);
+         });
+      });
+      </script>
+   
 
 
 </body>

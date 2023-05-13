@@ -105,7 +105,8 @@
            <div class="d-flex col-lg-5">
              <p  class="fs-3 text-color text-center pt-3 mt-4">Stay in the Loop?</p>
              <span class="px-0 ps-3">
-               <img src="img/Products/Cholrination/W_app_icon.png" alt="">
+              <a href="#" id="whatsapp-icon">
+                <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>
              </span>
              <span class="px-0 ps-3">
                <img src="img/Products/Cholrination/linked_In.png" alt="">
@@ -124,4 +125,13 @@
         
          <!--Footer Ends-->
 
-  
+         <script>
+          $(document).ready(function() {
+             $('#whatsapp-icon').click(function() {
+                var phone = '+91 9786360344'; // Replace with your phone number
+                var message = 'Hello'; // Replace with your message
+                var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
+                window.open(url);
+             });
+          });
+          </script>
