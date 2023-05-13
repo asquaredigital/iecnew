@@ -51,11 +51,10 @@
          font-size: 18px;
          border: none;
          outline: none;
-         background-color: yellow;
-         color: green;
+         background-color: green;
+         color: white;
          cursor: pointer;
-         padding: 3px;
-         border-radius: 15px;
+         padding: 8px;
       }
 
       #myBtn:hover{
@@ -64,7 +63,7 @@
       }
 
       .fas{
-         font-size: 25px;
+         font-size: 35px;
       }
    </style>
    <script>
@@ -98,7 +97,7 @@
 <body>
    <a href="#header">
       <button type="button" id="myBtn">
-         <i class="fas fa-arrow-alt-circle-up"></i>
+         <i class="fas fa-solid fa-arrow-up"></i>
       </button>
    </a>
 
@@ -501,7 +500,7 @@
          </div>
       </div>
    </section>
-   <!--Product Slider-->
+  <!--Product Slider-->
    <div class="mycontaniner" id="solutions">
       <div class="row py-5">
          <div class="col-lg-1 clearfix"></div>
@@ -509,36 +508,36 @@
             <h1 class="head1">PRODUCTS</h1>
             <div id="carousel-list">
                <div class="carousel-list-item active " data-target="#carousel2" data-slide-to="0">
-                  <h4><a href="machHeater.html" target="\blank">MACH-HEATER <span></span></a></h4>
+                  <h4><a href="machHeater.html">MACH-HEATER <span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="1">
-                  <h4><a href="chloridox.html" target="\blank">
+                  <h4><a href="chloridox.html">
                         <h4>CHLORIDOX<span></span>
                      </a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="2">
-                  <h4> <a href="chlorination.html" target="\blank">CHLORINATION<span></span></a></h4>
+                  <h4> <a href="chlorination.html" >CHLORINATION<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="3">
-                  <h4> <a href="vapourizer.html" target="\blank">VAPORIZER<span></span></a></h4>
+                  <h4> <a href="vapourizer.html" >VAPORIZER<span></span></a></h4>
                </div>
                <div class="carousel-list-item" data-target="#carousel2" data-slide-to="4">
-                  <h4> <a href="steriflo.html" target="\blank"> STERIFLO<span></span></a></h4>
+                  <h4> <a href="steriflo.html" > STERIFLO<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="5">
-                  <h4> <a href="dryHeater.html" target="\blank"> DRYHEATER<span></span></a></h4>
+                  <h4> <a href="dryHeater.html" > DRYHEATER<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="6">
-                  <h4> <a href="avgf.html" target="\blank"> AVGF<span></span></a></h4>
+                  <h4> <a href="avgf.html" > AVGF<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="7">
-                  <h4> <a href="purer.html" target="\blank"> PURER<span></span></a></h4>
+                  <h4> <a href="purer.html" > PURER<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="8">
-                  <h4> <a href="leakAbsorption.html" target="\blank"> LEAK ABSORPTION<span></span></a></h4>
+                  <h4> <a href="leakAbsorption.html" > LEAK ABSORPTION<span></span></a></h4>
                </div>
                <div class="carousel-list-item" data-target="#carousel2" data-slide-to="9">
-                  <h4> <a href="swec.html" target="\blank"> SWEC<span></span></a></h4>
+                  <h4> <a href="swec.html" > SWEC<span></span></a></h4>
                </div>
             </div>
          </div>
@@ -1453,48 +1452,54 @@
    </section>
 
 
-
-   <script>
-      $(document).ready(function () {
-         $('#carousel2').carousel({
-            interval: 3000,
-
-         });
-         $('#carousel-list').on('click', '.carousel-list-item', function () {
-            $('#carousel-list .carousel-list-item').removeClass('active');
-            $(this).addClass('active');
-            var index = $(this).index();
-            $('#carousel2').carousel(index);
-
-            // Remove the arrow icon from all carousel list items
-            $('#carousel-list .carousel-list-item span img').remove();
-
-            // Add the arrow icon to the clicked item
-            const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
-            $(this).find('span').append(arrowIcon);
-         });
-
-
-         $('#carousel2').on('slid.bs.carousel', function () {
-            var index = $('#carousel2 .carousel-item.active').index();
-            $('#carousel-list .carousel-list-item').removeClass('active');
-            $('#carousel-list .carousel-list-item').eq(index).addClass('active');
-
-            // Remove the arrow icon from all carousel list items
-            $('#carousel-list .carousel-list-item span img').remove();
-
-            // Add the arrow icon to the active item
-            const activeItem = $('#carousel-list .carousel-list-item.active');
-            const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
-            activeItem.find('span').append(arrowIcon);
-         });
-
-         // Trigger a click event on the first carousel list item
-         $('#carousel-list .carousel-list-item').eq(0).trigger('click');
+<script>
+   $(document).ready(function () {
+      $('#carousel2').carousel({
+         interval: 3000,
       });
 
+      $('#carousel2').on('slid.bs.carousel', function () {
+         var index = $('#carousel2 .carousel-item.active').index();
+         $('#carousel-list .carousel-list-item').removeClass('active');
+         $('#carousel-list .carousel-list-item').eq(index).addClass('active');
 
-   </script>
+         // Remove the arrow icon from all carousel list items
+         $('#carousel-list .carousel-list-item span img').remove();
+
+         // Add the arrow icon to the active item
+         const activeItem = $('#carousel-list .carousel-list-item.active');
+         const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
+         activeItem.find('span').append(arrowIcon);
+      });
+
+      // Trigger a click event on the first carousel list item
+      $('#carousel-list .carousel-list-item').eq(0).trigger('click');
+
+      // Add arrow icon to the first carousel list item initially
+      const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
+      $('#carousel-list .carousel-list-item').eq(0).find('span').append(arrowIcon);
+   });
+
+   $('#carousel-list').on('click', '.carousel-list-item a', function (event) {
+      event.preventDefault(); // Prevent the default behavior of the <a> tag
+
+      $('#carousel-list .carousel-list-item').removeClass('active');
+      $(this).parent().addClass('active');
+      var index = $(this).parent().index();
+      $('#carousel2').carousel(index);
+
+      // Remove the arrow icon from all carousel list items
+      $('#carousel-list .carousel-list-item span img').remove();
+
+      // Add the arrow icon to the clicked item
+      const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
+      $(this).parent().find('span').append(arrowIcon);
+
+      var href = $(this).attr('href');
+      // Navigate to the linked page in the same window
+      window.location.href = href;
+   });
+</script>
 	<script>
       $(document).ready(function() {
          $('#whatsapp-icon').click(function() {
