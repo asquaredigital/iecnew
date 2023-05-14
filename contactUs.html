@@ -75,7 +75,7 @@
 
     <title>Contact US</title>
 </head>
-
+<body>
 
 <section class="bg-chlo py-5">
     <div id="header">
@@ -127,7 +127,7 @@
         <div class="form">
             <div class="row">
                 <div class="col-lg-7 p-5">
-                 <form action="">
+                    <form id="contact-form" method="post" class="contact-form">
          
                    <div class="form-group mt-3">
                      <input type="name" class="form-control " placeholder="Name"  id="u_name">
@@ -155,8 +155,10 @@
                    <div class="form-group mt-3">
                     <input type="button"  class="form-control fs-3 fw-bolder" value="Submit">
                   </div>
-         
+                  <div style="text-align: center;" id="response-message"></div>
+
                    </form>
+
                 </div> 
          
                 </div>
@@ -170,4 +172,36 @@
 <div id="footer"></div>
 <!--Footer Ends-->
 
+<script>
+    $(document).ready(function() {
+    // Contact Form Submission
+    $('#response-message').html('');
+    $('#contact-form').submit(function(event) {
+       event.preventDefault(); // Prevent default form submission
+
+       var form = $(this);
+       var formData = form.serialize();
+
+       // Send AJAX request
+       $.ajax({
+          type: 'POST',
+          url: 'contact.php',
+          data: formData,
+          dataType: 'json',
+          success: function(response) {
+             if (response.success) {
+                $('#response-message').html('<p class="success-message">' + response.message + '</p>');
+                form.trigger('reset');
+             } else {
+                $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+             }
+          },
+          error: function() {
+             $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
+          }
+       });
+    });
+ });
+</script>
+</body>
 </html>

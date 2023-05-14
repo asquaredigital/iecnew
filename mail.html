@@ -7,19 +7,24 @@
    <link rel="stylesheet" href="css/index.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf">
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+   <style>
+      
+#my-button:hover {
+  /* Styles for button on hover */
+  background-color: #343a40;
+  color: #fff;
+}
+   </style>
 </head>
 <body>
-
-   
-
-
 
    <div class="about py-5">
 
@@ -92,10 +97,10 @@
                      <input type="text" class="form-control1" id="c_name" name="c_name" placeholder="Company Name" required>
                   </div>
                   <div class="form-group mt-3 text-center">
-                     <button type="submit" class="form-control fs-3 fw-bolder btn btn-dark text-light" style="width: 50%;">Submit</button>
+                     <button  type="submit" id="my-button" class="form-control fs-3 fw-bolder btn btn-dark text-light" style="width: 50%;">Submit</button>
                   </div>
                </form>
-               <div id="response-message"></div>
+               <div style="text-align: center;" id="response-message"></div>
             </div>
          </div>
 
@@ -104,8 +109,37 @@
    </section>
 
  
-   
-   <script src="contact.js"></script>
+   <script>
+         $(document).ready(function() {
+         // Contact Form Submission
+         $('#response-message').html('');
+         $('#contact-form').submit(function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var form = $(this);
+            var formData = form.serialize();
+
+            // Send AJAX request
+            $.ajax({
+               type: 'POST',
+               url: 'contact.php',
+               data: formData,
+               dataType: 'json',
+               success: function(response) {
+                  if (response.success) {
+                     $('#response-message').html('<p class="success-message">' + response.message + '</p>');
+                     form.trigger('reset');
+                  } else {
+                     $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+                  }
+               },
+               error: function() {
+                  $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
+               }
+            });
+         });
+      });
+   </script>
 
 
 </body>

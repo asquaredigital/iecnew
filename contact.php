@@ -1,22 +1,22 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    // Collect form data
-   $name = $_POST['name'];
-   $phone = $_POST['u_number'];
-   $email = $_POST['email'];
-   $companyName = $_POST['c_name'];
+   $name = $_POST["name"];
+   $email = $_POST["email"];
+   $phoneNumber = $_POST["phoneNumber"];
+   $msg = $_POST["message"];
 
    // Set recipient email address
-   $recipient = 'elavarasanl@asquare.tech';
+   $recipient = 'elavarasan5193@gmail.com';
 
    // Set subject
-   $subject = 'Contact Form Submission';
+   $subject = 'Enquiry Notification';
 
    // Build the email content
    $message = "Name: $name\n";
-   $message .= "Phone: $phone\n";
+   $message .= "Phone: $phoneNumber\n";
    $message .= "Email: $email\n";
-   $message .= "Company Name: $companyName\n";
+   $message .= "Message: $msg\n";
 
    // Set headers
    $headers = "From: $name <$email>";
