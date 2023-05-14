@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf">
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
@@ -71,6 +70,14 @@
         {
             background-color: black!important;
         }
+        #my-button2,
+#my-button2:hover,
+#my-button2:active,
+#my-button2:focus {
+  /* Styles for button on hover, active, and focus */
+  background-color: black !important;
+  color: #fff !important;
+}
     </style>
 
     <title>Contact US</title>
@@ -120,7 +127,7 @@
 
 <div class="row forms">
     <div class="col-lg-5">
-        <img  class="imgg"src="img/Products/ContactUs/bg_03.png" alt="">
+        <img  class="imgg" src="img/Products/ContactUs/bg_03.png" alt="">
     </div>
 
     <div class="col-lg-7 bg-black ">
@@ -130,17 +137,17 @@
                     <form id="contact-form" method="post" class="contact-form">
          
                    <div class="form-group mt-3">
-                     <input type="name" class="form-control " placeholder="Name"  id="u_name">
+                     <input type="name" class="form-control " placeholder="Name"  id="u_name" name="u_name" required>
                    </div>
          
                    <div class="form-group mt-3">
                     
-                     <input type="email" class="form-control"  placeholder="Email" id="u_email" aria-describedby="emailHelp">
+                     <input type="email" class="form-control"  placeholder="Email" name="u_email" id="u_email" aria-describedby="emailHelp" required>
                    </div>
 
                    <div class="form-group mt-3">
                     
-                    <input type="number" class="form-control" placeholder="Phone Number"  id="p_number">
+                    <input type="number" class="form-control" placeholder="Phone Number" name="p_number" id="p_number" required>
                   </div>
 
 
@@ -149,13 +156,14 @@
                    </div>
 
                    <div class="input-group">
-                    <textarea class="form-control" placeholder="Message" aria-label="With textarea"></textarea>
+                    <textarea class="form-control" placeholder="Message" name="msg" id="msg" aria-label="With textarea"></textarea>
                   </div>
         
                    <div class="form-group mt-3">
-                    <input type="button"  class="form-control fs-3 fw-bolder" value="Submit">
+                     <button type="submit" id="my-button2" style=" border-radius:  14px;height:75px"
+                  class="form-control  fs-3 fw-bolder ">Download</button>
                   </div>
-                  <div style="text-align: center;" id="response-message"></div>
+                  <div style="text-align: center; color:white" id="response-message"></div>
 
                    </form>
 
@@ -185,7 +193,7 @@
        // Send AJAX request
        $.ajax({
           type: 'POST',
-          url: 'contact.php',
+          url: 'contact2.php',
           data: formData,
           dataType: 'json',
           success: function(response) {

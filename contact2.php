@@ -1,16 +1,16 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    // Collect form data
-   $name = $_POST["name"];
-   $email = $_POST["email"];
-   $phoneNumber = $_POST["phoneNumber"];
-   $msg = $_POST["message"];
+   $name = $_POST["u_name"];
+   $email = $_POST["u_email"];
+   $phoneNumber = $_POST["p_number"];
+   $msg = $_POST["msg"];
 
    // Set recipient email address
    $recipient = 'elavarasan5193@gmail.com';
 
    // Set subject
-   $subject = 'Enquiry Notification';
+   $subject = 'Contact Enquiry Notification';
 
    // Build the email content
    $message = "Name: $name\n";
