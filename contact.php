@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $companyName = $_POST['c_name'];
 
    // Set recipient email address
-   $recipient = 'elavarasan5193n@gmail.com';
+   $recipient = 'elavarasanl@asquare.tech';
 
    // Set subject
    $subject = 'Contact Form Submission';
@@ -21,16 +21,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    // Set headers
    $headers = "From: $name <$email>";
 
-   // Attempt to send the email
+   // Send the email
    if (mail($recipient, $subject, $message, $headers)) {
       // Email sent successfully
-      echo 'Thank you for your submission!';
+      $response = array(
+         'success' => true,
+         'message' => 'Thank you for your submission!'
+      );
    } else {
       // Failed to send email
-      echo 'Sorry, there was an error sending your message. Please try again later.';
+      $response = array(
+         'success' => false,
+         'message' => 'Sorry, there was an error sending your message. Please try again later.'
+      );
    }
+
+   // Return the JSON response
+   header('Content-type: application/json');
+   echo json_encode($response);
 } else {
-   // If the request method is not POST, redirect to the index.html page
-   header('Location: index.html');
+   // If the request method is not POST, return an empty response
+   header('Content-type: application/json');
+   echo json_encode(array());
 }
 ?>

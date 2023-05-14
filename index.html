@@ -1095,7 +1095,7 @@
                      GET IN TOUCH
                   </strong></h2>
                   
-               <form action="#" method="post" class="contact-form">
+                  <form id="contact-form" method="post" class="contact-form">
 
                
                   <div class="form-group mt-5">
@@ -1121,6 +1121,8 @@
                      <button type="submit" class="form-control  fs-3 fw-bolder btn btn-dark text-light"
                         style="width: 50%;">Submit</button>
                   </div>
+                  <div id="success-message"></div>
+
                </form>
             </div>
          </div>
@@ -1132,7 +1134,7 @@
                <h2 class="fw-bolder"><strong>
                      GET IN TOUCH
                   </strong></h2>
-               <form action="mailer.php" method="post" class="contact-form">
+                  <form id="contact-form" method="post" class="contact-form">
 
 
                   <div class="form-group mt-5">
@@ -1158,6 +1160,8 @@
                      <button type="submit" class="form-control  fs-3 fw-bolder btn btn-dark text-light"
                         style="width: 50%;">Submit</button>
                   </div>
+                  <div id="success-message"></div>
+
                </form>
             </div>
          </div>
@@ -1451,7 +1455,44 @@
             href="https://www.asquare.tech" style="color: green;" target="\blank">ASQUARE DIGITAL SOLUTIONS</a></h6>
 
    </section>
-
+   <script>
+      // Get the form element
+      const form = document.getElementById('contact-form');
+    
+      // Add an event listener to the form submission
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+    
+        // Create a new FormData object to collect form data
+        const formData = new FormData(form);
+    
+        // Create a new XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
+    
+        // Configure the request
+        xhr.open('POST', 'mailer.php');
+    
+        // Set the request headers
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    
+        // Define a function to handle the request completion
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            // Request successful
+            const response = xhr.responseText;
+            document.getElementById('success-message').innerHTML = response;
+            form.reset(); // Reset the form
+          } else {
+            // Request error
+            document.getElementById('success-message').innerHTML = 'Sorry, there was an error sending your message. Please try again later.';
+          }
+        };
+    
+        // Send the request with the form data
+        xhr.send(formData);
+      });
+    </script>
+    
 
 <script>
    $(document).ready(function () {
