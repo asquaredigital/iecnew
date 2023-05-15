@@ -1304,8 +1304,8 @@
             <div class="d-flex col-lg-12 col-md-12">
                <p class="fs-5 text-light text-center pt-3 mt-5">Stay in the Loop?</p>
                <span class="px-0 ps-3">
-					<a href="#" id="whatsapp-icon">
-               <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>               </span>
+                  <img src="img/Products/Cholrination/W_app_icon.png" alt="">
+               </span>
                <span class="px-0 ps-3">
                   <img src="img/Products/Cholrination/linked_In.png" alt="">
                </span>
