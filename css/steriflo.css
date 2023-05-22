@@ -336,7 +336,8 @@ a.navbar-brand {
 
 
 /* tableSteriflo */
-  @media only screen and (max-width: 1000px) {
+
+  /* @media only screen and (max-width: 1000px) {
     .tableSteriflo img{
       height: 400px !important;
     }
@@ -354,7 +355,26 @@ a.navbar-brand {
     .tableSteriflo img{
       height: 600px !important;
     }
+  } */
+
+  .tableSteriflo table {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 10px;
   }
+
+    .tableSteriflo tr {
+      color: #fff;
+      border-color: #fff;
+      font-size: 1.5rem!important;
+      font-weight: 600!important;
+    }
+    
+
+    .tableSteriflo td{
+      padding: 7px;
+    }
+
   
   
   /* Technicla Details */

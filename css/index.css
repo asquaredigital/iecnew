@@ -1239,6 +1239,8 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     border-bottom: 2px solid black;
   }
+
+ 
   
   .col-lg-3.contact.px-0 {
     position: absolute;

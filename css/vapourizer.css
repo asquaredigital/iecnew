@@ -381,6 +381,12 @@ body{
     font-weight: 700;
   }
 
+ tr{
+    border-color:#ff9200;
+    color: #ff9200;
+    background-color: #000;
+  }
+
    /* Form */
 
    .bg-chlo1 {

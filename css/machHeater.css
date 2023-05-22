@@ -371,6 +371,7 @@ body{
 .variants th{
   font-size: larger;
   font-weight: 600;
+  padding: 15px;
 }
 .variants td{
   font-size: larger;
@@ -463,3 +464,13 @@ input:-moz-placeholder { color:#ed1b33;font-weight: bolder; }
     border-bottom-width: thick;
     border-color: #ed1b33 !important;
 }
+
+
+tbody tr,td{
+  border-color: #ed1b33;
+}
+
+thead{
+  border-color: #000;
+}
+

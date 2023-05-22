@@ -367,11 +367,80 @@ a.navbar-brand {
 
 
 /* construction */
+
+.construction_Table{
+background-image: url('/img/Products/Purer/table_1.png');
+}
+
+.con_topLeft{
+  position: absolute;
+  left: 0;
+  color: #fff;
+    font-size: 367px;
+    font-weight: 700;
+  opacity: 45%;
+}
+.con_topRight{
+  position: absolute;
+  right: 0;
+  color: #fff;
+    font-size: 367px;
+    font-weight: 700;
+  opacity: 45%;
+}
+
+.con_bottomLeft{
+  position: absolute;
+    left: 0;
+    /* bottom: 0; */
+    padding-top: 30rem;
+    color: #fff;
+    font-size: 367px;
+    font-weight: 700;
+    opacity: 45%;
+}
+
+.con_bottomLeft1{
+  position: absolute;
+    left: 5rem;
+    /* bottom: 0; */
+    padding-top: 30rem;
+    color: #fff;
+    font-size: 367px;
+    font-weight: 700;
+    opacity: 45%;
+}
+
+.con_bottomRight{
+  position: absolute;
+  right: 0;
+  padding-top: 30rem;
+    color: #fff;
+    font-size: 367px;
+    font-weight: 700;
+    opacity: 45%;
+}
+.con_bottomRight1{
+  position: absolute;
+  right: 5rem;
+  padding-top: 30rem;
+    color: #fff;
+    font-size: 367px;
+    font-weight: 700;
+    opacity: 45%;
+}
+
+
+.construction table{
+  background-color: #0f3173;
+}
+
 .construction h1{
   --bs-text-opacity: 1;
   color: #fff;
   font-weight: 700;
-  position: absolute;
+  text-align: center;
+  /* position: absolute; */
 }
 
 .construction td p{
