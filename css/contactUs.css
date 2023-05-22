@@ -91,11 +91,17 @@ body {
   background-color: #000;
 }
 
+
+a.navbar-brand {
+  margin-left: 6rem;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
     justify-content: flex-end;
+    margin-right: 5rem;
   }
 }
 

@@ -92,11 +92,17 @@ body {
   background-color: #000;
 }
 
+
+a.navbar-brand {
+  margin-left: 6rem;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
     justify-content: flex-end;
+    margin-right: 5rem;
   }
 }
 
@@ -244,11 +250,12 @@ body {
 .sebac p {
   font-size: x-large;
   font-weight: 600;
+  padding-top: 4px;
 }
 
 .sebac img {
-  height: 600px;
-  width: 500px;
+  height: 645px;
+  width: 510px;
 }
 
 @media only screen and (max-width: 480px) {

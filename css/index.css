@@ -165,7 +165,7 @@
   }
   .head1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 70px;
     margin-left: 95px;
     color: white;
   }
@@ -1250,6 +1250,7 @@
   
 
   #carousel-list a {
+    font-size: 32px;
     text-decoration: none;
     color: #666666;
     font-weight: 700;

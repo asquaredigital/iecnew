@@ -88,11 +88,17 @@ background-color: rgb(0 46 137);
   font-size: 16px;
 }
 
+
+a.navbar-brand {
+  margin-left: 6rem;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
     justify-content: flex-end;
+    margin-right: 5rem;
   }
 }
 

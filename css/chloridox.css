@@ -99,11 +99,18 @@ body {
     font-size: 16px;
   }
   
+  a.navbar-brand {
+    margin-left: 6rem;
+}
+
   @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
       display: flex!important;
       flex-basis: auto;
       justify-content: flex-end;
+      margin-right: 5rem;
+      /* position: absolute;
+      right: 87px ; */
   }
   }
 
@@ -127,6 +134,8 @@ body {
       font-size: 200%;
       font-weight: 700;
       padding-top: 8%;
+      z-index: 0;
+  
     }
   
     .bg-title-lg {
@@ -142,6 +151,8 @@ body {
       font-size: 1028%;
       font-weight: 700;
       padding-top: 8%;
+      z-index: 0;
+  
     }
   
     .bg-title {

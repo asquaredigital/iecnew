@@ -92,6 +92,7 @@ body {
         display: flex!important;
         flex-basis: auto !important;
         justify-content: flex-end!important;
+        margin-right: 5rem;
     }
     }
 

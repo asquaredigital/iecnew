@@ -25,8 +25,18 @@
          margin-right: 20px;
       }
 
+      .navbar-nav li:hover>ul.dropdown-menu {
+         background: black;
+      }
+      
+      .navbar-nav li a {
+         color: #fff;
+      }
+
       #nav-bar ul li a:hover {
-         color: green !important;
+         /* color: green !important; */
+         background-color: #000;
+         color: Yellow !important;
       }
 
       .navbar-nav .dropdown-menu {
@@ -38,7 +48,7 @@
          display: block;
       }
 
-      #header #myBtn{
+      #header #myBtn {
          display: none !important;
       }
 
@@ -57,24 +67,24 @@
          padding: 8px;
       }
 
-      #myBtn:hover{
+      #myBtn:hover {
          background-color: green;
          color: yellow;
       }
 
-      .fas{
+      .fas {
          font-size: 35px;
       }
-      
-      
-      
+
+
+
       #my-button2:hover,
-#my-button2:active,
-#my-button2:focus {
-  /* Styles for button on hover, active, and focus */
-  background-color: #343a40 !important;
-  color: #fff !important;
-}
+      #my-button2:active,
+      #my-button2:focus {
+         /* Styles for button on hover, active, and focus */
+         background-color: #343a40 !important;
+         color: #fff !important;
+      }
    </style>
    <script>
 
@@ -105,7 +115,7 @@
 </head>
 
 <body>
-   
+
    <div id="header" class="headerdesign">
       <!--Navigation--->
       <div id="nav-bar">
@@ -140,13 +150,13 @@
 
                      </ul>
                   </li>
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="index.html#project" id="projectsDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PROJECTS
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                        <!-- Add submenu items for PROJECTS here -->
+
                         <a class="dropdown-item" href="project.html#sebac">Vaporizer</a>
                         <a class="dropdown-item" href="project.html#chlori">Chlorination</a>
                         <a class="dropdown-item" href="project.html#steam">AVGF</a>
@@ -154,7 +164,13 @@
 
 
                      </ul>
+                  </li> -->
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="project.html">PROJECTS</a>
                   </li>
+
+
                   <li class="nav-item">
                      <a class="nav-link" href="aboutUs.html">ABOUT</a>
                   </li>
@@ -505,7 +521,7 @@
          </div>
       </div>
    </section>
-  <!--Product Slider-->
+   <!--Product Slider-->
    <div class="mycontaniner" id="solutions">
       <div class="row py-5">
          <div class="col-lg-1 clearfix"></div>
@@ -521,28 +537,28 @@
                      </a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="2">
-                  <h4> <a href="chlorination.html" >CHLORINATION<span></span></a></h4>
+                  <h4> <a href="chlorination.html">CHLORINATION<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="3">
-                  <h4> <a href="vapourizer.html" >VAPORIZER<span></span></a></h4>
+                  <h4> <a href="vapourizer.html">VAPORIZER<span></span></a></h4>
                </div>
                <div class="carousel-list-item" data-target="#carousel2" data-slide-to="4">
-                  <h4> <a href="steriflo.html" > STERIFLO<span></span></a></h4>
+                  <h4> <a href="steriflo.html"> STERIFLO<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="5">
-                  <h4> <a href="dryHeater.html" > DRYHEATER<span></span></a></h4>
+                  <h4> <a href="dryHeater.html"> DRYHEATER<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="6">
-                  <h4> <a href="avgf.html" > AVGF<span></span></a></h4>
+                  <h4> <a href="avgf.html"> AVGF<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="7">
-                  <h4> <a href="purer.html" > PURER<span></span></a></h4>
+                  <h4> <a href="purer.html"> PURER<span></span></a></h4>
                </div>
                <div class="carousel-list-item " data-target="#carousel2" data-slide-to="8">
-                  <h4> <a href="leakAbsorption.html" > LEAK ABSORPTION<span></span></a></h4>
+                  <h4> <a href="leakAbsorption.html"> LEAK ABSORPTION<span></span></a></h4>
                </div>
                <div class="carousel-list-item" data-target="#carousel2" data-slide-to="9">
-                  <h4> <a href="swec.html" > SWEC<span></span></a></h4>
+                  <h4> <a href="swec.html"> SWEC<span></span></a></h4>
                </div>
             </div>
          </div>
@@ -590,7 +606,7 @@
    <div class="latestprojects" id="projects">
       <h1>OUR LATEST PROJECTS </h1>
    </div>
-   <div class="mycontaniner2">
+   <div class="mycontaniner2 py-5">
       <div class="col-lg-12 text-center py-3 mt-4">
          <div id="carousel-list" class="row d-flex">
             <div class="col-lg-3">
@@ -935,7 +951,7 @@
       </div>
    </div>
 
-   <div class="testimonials">
+   <div class="testimonials py-4">
 
       <h2 class="testimonialstitile">Testimonials</h2>
       <p class="testimonialspara">What they are saying</p>
@@ -1089,7 +1105,7 @@
             <div class="map mb-4 mb-lg-0">
                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248381.24967397883!2d79.79859489453128!3d13.4149872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d81de81031737%3A0xc72cf09b73edea3e!2sIEC%20FABCHEM%20LIMITED!5e0!3m2!1sen!2sin!4v1683885146809!5m2!1sen!2sin"
-                  width="600" height="450" frameborder="0" style="border:0; width: 100%; height: 312px;"
+                  width="600" height="450" frameborder="0" style="border:0; width: 100%; height: 450px;"
                   allowfullscreen></iframe>
             </div>
 
@@ -1099,18 +1115,17 @@
                <h2 class="fw-bolder"><strong>
                      GET IN TOUCH
                   </strong></h2>
-                  
-                  <form id="contact-form" method="post" class="contact-form">
 
-               
+               <form id="contact-form" method="post" class="contact-form">
+
+
                   <div class="form-group mt-5">
                      <input type="text" class="form-control1  " id="name" name="name" placeholder="Name" required>
                   </div>
 
                   <div class="form-group mt-5">
                      <!-- <label for="name">Name:</label> -->
-                     <input type="number" class="form-control1  " id="u_number" name="u_number" placeholder="Phone"
-                        >
+                     <input type="number" class="form-control1  " id="u_number" name="u_number" placeholder="Phone">
                   </div>
 
                   <div class="form-group mt-5">
@@ -1139,7 +1154,7 @@
                <h2 class="fw-bolder"><strong>
                      GET IN TOUCH
                   </strong></h2>
-                  <form id="contact-form" method="post" class="contact-form">
+               <form id="contact-form" method="post" class="contact-form">
 
 
                   <div class="form-group mt-5">
@@ -1148,8 +1163,7 @@
 
                   <div class="form-group mt-5">
                      <!-- <label for="name">Name:</label> -->
-                     <input type="number" class="form-control1  " id="u_number" name="u_number" placeholder="Phone"
-                        >
+                     <input type="number" class="form-control1  " id="u_number" name="u_number" placeholder="Phone">
                   </div>
 
                   <div class="form-group mt-5">
@@ -1304,8 +1318,8 @@
             <div class="d-flex col-lg-12 col-md-12">
                <p class="fs-5 text-light text-center pt-3 mt-5">Stay in the Loop?</p>
                <span class="px-0 ps-3">
-					<a href="#" id="whatsapp-icon">
-               <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>               </span>
+                  <a href="#" id="whatsapp-icon">
+                     <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a> </span>
                <span class="px-0 ps-3">
                   <img src="img/Products/Cholrination/linked_In.png" alt="">
                </span>
@@ -1315,8 +1329,8 @@
    </section>
 
 
-   <section class="bg-black d-none d-sm-none d-md-none d-lg-block d-xl-block">
-      <div class="row pt-3">
+   <section class="bg-black d-none d-sm-none d-md-none d-lg-block d-xl-block pt-5">
+      <div class="row pt-5">
          <div class="col-lg-1 clearfix"></div>
          <div class="col-lg-7 location">
             <h4 style="border-bottom-style: groove;
@@ -1396,7 +1410,7 @@
                </div>
             </div>
             <div class="col-lg-3 col-md-6  pt-5">
-               <ul class="footermenus" style="list-style-type: none;" class="pt-5">
+               <ul class="footermenus" style="list-style-type: none;padding-left: 42px;" class="pt-5">
                   <li>
                      <h4 style="    border-bottom-style: groove;
                         width: fit-content;margin-top: 40px;">COMPANY</h4>
@@ -1415,24 +1429,23 @@
                   </li>
                </ul>
 
-               <div class="col-lg-12 pt-5 contactUs">
-                  <ul style="list-style-type: none;" class="pt-5">
-                     <li style=" padding-left: 49px;">
-                        <h4 style=" border-bottom-style: groove;
+               <ul style="list-style-type: none;" class="pt-5 contactUs">
+                  <li style=" padding-left: 49px;">
+                     <h4 style=" border-bottom-style: groove;
                           width: fit-content;">CONTACT US</h4>
-                     </li>
+                  </li>
 
-                     <li class="d-flex mt-3 ">
-                        <img src="img/Home/phone_icon.png" alt="">&nbsp;&nbsp;
-                        <h5>+91-9789635755</h5>
-                     </li>
+                  <li class="d-flex mt-3 ">
+                     <img src="img/Home/phone_icon.png" alt="">&nbsp;&nbsp;
+                     <h5>+91-9789635755</h5>
+                  </li>
 
-                     <li class="d-flex mt-3 ">
-                        <img src="img/Home/mail_icon.png" alt="">&nbsp;&nbsp;
-                        <h5>marketing@iecfabchem.in</h5>
-                     </li>
-                  </ul>
-               </div>
+                  <li class="d-flex mt-3 ">
+                     <img src="img/Home/mail_icon.png" alt="">&nbsp;&nbsp;
+                     <h5>marketing@iecfabchem.in</h5>
+                  </li>
+               </ul>
+
             </div>
             <div class="col-lg-1 clearfix"></div>
          </div>
@@ -1444,7 +1457,7 @@
             <p class="fs-5 text-light text-center  mt-4">Stay in the Loop?</p>
             <span class="px-5 ps-3">
                <a href="#" id="whatsapp-icon">
-               <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>
+                  <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>
             </span>
             <span class="px-0 ps-3">
                <img src="img/Products/Cholrination/linked_In.png" alt="">
@@ -1460,98 +1473,98 @@
             href="https://www.asquare.tech" style="color: green;" target="\blank">ASQUARE DIGITAL SOLUTIONS</a></h6>
 
    </section>
-  
 
-<script>
-   $(document).ready(function () {
-      $('#carousel2').carousel({
-         interval: 3000,
+
+   <script>
+      $(document).ready(function () {
+         $('#carousel2').carousel({
+            interval: 3000,
+         });
+
+         $('#carousel2').on('slid.bs.carousel', function () {
+            var index = $('#carousel2 .carousel-item.active').index();
+            $('#carousel-list .carousel-list-item').removeClass('active');
+            $('#carousel-list .carousel-list-item').eq(index).addClass('active');
+
+            // Remove the arrow icon from all carousel list items
+            $('#carousel-list .carousel-list-item span img').remove();
+
+            // Add the arrow icon to the active item
+            const activeItem = $('#carousel-list .carousel-list-item.active');
+            const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
+            activeItem.find('span').append(arrowIcon);
+         });
+
+         // Trigger a click event on the first carousel list item
+         $('#carousel-list .carousel-list-item').eq(0).trigger('click');
+
+         // Add arrow icon to the first carousel list item initially
+         const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
+         $('#carousel-list .carousel-list-item').eq(0).find('span').append(arrowIcon);
       });
 
-      $('#carousel2').on('slid.bs.carousel', function () {
-         var index = $('#carousel2 .carousel-item.active').index();
+      $('#carousel-list').on('click', '.carousel-list-item a', function (event) {
+         event.preventDefault(); // Prevent the default behavior of the <a> tag
+
          $('#carousel-list .carousel-list-item').removeClass('active');
-         $('#carousel-list .carousel-list-item').eq(index).addClass('active');
+         $(this).parent().addClass('active');
+         var index = $(this).parent().index();
+         $('#carousel2').carousel(index);
 
          // Remove the arrow icon from all carousel list items
          $('#carousel-list .carousel-list-item span img').remove();
 
-         // Add the arrow icon to the active item
-         const activeItem = $('#carousel-list .carousel-list-item.active');
+         // Add the arrow icon to the clicked item
          const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
-         activeItem.find('span').append(arrowIcon);
+         $(this).parent().find('span').append(arrowIcon);
+
+         var href = $(this).attr('href');
+         // Navigate to the linked page in the same window
+         window.location.href = href;
       });
-
-      // Trigger a click event on the first carousel list item
-      $('#carousel-list .carousel-list-item').eq(0).trigger('click');
-
-      // Add arrow icon to the first carousel list item initially
-      const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
-      $('#carousel-list .carousel-list-item').eq(0).find('span').append(arrowIcon);
-   });
-
-   $('#carousel-list').on('click', '.carousel-list-item a', function (event) {
-      event.preventDefault(); // Prevent the default behavior of the <a> tag
-
-      $('#carousel-list .carousel-list-item').removeClass('active');
-      $(this).parent().addClass('active');
-      var index = $(this).parent().index();
-      $('#carousel2').carousel(index);
-
-      // Remove the arrow icon from all carousel list items
-      $('#carousel-list .carousel-list-item span img').remove();
-
-      // Add the arrow icon to the clicked item
-      const arrowIcon = $('<img>').attr('src', 'ico/Home/Arrow 11.svg').addClass('arrow-icon');
-      $(this).parent().find('span').append(arrowIcon);
-
-      var href = $(this).attr('href');
-      // Navigate to the linked page in the same window
-      window.location.href = href;
-   });
-</script>
-	<script>
-      $(document).ready(function() {
-         $('#whatsapp-icon').click(function() {
+   </script>
+   <script>
+      $(document).ready(function () {
+         $('#whatsapp-icon').click(function () {
             var phone = '+91 9786360344'; // Replace with your phone number
             var message = 'Hello'; // Replace with your message
             var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
             window.open(url);
          });
       });
-      </script>
-   
+   </script>
+
    <script>
-      $(document).ready(function() {
-      // Contact Form Submission
-      $('#response-message').html('');
-      $('#contact-form').submit(function(event) {
-         event.preventDefault(); // Prevent default form submission
+      $(document).ready(function () {
+         // Contact Form Submission
+         $('#response-message').html('');
+         $('#contact-form').submit(function (event) {
+            event.preventDefault(); // Prevent default form submission
 
-         var form = $(this);
-         var formData = form.serialize();
+            var form = $(this);
+            var formData = form.serialize();
 
-         // Send AJAX request
-         $.ajax({
-            type: 'POST',
-            url: 'homecontact.php',
-            data: formData,
-            dataType: 'json',
-            success: function(response) {
-               if (response.success) {
-                  $('#response-message').html('<p class="success-message">' + response.message + '</p>');
-                  form.trigger('reset');
-               } else {
-                  $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+            // Send AJAX request
+            $.ajax({
+               type: 'POST',
+               url: 'homecontact.php',
+               data: formData,
+               dataType: 'json',
+               success: function (response) {
+                  if (response.success) {
+                     $('#response-message').html('<p class="success-message">' + response.message + '</p>');
+                     form.trigger('reset');
+                  } else {
+                     $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+                  }
+               },
+               error: function () {
+                  $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
                }
-            },
-            error: function() {
-               $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
-            }
+            });
          });
       });
-   });
-</script>
+   </script>
 
 </body>
 
