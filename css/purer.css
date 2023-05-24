@@ -380,6 +380,32 @@ background-image: url('/img/Products/Purer/table_1.png');
     font-weight: 700;
   opacity: 45%;
 }
+
+@media only screen and (max-width: 900px) {
+.con_topLeft{
+display: none;
+}
+.con_topRight{
+  display: none;
+}
+
+.con_bottomLeft{
+  display: none;
+}
+
+.con_bottomRight{
+  display: none;
+}
+
+.con_bottomLeft1{
+  display: none;
+}
+
+.con_bottomRight1{
+  display: none;
+}
+}
+
 .con_topRight{
   position: absolute;
   right: 0;
@@ -445,11 +471,15 @@ background-image: url('/img/Products/Purer/table_1.png');
 
 .construction td p{
 color: #fff;
-font-size: x-large;
+font-size: x-large ;
 font-weight: 700;
 }
 
-
+.construction   p{
+  color: #fff;
+  font-size: x-large;
+  font-weight: 700;
+  }
 
 @media only screen and (max-width: 600px) {
   .construction h1{

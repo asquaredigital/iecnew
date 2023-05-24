@@ -91,6 +91,9 @@ body {
   background-color: #000;
 }
 
+.bg-navColor{
+background-color: #f8e501;
+}
 
 a.navbar-brand {
   margin-left: 6rem;
@@ -272,6 +275,10 @@ a.navbar-brand {
   padding-top: 5px;
 }
 
+.forms  img {
+  height: 850px;
+}
+
 @media only screen and (max-width: 1100px) {
   .corporate .imgg {
     height: 430px;
@@ -321,7 +328,7 @@ textarea.form-control {
 }
 
 .forms img {
-  height: 600px;
+  height: 835px;
 }
 
 form {

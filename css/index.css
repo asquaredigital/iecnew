@@ -81,7 +81,7 @@
     font-size: 6em;
    /* adjust this value as needed */
     color: black;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: bold;
     margin-left: 50px;
     text-align: center;
