@@ -17,6 +17,10 @@
 
 
    <style>
+      html {
+         scroll-behavior: smooth;
+      }
+
       body {
          font-family: 'Inter', sans-serif;
       }
@@ -83,7 +87,54 @@
          background-color: #343a40 !important;
          color: #fff !important;
       }
+
+      #top a {
+         height: 20px;
+         /* background-color: #f5f512; */
+      }
+
+      #top {
+         display: none;
+      }
+
+      .scroll-container {
+         position: absolute;
+         top: 0;
+         right: 0;
+         height: 100%;
+      }
+
+      .scroll-container:before {
+         content: '';
+         display: block;
+         height: 100vh;
+         pointer-events: none;
+      }
+
+      .scroll-container a {
+         position: sticky;
+         top: 88vh;
+         cursor: pointer;
+         font-size: 20px;
+      }
+
+      .scroll-container a {
+         position: fixed;
+         right: 20px;
+         top: 90vh;
+         cursor: pointer;
+         font-size: 20px;
+         /* background-color: #fad91d; */
+         padding: 2px;
+         border-radius: 4px;
+      }
+
+      .scroll-container img {
+         height: 30px;
+         border-radius: 6px;
+      }
    </style>
+
    <script>
 
       $(document).ready(function () {
@@ -639,7 +690,8 @@
                      <div class="col-md-6">
                         <h1>SEBAC Automatic valveless filters for a remote Pacific Island</h1>
                         <br>
-                        <p><a href="project.html#sebac" style="text-decoration: none;color: #fff;"><span style="border-bottom-style: solid;">Read More</span> &nbsp; <img
+                        <p><a href="project.html#sebac" style="text-decoration: none;color: #fff;"><span
+                                 style="border-bottom-style: solid;">Read More</span> &nbsp; <img
                                  src="ico/Home/Arrow 11.svg" id="arrow"> </a></p>
                      </div>
                      <div class="col-md-6">
@@ -656,9 +708,11 @@
                         <img src="img/Home/Projects/2.webp" alt="Slide 2" id="img1" class="d-block mx-auto">
                      </div>
                      <div class="col-md-6">
-                        <h1>State of the art chlorine leak Neutralization system for an American chemical company</h1>
+                        <h1>State of the art chlorine leak Neutralization system for an American chemical
+                           company</h1>
                         <br>
-                        <p><a href="project.html#chlori" style="text-decoration: none;color: #fff;"><span style="border-bottom-style: solid;">Read More</span> &nbsp;
+                        <p><a href="project.html#chlori" style="text-decoration: none;color: #fff;"><span
+                                 style="border-bottom-style: solid;">Read More</span> &nbsp;
                               <img src="ico/Home/Arrow 11.svg" id="arrow"></a> </p>
                      </div>
 
@@ -670,12 +724,13 @@
 
                   <div class="d-flex align-items-center h-100">
                      <div class="col-md-6">
-                        <h1 style="color: #fff;">Steam heated Liquid chlorine vaporizers at India's largest chlorine
+                        <h1 style="color: #fff;">Steam heated Liquid chlorine vaporizers at India's largest
+                           chlorine
                            consumption point</h1>
                         <br>
                         <p style="color: #fff;"><a href="project.html#steam"
-                              style="text-decoration: none;color: #fff;"><span style="border-bottom-style: solid;">Read More</span> &nbsp;<img
-                                 src="ico/Home/Arrow 11.svg" id="arrow1"></a> </p>
+                              style="text-decoration: none;color: #fff;"><span style="border-bottom-style: solid;">Read
+                                 More</span> &nbsp;<img src="ico/Home/Arrow 11.svg" id="arrow1"></a> </p>
                      </div>
                      <div class="col-md-6">
                         <img src="img/Home/Projects/4.webp" alt="Slide 3" id="img1" class="d-block mx-auto">
@@ -689,10 +744,12 @@
                         <img src="img/Home/Projects/3.webp" alt="Slide 4" id="img1" class="d-block mx-auto">
                      </div>
                      <div class="col-md-6">
-                        <h1>Brine Electro-Chlorination "hypochlorite" production systems for Municipal water treatment
+                        <h1>Brine Electro-Chlorination "hypochlorite" production systems for Municipal water
+                           treatment
                            schemes</h1>
                         <br>
-                        <p><a href="project.html#brine" style="text-decoration: none;color: #fff;"><span style="border-bottom-style: solid;">Read More</span>  &nbsp;<img
+                        <p><a href="project.html#brine" style="text-decoration: none;color: #fff;"><span
+                                 style="border-bottom-style: solid;">Read More</span> &nbsp;<img
                                  src="ico/Home/Arrow 11.svg" id="arrow"> </a></p>
                      </div>
 
@@ -746,7 +803,8 @@
                Management System as per ISO
                9001 : 2015, ISO 14001 : 2015 and OHSAS
 
-               18001 : 2007 <br><br><span style="border-bottom-style: solid;">Read More</span>  &nbsp; <img src="ico/Home/Arrow 11.svg" id="arrow3">
+               18001 : 2007 <br><br><span style="border-bottom-style: solid;">Read More</span> &nbsp; <img
+                  src="ico/Home/Arrow 11.svg" id="arrow3">
             </p>
 
          </div>
@@ -974,7 +1032,8 @@
 
                      <div class="row text-center">
                         <div class="col-lg-10">
-                           <h5>North Eastern Electric Power Corporation Limited<br>A Government of India Enterprise</h5>
+                           <h5>North Eastern Electric Power Corporation Limited<br>A Government of India
+                              Enterprise</h5>
                         </div>
                      </div>
                   </div>
@@ -1039,13 +1098,20 @@
                   <div class="carousel-item active">
                      <div class="row">
                         <div class="col-md-10">
-                           <p>Chlorination Plant has been supplied, erected and commissioned by IEC Fabchem, Chennai
-                              through MC-BHEL, the turn-key contractors for this 291 MW Combined Cycle Power Plant with
-                              dosing capacities of 2 x 120 kg/hrs and 2 x 10 kg/hrs for Cooling Water Chlorination
-                              System and Raw Water Chlorination System respectively. The systems with all requisite
-                              safety features including chlorine leak absorption system of 1 ton/hr capacity were
-                              commissioned in July 2000. The performance of the system is found to be satisfactory.
-                              Moreover, we have not faced any difficulty in getting the necessary spare parts etc., that
+                           <p>Chlorination Plant has been supplied, erected and commissioned by IEC Fabchem,
+                              Chennai
+                              through MC-BHEL, the turn-key contractors for this 291 MW Combined Cycle Power
+                              Plant with
+                              dosing capacities of 2 x 120 kg/hrs and 2 x 10 kg/hrs for Cooling Water
+                              Chlorination
+                              System and Raw Water Chlorination System respectively. The systems with all
+                              requisite
+                              safety features including chlorine leak absorption system of 1 ton/hr capacity
+                              were
+                              commissioned in July 2000. The performance of the system is found to be
+                              satisfactory.
+                              Moreover, we have not faced any difficulty in getting the necessary spare parts
+                              etc., that
                               are required from time to time. - NEEPCO.</p>
                         </div>
                      </div>
@@ -1054,11 +1120,16 @@
                   <div class="carousel-item">
                      <div class="row">
                         <div class="col-md-10">
-                           <p>IEC FABCHEM LIMITED, Chennai has Designed, Manufactured, Supplied, Erected & Commissioned
-                              Chlorine Dioxide Generator System for the below capacity, Chlorine Dioxide Generator
-                              System - 15 kg/hr. The Chlorine Dioxide Generator System is/are commissioned successfully
-                              on April 2021 and it is working satisfactorily as on date. This testimonial is issued upon
-                              request of M/s. IEC FABCHEM LIMITED without prejudice to our rights under the contract and
+                           <p>IEC FABCHEM LIMITED, Chennai has Designed, Manufactured, Supplied, Erected &
+                              Commissioned
+                              Chlorine Dioxide Generator System for the below capacity, Chlorine Dioxide
+                              Generator
+                              System - 15 kg/hr. The Chlorine Dioxide Generator System is/are commissioned
+                              successfully
+                              on April 2021 and it is working satisfactorily as on date. This testimonial is
+                              issued upon
+                              request of M/s. IEC FABCHEM LIMITED without prejudice to our rights under the
+                              contract and
                               for the limited purpose of business promotion only. -NTPC.</p>
                         </div>
                      </div>
@@ -1066,13 +1137,20 @@
                   <div class="carousel-item">
                      <div class="row">
                         <div class="col-md-10">
-                           <p>IEC FABCHEM LIMITED has designed, manufactured, supplied and commissioned Side Stream
-                              Filtration System of capacity 6 x 250 m3/hr (Automatic Valveless Gravity Filter) near
-                              Cooling Tower at 2 X 500 MW Marwa Thermal Power Project, Chattisgarh. The Side Stream
-                              Filtration System (Automatic Valveless Gravity Filter) is meeting the design conditions
-                              and working satisfactorily since October 2017. This certificate is issued on the request
-                              of M/s. IEC Fabchem Ltd for their tendering / pre-qualification purpose only and is issued
-                              without any prejudice to the terms and conditions of the contracts between M/s. BGRESL &
+                           <p>IEC FABCHEM LIMITED has designed, manufactured, supplied and commissioned Side
+                              Stream
+                              Filtration System of capacity 6 x 250 m3/hr (Automatic Valveless Gravity Filter)
+                              near
+                              Cooling Tower at 2 X 500 MW Marwa Thermal Power Project, Chattisgarh. The Side
+                              Stream
+                              Filtration System (Automatic Valveless Gravity Filter) is meeting the design
+                              conditions
+                              and working satisfactorily since October 2017. This certificate is issued on the
+                              request
+                              of M/s. IEC Fabchem Ltd for their tendering / pre-qualification purpose only and
+                              is issued
+                              without any prejudice to the terms and conditions of the contracts between M/s.
+                              BGRESL &
                               M/s IEC Fabchem Ltd - BGR.</p>
                         </div>
                      </div>
@@ -1209,8 +1287,9 @@
             <div class="row ">
                <div class="col-lg-3">
 
-                  <span class="mt-2">
-                     <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png"></span>
+                  <a href="index.html">
+                     <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png">
+                  </a>
                   <h3 class="fs-4 fw-bold text-light pt-3">
                      Since 1963, IEC FABCHEM LTD is
                      the best Manufacturer of
@@ -1292,17 +1371,23 @@
                  width: fit-content;">CONTACT US</h4>
                         </li>
 
-                        <li class="d-flex mt-3">
-                           <img src="img/Products/Cholrination/phone_icon.png" alt="">
-                           <span class="">
-                              <h4 class=" ps-2 mt-3">+91-9789635755</h4>
-                        </li>
+                        <a style="text-decoration: none;" href="tel: +919786360344">
+                           <li class="d-flex mt-3">
+                              <img src="img/Products/Cholrination/phone_icon.png" alt="">
+                              <span class="">
+                                 <h4 class=" ps-2 mt-3">+91-9789635755</h4>
+                           </li>
+                        </a>
 
-                        <li class="d-flex mt-3">
-                           <img src="img/Products/Cholrination/mail_icon.png" alt=""><span>
-                           </span>
-                           <h4 class="ps-2 mt-3">marketing@iecfabchem.in</h4>
-                        </li>
+
+                        <a style="text-decoration: none;" href="mailto: alageswaranb2@gmail.com">
+                           <li class="d-flex mt-3">
+                              <img src="img/Products/Cholrination/mail_icon.png" alt=""><span>
+                              </span>
+                              <h4 class="ps-2 mt-3">marketing@iecfabchem.in</h4>
+                           </li>
+                        </a>
+
                      </ul>
                   </div>
                </div>
@@ -1319,7 +1404,10 @@
                   <a href="#" id="whatsapp-icon">
                      <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a> </span>
                <span class="px-0 ps-3">
-                  <img src="img/Products/Cholrination/linked_In.png" alt="">
+                  <a href="https://in.linkedin.com/company/iec-fabchem-limited?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                     target="_blank">
+                     <img src="img/Products/Cholrination/linked_In.png" alt="">
+                  </a>
                </span>
             </div>
          </div>
@@ -1348,7 +1436,10 @@
             <div class="col-lg-3 pt-3 aboutUs">
 
                <span class="mt-2">
-                  <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png"></span>
+                  <a href="index.html">
+                     <img class="ico/Products/Cholrination/" src="img/Products/Cholrination//IEC_logo.png">
+                  </a>
+               </span>
 
 
                <h5 class=" text-light pt-3">
@@ -1433,15 +1524,22 @@
                           width: fit-content;">CONTACT US</h4>
                   </li>
 
-                  <li class="d-flex mt-3 ">
-                     <img src="img/Home/phone_icon.png" alt="">&nbsp;&nbsp;
-                     <h5>+91-9789635755</h5>
-                  </li>
 
-                  <li class="d-flex mt-3 ">
-                     <img src="img/Home/mail_icon.png" alt="">&nbsp;&nbsp;
-                     <h5>marketing@iecfabchem.in</h5>
-                  </li>
+                  <a style="text-decoration: none;" href="tel: +919786360344">
+                     <li class="d-flex mt-3 ">
+                        <img src="img/Home/phone_icon.png" alt="">&nbsp;&nbsp;
+                        <h5>+91-9789635755</h5>
+                     </li>
+                  </a>
+
+
+                  <a style="text-decoration: none;" href="mailto: alageswaranb2@gmail.com">
+                     <li class="d-flex mt-3 ">
+                        <img src="img/Home/mail_icon.png" alt="">&nbsp;&nbsp;
+                        <h5>marketing@iecfabchem.in</h5>
+                     </li>
+                  </a>
+
                </ul>
 
             </div>
@@ -1458,7 +1556,10 @@
                   <img id="whatsapp-btn" src="img/Products/Cholrination/W_app_icon.png" alt=""></a>
             </span>
             <span class="px-0 ps-3">
-               <img src="img/Products/Cholrination/linked_In.png" alt="">
+               <a href="https://in.linkedin.com/company/iec-fabchem-limited?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                  target="_blank">
+                  <img src="img/Products/Cholrination/linked_In.png" alt="">
+               </a>
             </span>
          </div>
       </div>
@@ -1471,6 +1572,12 @@
             href="https://www.asquare.tech" style="color: green;" target="\blank">ASQUARE DIGITAL SOLUTIONS</a></h6>
 
    </section>
+   <div class="scroll-container">
+      <a href="#top"><img alt="Back to top" src="ico/Home/s_top.jpg" alt=""></a>
+   </div>
+
+
+
 
 
    <script>
