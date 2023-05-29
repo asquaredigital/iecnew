@@ -110,6 +110,7 @@
   /* background-color: #fad91d; */
   padding: 2px;
   border-radius: 4px;
+  z-index: 1;
 }
 
 .scroll-container img {
