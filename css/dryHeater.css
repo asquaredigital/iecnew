@@ -112,6 +112,7 @@ body{
         font-weight: 700;
         padding-top: 8%;
         color: #63ff99;
+        z-index: 1;
       }
     .bg-title {
       font-size: 300%;
@@ -140,6 +141,7 @@ body{
       font-weight: 700;
       padding-top: 8%;
       color: #63ff99;
+      z-index: 1;
     }
 
     .title {
