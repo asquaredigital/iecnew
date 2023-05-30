@@ -860,7 +860,7 @@
                 <div class="row mt-3 mb-2">
                     <div class="col-lg-4"></div>
                     <div class="col-lg-5 p-5">
-                        <form action="">
+                        <form id="contact-form" method="post" class="contact-form">
 
                             <div class="form-group mt-3">
                                 <label for="_name" class="text-light  fs-3 fw-bolder">Name <sup><i
@@ -880,11 +880,11 @@
                                 <input type="text" class="form-control " placeholder="Company Name" id="c_Name">
                             </div>
 
+                            <input type="hidden" name="pname" id="pname" value="MachHeater">
                             <div class="form-group mt-3">
-                                <input type="button" style=" border-radius:  14px;height:75px"
-                                    class="form-control  fs-3 fw-bolder " value="Download">
-                            </div>
-
+                
+                            <button type="submit" id="my-button2" style=" border-radius:14px;height:75px"
+                                class="form-control  fs-3 fw-bolder ">Download</button>
                         </form>
                     </div>
 
@@ -897,6 +897,39 @@
     <!--Footer-->
     <div id="footer"></div>
     <!--Footer Ends-->
+    <script>
+        $(document).ready(function () {
+          // Contact Form Submission
+          $('#response-message').html('');
+          $('#contact-form').submit(function (event) {
+            event.preventDefault(); // Prevent default form submission
+      
+            var form = $(this);
+            var formData = form.serialize();
+      
+            // Send AJAX request
+            $.ajax({
+              type: 'POST',
+              url: 'productcontact.php',
+              data: formData,
+              dataType: 'json',
+              success: function (response) {
+                if (response.success) {
+                  $('#response-message').html('<p class="success-message">' + response.message + '</p>');
+                  // Trigger file download
+                  window.location.href = 'catalogue/DSI.pdf';
+                  form.trigger('reset');
+                } else {
+                  $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+                }
+              },
+              error: function () {
+                $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
+              }
+            });
+          });
+        });
+      </script>
 </body>
 
 </html>
