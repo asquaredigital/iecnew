@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $cname = $_POST["c_Name"];
 
    // Set recipient email address
-   $recipient = 'elavarasan5193@gmail.com';
+   $recipient = 'alageswaranb2@gmail.com';
 
    // Set subject
    $subject = 'Brochure Download Nofitication';

@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $msg = $_POST["msg"];
 
    // Set recipient email address
-   $recipient = 'iecfabchemwebsite@gmail.com';
+   $recipient = 'alageswaranb2@gmail.com';
 
    // Set subject
    $subject = 'Contact Enquiry Notification';
