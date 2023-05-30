@@ -645,7 +645,6 @@
             if (response.success) {
               $('#response-message').html('<p class="success-message">' + response.message + '</p>');
               // Trigger file download
-              window.location.href = 'catalogue/STERIFLO.pdf';
               form.trigger('reset');
             } else {
               $('#response-message').html('<p class="error-message">' + response.message + '</p>');
