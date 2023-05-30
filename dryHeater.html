@@ -1,598 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 
-  <link rel="stylesheet" href="css/dryHeater.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf">
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/dryHeater.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script>
-    $(function () {
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
-    });
-  </script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
 
-    .bg-copyRight {
-      padding: 1rem !important;
+      .bg-copyRight {
+        padding: 1rem !important;
 
-    }
+      }
 
-    .footerproducts li h4 a {
-      color: #63ff99 !important;
-      ;
-      text-decoration: none
-    }
+      .footerproducts li h4 a {
+        color: #63ff99 !important;
+        ;
+        text-decoration: none
+      }
 
-    .footermenus li h4 a {
-      color: #63ff99 !important;
-      ;
-      text-decoration: none;
-      line-height: 2px;
-    }
+      .footermenus li h4 a {
+        color: #63ff99 !important;
+        ;
+        text-decoration: none;
+        line-height: 2px;
+      }
 
-    .text-copyRight a {
-      color: black;
-      text-decoration: none;
-    }
+      .text-copyRight a {
+        color: black;
+        text-decoration: none;
+      }
 
-    #nav-bar ul li a:hover {
-      color: yellow !important;
-    }
+      #nav-bar ul li a:hover {
+        color: yellow !important;
+      }
 
-    .dryHeater_soc {
-      display: block !important;
-    }
+      .dryHeater_soc {
+        display: block !important;
+      }
 
-    #nav-bar ul li>ul>li a:hover {
-            color: #000!important;
+      #nav-bar ul li>ul>li a:hover {
+        color: #000 !important;
+      }
+
+      button#my-button2 {
+        color: #63ff99;
+        background-color: #081e34;
+      }
+      #response-message p{
+            margin-top: 5px;
+            color: #081e34;
         }
-  </style>
-
-  <title>Dry Heater</title>
-</head>
 
 
-<!-- Navigation bar -->
+    </style>
 
-<section class="bg-chlo py-5">
-  <div id="header">
-
-  </div>
-</section>
+    <title>Dry Heater</title>
+  </head>
 
 
+  <!-- Navigation bar -->
 
-<!-- Navigation bar  Ends-->
+  <section class="bg-chlo py-5">
+    <div id="header">
 
-
-<!-- Home  -->
-<div class="home">
-  <div class="bg-chlo pt-5 px-5 mobile">
-    <div class="mx-auto card-body ">
-      <h1 class="text-center">DRYHEATER
-      </h1>
     </div>
-    <hr>
-  </div>
+  </section>
 
 
-  <div class="bg-chlo p-5 px-5 desktop">
-    <div class="mx-auto card-body pt-4 m-5">
-      <h1 class="text-center " style="font-size: 1077%;
+
+  <!-- Navigation bar  Ends-->
+
+
+  <!-- Home  -->
+  <div class="home">
+    <div class="bg-chlo pt-5 px-5 mobile">
+      <div class="mx-auto card-body ">
+        <h1 class="text-center">DRYHEATER
+        </h1>
+      </div>
+      <hr>
+    </div>
+
+
+    <div class="bg-chlo p-5 px-5 desktop">
+      <div class="mx-auto card-body pt-4 m-5">
+        <h1 class="text-center " style="font-size: 1077%;
       font-weight: 700;">DRYHEATER
-      </h1>
-    </div>
-    <hr>
-  </div>
-
-  <div class="container v-feed">
-    <div class="card-body bg-chlo ">
-      <h2 class=" text-center  v-feed-text">Electrical non-contact process heaters
-      </h2>
-    </div>
-  </div>
-</div>
-
-<!-- Home  Ends-->
-
-
-<section class="bg-chlo mt-5">
-  <div class="container wrapper">
-    <h1 class="text-chlo text-center bg-title "> PRODUCT </h1>
-    <h1 class="text-chlo text-center title  "> Models </h1>
-  </div>
-</section>
-
-
-
-<!-- Carousel  -->
-<section class=" bg-dh p-3">
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner text-center">
-      <div class="carousel-item row active">
-        <img class="text-center" src="img/Products/DryHeater/dh_06.png" alt="First slide">
-        <h3 class="fw-bolder text-chlo1 text-center w-100">DH - 1.5</h3>
+        </h1>
       </div>
-      <div class="carousel-item row">
-        <img class="text-center " src="img/Products/DryHeater/dh_07.png" alt="Second slide">
-        <h3 class="fw-bolder text-chlo1 text-center w-100">DH - 3</h3>
-      </div>
+      <hr>
+    </div>
 
-      <div class="carousel-item row">
-        <img class="text-center" src="img/Products/DryHeater/dh_08.png" alt="Second slide">
-        <h3 class="fw-bolder text-chlo1 text-center w-100">DH - 10.5</h3>
+    <div class="container v-feed">
+      <div class="card-body bg-chlo ">
+        <h2 class=" text-center  v-feed-text">Electrical non-contact process heaters
+        </h2>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-      <div class="next-btn">
-        <img src="img/Products/DryHeater/previous.png" alt="">
-      </div>
-
-
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-
-
-      <div class="prev-btn">
-        <img src="img/Products/DryHeater/next.png" alt="">
-      </div>
-    </a>
   </div>
-</section>
-<!-- Carousel Ends -->
 
-<div class="dryHeater01 bg-chlo  pt-5">
-  <div class="row">
-    <div class="col-lg-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
-      <img style="height: 801px;" src="img/Products/DryHeater/dh_01.png" alt="">
+  <!-- Home  Ends-->
+
+
+  <section class="bg-chlo mt-5">
+    <div class="container wrapper">
+      <h1 class="text-chlo text-center bg-title "> PRODUCT </h1>
+      <h1 class="text-chlo text-center title  "> Models </h1>
     </div>
-    <div class="col-lg-6 bg-chlo1  d-block d-sm-block d-md-none d-lg-none d-xl-none">
-      <img style="height: 401px; width: 250px;" src="img/Products/DryHeater/dh_1.png" alt="">
-    </div>
-    <div class="col-lg-6 mt-5">
-      <p> The DRY HEATER® uses electric heating to heat or vaporize
-        the fluids
-        through an isolated flow-path. In this design the
-        fluid never contacts
-        the electrical heating element which
-        brings three key benefits to
-        your application.</p>
-
-      <h1>High purity</h1>
-      <p> Electrical heating elements are notorious for
-        leaching chemicals into
-        the process which
-        contaminates the process fluid rendering it
-        useless.
-        In the DRYHEATER® the process fluid is isolated in
-        a
-        separate tube away from the heating elements
-        making contamination
-        impossible. Therefore the
-        DRYHEATER® is the chosen heater for food
-        and
-        pharma applications.</p>
+  </section>
 
 
-      <h1>High Pressure</h1>
-      <p> The isolated flow channels for the process fluids
-        are rated for 150
-        Bar pressure which makes the
-        DRYHEATER® the preferred choice for
-        heating
-        cryogenics and high pressure gases.</p>
-    </div>
-  </div>
-</div>
 
+  <!-- Carousel  -->
+  <section class=" bg-dh p-3">
 
-<div class="dryHeater01 bg-chlo">
-  <div class="row">
-    <div class=" col-lg-1 clearfix">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item row active">
+          <img class="text-center" src="img/Products/DryHeater/dh_06.png" alt="First slide">
+          <h3 class="fw-bolder text-chlo1 text-center w-100">DH - 1.5</h3>
+        </div>
+        <div class="carousel-item row">
+          <img class="text-center " src="img/Products/DryHeater/dh_07.png" alt="Second slide">
+          <h3 class="fw-bolder text-chlo1 text-center w-100">DH - 3</h3>
+        </div>
 
-    </div>
-    <div class="col-lg-7 mt-5">
-      <h1>Intrinsically explosion & fire proof</h1>
-      <p> As the process fluid never touches the electrical
-        heating elements,
-        the risk of flame or explosion
-        is radically minimized. DRYHEATER® is
-
-        therefore the preferred choice for heating
-        Petroleum products and
-        gases.</p>
-
-      <h1>Conventional Heaters Vs Dryheaters</h1>
-      <p> IEC'S Dry Heaters differs from conventional heaters in a few ways
-        which prove to be highly
-        advantageous.</p>
-
-
-      <h1>No direct contact</h1>
-      <p> The heating element does not come into direct contact with the
-        process fluid. This feature
-        eliminates the risk of contamination of the
-        process fluid with compounds from the heating
-        element.</p>
-
-      <h1>Solid state heat transfer medium</h1>
-      <p> There is no liquid-based heat transfer medium such as a
-        water bath
-        or thermic oil baths. The heat transfer medium is
-        solid aluminium or
-        bronze.</p>
-    </div>
-
-    <div class="col-lg-4 d-none d-sm-none d-md-block d-lg-block d-xl-block">
-      <img style="height: 801px;" src="img/Products/DryHeater/dh_02.png" alt="">
-    </div>
-    <div class="col-lg-6 bg-chlo1  d-block d-sm-block d-md-none d-lg-none d-xl-none">
-      <img style="height: 401px; width: 250px;" src="img/Products/DryHeater/dh_2.png" alt="">
-    </div>
-  </div>
-</div>
-
-
-<div class="dryHeater03 bg-chlo1">
-  <div class="row">
-    <div class=" col-lg-1 clearfix">
-
-    </div>
-    <div class="col-lg-6 pt-5">
-      <div id="with-border-box">
-        <h1>High velocity</h1>
-        <p>Unlike normal process heaters the fluid medium can
-
-          travel
-          at a high velocity inside the heater which
-          increases the heat
-          transfer rate</p>
-
-        <h1>Benefits & Advantages</h1>
-        <p> High heat transfer area. <br>
-
-          Excellent heat transfer capabilities.<br>
-
-          Reliable design Operational safety.<br>
-
-          Less susceptible to freeze-up and liquid entrainment.<br>
-
-          Lower footprint.<br>
-
-          Robust construction</p>
-
-
-        <h1>Safety Features</h1>
-        <p>Integrated temperature control system.<br>
-
-          Integrated pressure and flow control system.<br>
-
-          Fire proof system</p>
-      </div>
-
-    </div>
-
-    <div class="col-lg-4 d-none d-sm-none d-md-block d-lg-block d-xl-block">
-      <img style="height: 801px;" src="img/Products/DryHeater/dh_03.png" alt="">
-    </div>
-    <div class="col-lg-6 bg-chlo   d-block d-sm-block d-md-none d-lg-none d-xl-none">
-      <img style="height: 401px; width: 250px;" src="img/Products/DryHeater/dh_3.png" alt="">
-    </div>
-  </div>
-</div>
-
-<!-- Design & Features -->
-<section class="bg-chlo1 mt-5">
-  <div class="container wrapper">
-    <h1 class="text-light text-center bg-title "> DEGISN </h1>
-    <h1 class="text-chlo1 text-center title1  "> Features </h1>
-  </div>
-</section>
-
-<div class="dryHeater03">
-  <div class="row">
-    <div class="col-lg-6 ">
-      <ul>
-        <li>
-          <p>
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;<p>Stainless Steel
-            and various MOC flow path
-            tubes
-            according to the specific process
-            application.</p>
-        </li>
-        </p>
-        </li>
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
-          <p>Electric heaters can be replaced instantly.</p>
-        </li>
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
-          <p>Ability to heat liquids and gases as well.</p>
-        </li>
-
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
-          <p>Ability to safely heat flammable media.</p>
-        </li>
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
-          <p>Isolated in flow path tube that never
-            contacts the
-            heating elements.</p>
-        </li>
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
-          <p>Suitable for high pressure applications.</p>
-        </li>
-        <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
-          <p>High heat transfer rates.</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col-lg-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
-      <img src="img/Products/DryHeater/dh_04.png" alt="">
-    </div>
-    <div class="col-lg-6 text-center d-block d-sm-block d-md-none d-lg-none d-xl-none">
-      <img style=" width: 330px;" src="img/Products/DryHeater/dh_04.png" alt="">
-    </div>
-  </div>
-</div>
-
-<!-- Industrial & Applications -->
-
-<section class="bg-chlo mt-5">
-  <div class="container wrapper">
-    <h1 class="text-chlo text-center bg-title "> INDUSTRIAL </h1>
-    <h1 class="text-chlo text-center title  "> Applications </h1>
-  </div>
-</section>
-
-
-<div class="industrialApps bg-chlo py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="mb-2 bg-chlo1">
-          <div class="row p-2">
-            <div class="col-lg-6 text-center d-none d-sm-none  d-md-none d-lg-block d-xl-block">
-              <img style="height: 450px; width: 270px;" src="img/Products/DryHeater/dh_05.png" alt="">
-            </div>
-            <div class="col-lg-6 col-sm-6 col-6 d-block d-sm-block   d-md-block d-lg-none d-xl-none">
-              <img style="height: 250px; width: 150px;" src="img/Products/DryHeater/dh_05.png" alt="">
-            </div>
-            <div class="col-lg-6 col-sm-6 col-6 d-none d-sm-none  d-md-none d-lg-block d-xl-block">
-              <h1 class="pt-2">FIRE PROOF EB</h1>
-              <h1 style="padding-top: 4rem">QUICK FIT
-                ATTACHMENTS</h1>
-              <h1 style="padding-top: 6rem">CORROSION PROOF</h1>
-              <h1 style="padding-top: 6rem">COMPACT SIZE</h1>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-6  d-block d-sm-block   d-md-block d-lg-none d-xl-none">
-              <p class="pt-2">FIRE PROOF EB</p>
-              <p style="padding-top: 1rem">QUICK FIT
-                ATTACHMENTS</p>
-              <p style="padding-top: 1rem">CORROSION PROOF</p>
-              <p style="padding-top: 2rem">COMPACT SIZE</p>
-            </div>
-          </div>
+        <div class="carousel-item row">
+          <img class="text-center" src="img/Products/DryHeater/dh_08.png" alt="Second slide">
+          <h3 class="fw-bolder text-chlo1 text-center w-100">DH - 10.5</h3>
         </div>
       </div>
-      <div class="col-lg-6">
-        <ul style="    list-style: none;">
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <div class="next-btn">
+          <img src="img/Products/DryHeater/previous.png" alt="">
+        </div>
+
+
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+
+
+        <div class="prev-btn">
+          <img src="img/Products/DryHeater/next.png" alt="">
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- Carousel Ends -->
+
+  <div class="dryHeater01 bg-chlo  pt-5">
+    <div class="row">
+      <div class="col-lg-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <img style="height: 801px;" src="img/Products/DryHeater/dh_01.png" alt="">
+      </div>
+      <div class="col-lg-6 bg-chlo1  d-block d-sm-block d-md-none d-lg-none d-xl-none">
+        <img style="height: 401px; width: 250px;" src="img/Products/DryHeater/dh_1.png" alt="">
+      </div>
+      <div class="col-lg-6 mt-5">
+        <p> The DRY HEATER® uses electric heating to heat or vaporize
+          the fluids
+          through an isolated flow-path. In this design the
+          fluid never contacts
+          the electrical heating element which
+          brings three key benefits to
+          your application.</p>
+
+        <h1>High purity</h1>
+        <p> Electrical heating elements are notorious for
+          leaching chemicals into
+          the process which
+          contaminates the process fluid rendering it
+          useless.
+          In the DRYHEATER® the process fluid is isolated in
+          a
+          separate tube away from the heating elements
+          making contamination
+          impossible. Therefore the
+          DRYHEATER® is the chosen heater for food
+          and
+          pharma applications.</p>
+
+
+        <h1>High Pressure</h1>
+        <p> The isolated flow channels for the process fluids
+          are rated for 150
+          Bar pressure which makes the
+          DRYHEATER® the preferred choice for
+          heating
+          cryogenics and high pressure gases.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dryHeater01 bg-chlo">
+    <div class="row">
+      <div class=" col-lg-1 clearfix">
+
+      </div>
+      <div class="col-lg-7 mt-5">
+        <h1>Intrinsically explosion & fire proof</h1>
+        <p> As the process fluid never touches the electrical
+          heating elements,
+          the risk of flame or explosion
+          is radically minimized. DRYHEATER® is
+
+          therefore the preferred choice for heating
+          Petroleum products and
+          gases.</p>
+
+        <h1>Conventional Heaters Vs Dryheaters</h1>
+        <p> IEC'S Dry Heaters differs from conventional heaters in a few ways
+          which prove to be highly
+          advantageous.</p>
+
+
+        <h1>No direct contact</h1>
+        <p> The heating element does not come into direct contact with the
+          process fluid. This feature
+          eliminates the risk of contamination of the
+          process fluid with compounds from the heating
+          element.</p>
+
+        <h1>Solid state heat transfer medium</h1>
+        <p> There is no liquid-based heat transfer medium such as a
+          water bath
+          or thermic oil baths. The heat transfer medium is
+          solid aluminium or
+          bronze.</p>
+      </div>
+
+      <div class="col-lg-4 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <img style="height: 801px;" src="img/Products/DryHeater/dh_02.png" alt="">
+      </div>
+      <div class="col-lg-6 bg-chlo1  d-block d-sm-block d-md-none d-lg-none d-xl-none">
+        <img style="height: 401px; width: 250px;" src="img/Products/DryHeater/dh_2.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dryHeater03 bg-chlo1">
+    <div class="row">
+      <div class=" col-lg-1 clearfix">
+
+      </div>
+      <div class="col-lg-6 pt-5">
+        <div id="with-border-box">
+          <h1>High velocity</h1>
+          <p>Unlike normal process heaters the fluid medium can
+
+            travel
+            at a high velocity inside the heater which
+            increases the heat
+            transfer rate</p>
+
+          <h1>Benefits & Advantages</h1>
+          <p> High heat transfer area. <br>
+
+            Excellent heat transfer capabilities.<br>
+
+            Reliable design Operational safety.<br>
+
+            Less susceptible to freeze-up and liquid entrainment.<br>
+
+            Lower footprint.<br>
+
+            Robust construction</p>
+
+
+          <h1>Safety Features</h1>
+          <p>Integrated temperature control system.<br>
+
+            Integrated pressure and flow control system.<br>
+
+            Fire proof system</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <img style="height: 801px;" src="img/Products/DryHeater/dh_03.png" alt="">
+      </div>
+      <div class="col-lg-6 bg-chlo   d-block d-sm-block d-md-none d-lg-none d-xl-none">
+        <img style="height: 401px; width: 250px;" src="img/Products/DryHeater/dh_3.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Design & Features -->
+  <section class="bg-chlo1 mt-5">
+    <div class="container wrapper">
+      <h1 class="text-light text-center bg-title "> DEGISN </h1>
+      <h1 class="text-chlo1 text-center title1  "> Features </h1>
+    </div>
+  </section>
+
+  <div class="dryHeater03">
+    <div class="row">
+      <div class="col-lg-6 ">
+        <ul>
           <li>
-            <h2>Oil & Gas</h2>
+            <p>
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;<p>Stainless Steel
+              and various MOC flow path
+              tubes
+              according to the specific process
+              application.</p>
           </li>
-          <li>
-            <h2>Vaporizer</h2>
+          </p>
           </li>
-          <li>
-            <h2>Air Heaters</h2>
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
+            <p>Electric heaters can be replaced instantly.</p>
           </li>
-          <li>
-            <h2>Steam Boiler</h2>
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
+            <p>Ability to heat liquids and gases as well.</p>
           </li>
-          <li>
-            <h2>Steam Boiler</h2>
+
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
+            <p>Ability to safely heat flammable media.</p>
           </li>
-          <li>
-            <h2>LPG Vaporizer</h2>
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
+            <p>Isolated in flow path tube that never
+              contacts the
+              heating elements.</p>
           </li>
-          <li>
-            <h2>Cryogenic Gas Heaters</h2>
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
+            <p>Suitable for high pressure applications.</p>
           </li>
-          <li>
-            <h2>High Purity Gas Heaters</h2>
-          </li>
-          <li>
-            <h2>Mobile Gas Heating Units</h2>
-          </li>
-          <li>
-            <h2>Preheating Of Natural Gas</h2>
-          </li>
-          <li>
-            <h2>Preheating Of Natural Gas</h2>
-          </li>
-          <li>
-            <h2>Bio-pharmaceutical Processing
-              &
-              Manufacturing Heaters</h2>
+          <li class="d-flex"> <img class="li" src="img/Products/DryHeater/li.png" alt=""> &nbsp;&nbsp;
+            <p>High heat transfer rates.</p>
           </li>
         </ul>
       </div>
+
+      <div class="col-lg-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <img src="img/Products/DryHeater/dh_04.png" alt="">
+      </div>
+      <div class="col-lg-6 text-center d-block d-sm-block d-md-none d-lg-none d-xl-none">
+        <img style=" width: 330px;" src="img/Products/DryHeater/dh_04.png" alt="">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="dryHeater1_5 bg-chlo">
-  <div class="row text-center">
-    <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
-      <div class="d-flex justify-content-center midd">
-        <h1 class="bh">DRY HEA</h1>
-        <h1 class="bg">TER 1.5</h1>
-      </div>
-    </div>
-    <div class="col-lg-6 dh_l bg-chlo mt-5">
-      <h1>FLOW PATH : SINGLE STRAT</h1>
-      <h1>MAX PRESSURE
-        : 270 BAR (G)</h1>
-      <h1>DIMENSION (D x H)
-        : 100 X 310 mm
-      </h1>
-      <h1>END CONNECTION
-        : ½” NPT (M)</h1>
-      <h1>ENCLOSURE
-        : FIRE PROOF</h1>
-      <h1>POWER
-        : 0.5 - 1.5 kW</h1>
+  <!-- Industrial & Applications -->
 
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-lg-6 bg-chlo1 p-2 mt-4">
-          <h2 class="text-chlo1">DRY HEATERS<sup>®</sup></h2>
-        </div>
-      </div>
+  <section class="bg-chlo mt-5">
+    <div class="container wrapper">
+      <h1 class="text-chlo text-center bg-title "> INDUSTRIAL </h1>
+      <h1 class="text-chlo text-center title  "> Applications </h1>
     </div>
-    <div class="col-lg-6 bg-chlo1 dh_r">
-      <img style="height: 450px;" src="img/Products/DryHeater/dh_06.png" alt="">
-    </div>
-  </div>
-</div>
-
-<div class="dryHeater3 bg-chlo">
-  <div class="row text-center">
-    <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
-      <div class="d-flex justify-content-center midd-dh3">
-        <h1 class="bg">DRY HEA</h1>
-        <h1 class="bh">TER 3</h1>
-      </div>
-    </div>
-    <div class="col-lg-6 dh_l3 bg-chlo1 ">
-      <h1>FLOW PATH : SINGLE STRAT</h1>
-      <h1>MAX PRESSURE: 250 BAR (G)
-      </h1>
-      <h1>DIMENSION (D x H)
-        : 140 X 450 mm
-      </h1>
-      <h1>END CONNECTION
-        : ½” NPT (M)</h1>
-      <h1>ENCLOSURE
-        : FIRE PROOF</h1>
-      <h1>POWER
-        : 2.5 - 3.5 kW</h1>
-
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-lg-6 bg-chlo p-2 mt-4">
-          <h2 class="text-chlo">DRY HEATERS<sup>®</sup></h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 bg-chlo dh_r">
-      <img style="height: 450px;" src="img/Products/DryHeater/dh_07.png" alt="">
-    </div>
-  </div>
-</div>
+  </section>
 
 
-<div class="dryHeater10_5 bg-chlo">
-  <div class="row text-center">
-    <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
-      <div class="d-flex justify-content-center midd">
-        <h1 class="bh">DRY HEA</h1>
-        <h1 class="bg">TER 10.5</h1>
-      </div>
-      <div class="img midd">
-        <img src="img/Products/DryHeater/dh_08.png" alt="">
-      </div>
-    </div>
-    <div class="col-lg-6 dh_l bg-chlo mt-5">
-      <h1>FLOW PATH : SINGLE STRAT</h1>
-      <h1>MAX PRESSURE
-        : 250 BAR (G)</h1>
-      <h1>DIMENSION (D x H)
-        : 175 X 630 mm
-      </h1>
-      <h1>END CONNECTION
-        : 1” NPT (M)</h1>
-      <h1>ENCLOSURE
-        : FIRE PROOF</h1>
-      <h1>POWER
-        : 9 - 11 kW</h1>
-
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-lg-6 bg-chlo1 p-2 mt-4">
-          <h2 class="text-chlo1">DRY HEATERS<sup>®</sup></h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 bg-chlo1 dh_r10_5">
+  <div class="industrialApps bg-chlo py-5">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-3 clearfix"></div>
         <div class="col-lg-6">
-          <h2>The Dryheater comes
-            with an integrated
-            thermocouple as a
-            standard which
-            regulates the
-            temperature of the
-            heat transfer
-            medium
-            of aluminium/bronze.
-          </h2>
+          <div class="mb-2 bg-chlo1">
+            <div class="row p-2">
+              <div class="col-lg-6 text-center d-none d-sm-none  d-md-none d-lg-block d-xl-block">
+                <img style="height: 450px; width: 270px;" src="img/Products/DryHeater/dh_05.png" alt="">
+              </div>
+              <div class="col-lg-6 col-sm-6 col-6 d-block d-sm-block   d-md-block d-lg-none d-xl-none">
+                <img style="height: 250px; width: 150px;" src="img/Products/DryHeater/dh_05.png" alt="">
+              </div>
+              <div class="col-lg-6 col-sm-6 col-6 d-none d-sm-none  d-md-none d-lg-block d-xl-block">
+                <h1 class="pt-2">FIRE PROOF EB</h1>
+                <h1 style="padding-top: 4rem">QUICK FIT
+                  ATTACHMENTS</h1>
+                <h1 style="padding-top: 6rem">CORROSION PROOF</h1>
+                <h1 style="padding-top: 6rem">COMPACT SIZE</h1>
+              </div>
+              <div class="col-lg-6 col-sm-6 col-6  d-block d-sm-block   d-md-block d-lg-none d-xl-none">
+                <p class="pt-2">FIRE PROOF EB</p>
+                <p style="padding-top: 1rem">QUICK FIT
+                  ATTACHMENTS</p>
+                <p style="padding-top: 1rem">CORROSION PROOF</p>
+                <p style="padding-top: 2rem">COMPACT SIZE</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 clearfix"></div>
+        <div class="col-lg-6">
+          <ul style="    list-style: none;">
+            <li>
+              <h2>Oil & Gas</h2>
+            </li>
+            <li>
+              <h2>Vaporizer</h2>
+            </li>
+            <li>
+              <h2>Air Heaters</h2>
+            </li>
+            <li>
+              <h2>Steam Boiler</h2>
+            </li>
+            <li>
+              <h2>Steam Boiler</h2>
+            </li>
+            <li>
+              <h2>LPG Vaporizer</h2>
+            </li>
+            <li>
+              <h2>Cryogenic Gas Heaters</h2>
+            </li>
+            <li>
+              <h2>High Purity Gas Heaters</h2>
+            </li>
+            <li>
+              <h2>Mobile Gas Heating Units</h2>
+            </li>
+            <li>
+              <h2>Preheating Of Natural Gas</h2>
+            </li>
+            <li>
+              <h2>Preheating Of Natural Gas</h2>
+            </li>
+            <li>
+              <h2>Bio-pharmaceutical Processing
+                &
+                Manufacturing Heaters</h2>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
-<div class="dryHeater20 bg-chlo">
-  <div class="row text-center">
-    <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
-      <div class="d-flex justify-content-center midd-dh20">
-        <h1 class="bg">DRY HEA</h1>
-        <h1 class="bh">TER 20</h1>
+  <div class="dryHeater1_5 bg-chlo">
+    <div class="row text-center">
+      <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
+        <div class="d-flex justify-content-center midd">
+          <h1 class="bh">DRY HEA</h1>
+          <h1 class="bg">TER 1.5</h1>
+        </div>
       </div>
-      <div class="img midd">
-        <img src="img/Products/DryHeater/dh_09.png" alt="">
+      <div class="col-lg-6 dh_l bg-chlo mt-5">
+        <h1>FLOW PATH : SINGLE STRAT</h1>
+        <h1>MAX PRESSURE
+          : 270 BAR (G)</h1>
+        <h1>DIMENSION (D x H)
+          : 100 X 310 mm
+        </h1>
+        <h1>END CONNECTION
+          : ½” NPT (M)</h1>
+        <h1>ENCLOSURE
+          : FIRE PROOF</h1>
+        <h1>POWER
+          : 0.5 - 1.5 kW</h1>
+
+        <div class="row d-flex justify-content-center mt-5">
+          <div class="col-lg-6 bg-chlo1 p-2 mt-4">
+            <h2 class="text-chlo1">DRY HEATERS<sup>®</sup></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 bg-chlo1 dh_r">
+        <img style="height: 450px;" src="img/Products/DryHeater/dh_06.png" alt="">
       </div>
     </div>
-    <div class="col-lg-6 dh_l bg-chlo1 ">
-      <h1>FLOW PATH : DOUBLE STRAT</h1>
-      <h1>MAX PRESSURE
-        : 250 BAR (G)</h1>
-      <h1>DIMENSION (D x H)
-        : 255 X 950 mm
-      </h1>
-      <h1>END CONNECTION
-        : 1” NPT (M)</h1>
-      <h1>ENCLOSURE
-        : FIRE PROOF</h1>
-      <h1>POWER
-        : 20 - 23 kW</h1>
+  </div>
+
+  <div class="dryHeater3 bg-chlo">
+    <div class="row text-center">
+      <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
+        <div class="d-flex justify-content-center midd-dh3">
+          <h1 class="bg">DRY HEA</h1>
+          <h1 class="bh">TER 3</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 dh_l3 bg-chlo1 ">
+        <h1>FLOW PATH : SINGLE STRAT</h1>
+        <h1>MAX PRESSURE: 250 BAR (G)
+        </h1>
+        <h1>DIMENSION (D x H)
+          : 140 X 450 mm
+        </h1>
+        <h1>END CONNECTION
+          : ½” NPT (M)</h1>
+        <h1>ENCLOSURE
+          : FIRE PROOF</h1>
+        <h1>POWER
+          : 2.5 - 3.5 kW</h1>
+
+        <div class="row d-flex justify-content-center mt-5">
+          <div class="col-lg-6 bg-chlo p-2 mt-4">
+            <h2 class="text-chlo">DRY HEATERS<sup>®</sup></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 bg-chlo dh_r">
+        <img style="height: 450px;" src="img/Products/DryHeater/dh_07.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dryHeater10_5 bg-chlo">
+    <div class="row text-center">
+      <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
+        <div class="d-flex justify-content-center midd">
+          <h1 class="bh">DRY HEA</h1>
+          <h1 class="bg">TER 10.5</h1>
+        </div>
+        <div class="img midd">
+          <img src="img/Products/DryHeater/dh_08.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 dh_l bg-chlo mt-5">
+        <h1>FLOW PATH : SINGLE STRAT</h1>
+        <h1>MAX PRESSURE
+          : 250 BAR (G)</h1>
+        <h1>DIMENSION (D x H)
+          : 175 X 630 mm
+        </h1>
+        <h1>END CONNECTION
+          : 1” NPT (M)</h1>
+        <h1>ENCLOSURE
+          : FIRE PROOF</h1>
+        <h1>POWER
+          : 9 - 11 kW</h1>
+
+        <div class="row d-flex justify-content-center mt-5">
+          <div class="col-lg-6 bg-chlo1 p-2 mt-4">
+            <h2 class="text-chlo1">DRY HEATERS<sup>®</sup></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 bg-chlo1 dh_r10_5">
+        <div class="row">
+          <div class="col-lg-3 clearfix"></div>
+          <div class="col-lg-6">
+            <h2>The Dryheater comes
+              with an integrated
+              thermocouple as a
+              standard which
+              regulates the
+              temperature of the
+              heat transfer
+              medium
+              of aluminium/bronze.
+            </h2>
+          </div>
+          <div class="col-lg-3 clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dryHeater20 bg-chlo">
+    <div class="row text-center">
+      <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
+        <div class="d-flex justify-content-center midd-dh20">
+          <h1 class="bg">DRY HEA</h1>
+          <h1 class="bh">TER 20</h1>
+        </div>
+        <div class="img midd">
+          <img src="img/Products/DryHeater/dh_09.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 dh_l bg-chlo1 ">
+        <h1>FLOW PATH : DOUBLE STRAT</h1>
+        <h1>MAX PRESSURE
+          : 250 BAR (G)</h1>
+        <h1>DIMENSION (D x H)
+          : 255 X 950 mm
+        </h1>
+        <h1>END CONNECTION
+          : 1” NPT (M)</h1>
+        <h1>ENCLOSURE
+          : FIRE PROOF</h1>
+        <h1>POWER
+          : 20 - 23 kW</h1>
 
         <div class="row d-flex justify-content-center mt-5">
           <div class="col-lg-6 bg-chlo p-2 mt-4">
@@ -600,184 +613,185 @@
           </div>
         </div>
 
-   
-    </div>
-    <div class="col-lg-6 bg-chlo dh_r10_5">
-      <div class="row">
-        <div class="col-lg-3 clearfix"></div>
-        <div class="col-lg-6">
-          <h2>The Dryheater comes
-            with an integrated
-            thermocouple as a
-            standard which
-            regulates the
-            temperature of the
-            heat transfer
-            medium
-            of aluminium/bronze.
-          </h2>
-        </div>
-        <div class="col-lg-3 clearfix"></div>
+
       </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="dryHeater10_5 bg-chlo">
-  <div class="row text-center">
-    <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
-      <div class="d-flex justify-content-center midd">
-        <h1 class="bh">DRY HEA</h1>
-        <h1 class="bg">TER&nbsp; 45</h1>
-      </div>
-      <div class="img midd">
-        <img src="img/Products/DryHeater/dh_09.png" alt="">
-      </div>
-    </div>
-    <div class="col-lg-6 dh_l bg-chlo mt-5">
-      <h1>FLOW PATH : DOUBLE STRAT</h1>
-      <h1>MAX PRESSURE
-        : 180 BAR (G)</h1>
-      <h1>DIMENSION (D x H)
-        : 320 X 1100 mm
-
-      </h1>
-      <h1>END CONNECTION
-        : 1” NPT (M)</h1>
-      <h1>ENCLOSURE
-        : FIRE PROOF</h1>
-      <h1>POWER
-        : 42 - 46 kW</h1>
-
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-lg-6 bg-chlo1 p-2 mt-4">
-          <h2 class="text-chlo1">DRY HEATERS<sup>®</sup></h2>
+      <div class="col-lg-6 bg-chlo dh_r10_5">
+        <div class="row">
+          <div class="col-lg-3 clearfix"></div>
+          <div class="col-lg-6">
+            <h2>The Dryheater comes
+              with an integrated
+              thermocouple as a
+              standard which
+              regulates the
+              temperature of the
+              heat transfer
+              medium
+              of aluminium/bronze.
+            </h2>
+          </div>
+          <div class="col-lg-3 clearfix"></div>
         </div>
       </div>
     </div>
-    <div class="col-lg-6 bg-chlo1 dh_r10_5">
-      <div class="row">
-        <div class="col-lg-3 clearfix"></div>
-        <div class="col-lg-6">
-          <h2>The heating element
-            does not come into
-            direct contact with
-            the
-            process fluid. This
-            feature eliminates the
-            risk of contamination
-            of
-            the process fluid
-            with compounds from
-            the heating element
-          </h2>
+  </div>
+
+
+  <div class="dryHeater10_5 bg-chlo">
+    <div class="row text-center">
+      <div class="row d-none d-sm-none d-md-none  d-lg-block d-xl-block">
+        <div class="d-flex justify-content-center midd">
+          <h1 class="bh">DRY HEA</h1>
+          <h1 class="bg">TER&nbsp; 45</h1>
         </div>
-        <div class="col-lg-3 clearfix"></div>
+        <div class="img midd">
+          <img src="img/Products/DryHeater/dh_09.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 dh_l bg-chlo mt-5">
+        <h1>FLOW PATH : DOUBLE STRAT</h1>
+        <h1>MAX PRESSURE
+          : 180 BAR (G)</h1>
+        <h1>DIMENSION (D x H)
+          : 320 X 1100 mm
+
+        </h1>
+        <h1>END CONNECTION
+          : 1” NPT (M)</h1>
+        <h1>ENCLOSURE
+          : FIRE PROOF</h1>
+        <h1>POWER
+          : 42 - 46 kW</h1>
+
+        <div class="row d-flex justify-content-center mt-5">
+          <div class="col-lg-6 bg-chlo1 p-2 mt-4">
+            <h2 class="text-chlo1">DRY HEATERS<sup>®</sup></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 bg-chlo1 dh_r10_5">
+        <div class="row">
+          <div class="col-lg-3 clearfix"></div>
+          <div class="col-lg-6">
+            <h2>The heating element
+              does not come into
+              direct contact with
+              the
+              process fluid. This
+              feature eliminates the
+              risk of contamination
+              of
+              the process fluid
+              with compounds from
+              the heating element
+            </h2>
+          </div>
+          <div class="col-lg-3 clearfix"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<!-- Product & Brochure -->
-<section class="bg-chlo1 mt-5">
-  <div class="container wrapper">
-    <h1 class="text-light text-center bg-title "> PRODUCT </h1>
-    <h1 class="text-chlo1 text-center title1  "> BROCHURE </h1>
-  </div>
-</section>
-
-
+  <!-- Product & Brochure -->
+  <section class="bg-chlo1 mt-5">
+    <div class="container wrapper">
+      <h1 class="text-light text-center bg-title "> PRODUCT </h1>
+      <h1 class="text-chlo1 text-center title1  "> BROCHURE </h1>
+    </div>
+  </section>
 
 
 
-<!--Form-->
 
-<div class="form">
-  <div class="row">
-    <div class="card bg-chlo">
-      <div class="row py-4 mb-2">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4">
-          <form id="contact-form" method="post" class="contact-form">
 
-            <div class="form-group mt-3">
-              <label for="_name">Name <sup><i style="font-size: 15px;"
-                    class="fa-sharp fa-solid fa fa-star"></i></sup></label> <span class="text-light placeholder">
+  <!--Form-->
 
-              </span>
-              <input type="name" class="form-control " id="u_name">
-            </div>
+  <div class="form">
+    <div class="row">
+      <div class="card bg-chlo">
+        <div class="row py-4 mb-2">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <form id="contact-form" method="post" class="contact-form">
 
-            <div class="form-group mt-3">
-              <label for="exampleInputEmail1">Email <sup><i style="font-size: 15px;"
-                    class="fa-sharp fa-solid fa fa-star"></i></sup></label>
+              <div class="form-group mt-3">
+                <label for="_name">Name <sup><i style="font-size: 15px;"
+                      class="fa-sharp fa-solid fa fa-star"></i></sup></label> <span class="text-light placeholder">
 
-              <input type="email" class="form-control" id="u_email" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group mt-3">
-              <label for="c_name">Company Name<sup><i style="font-size: 15px;"
-                    class="fa-sharp fa-solid fa fa-star"></i></sup></label><br>
+                </span>
+                <input type="name" class="form-control " id="u_name">
+              </div>
 
-              <input type="text" class="form-control " id="c_Name">
-            </div>
+              <div class="form-group mt-3">
+                <label for="exampleInputEmail1">Email <sup><i style="font-size: 15px;"
+                      class="fa-sharp fa-solid fa fa-star"></i></sup></label>
 
-            <input type="hidden" name="pname" id="pname" value="DryHeater">
-            <div class="form-group mt-3">
- 
-              <button type="submit" id="my-button2" style=" border-radius:14px;height:75px"
-                class="form-control  fs-3 fw-bolder ">Download</button>
+                <input type="email" class="form-control" id="u_email" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group mt-3">
+                <label for="c_name">Company Name<sup><i style="font-size: 15px;"
+                      class="fa-sharp fa-solid fa fa-star"></i></sup></label><br>
+
+                <input type="text" class="form-control " id="c_Name">
+              </div>
+
+              <input type="hidden" name="pname" id="pname" value="DryHeater">
+              <div class="form-group mt-3">
+
+                <button type="submit" id="my-button2" style=" border-radius:14px;height:75px"
+                  class="form-control  fs-3 fw-bolder ">Download</button>
               </div>
               <div style="text-align: center;" id="response-message"></div>
 
 
-          </form>
-        </div>
+            </form>
+          </div>
 
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!--Form Ends-->
+  <!--Form Ends-->
 
 
-<!--Footer-->
-<div id="footer"></div>
-<script>
-  $(document).ready(function () {
-    // Contact Form Submission
-    $('#response-message').html('');
-    $('#contact-form').submit(function (event) {
-      event.preventDefault(); // Prevent default form submission
+  <!--Footer-->
+  <div id="footer"></div>
+  <script>
+    $(document).ready(function () {
+      // Contact Form Submission
+      $('#response-message').html('');
+      $('#contact-form').submit(function (event) {
+        event.preventDefault(); // Prevent default form submission
 
-      var form = $(this);
-      var formData = form.serialize();
+        var form = $(this);
+        var formData = form.serialize();
 
-      // Send AJAX request
-      $.ajax({
-        type: 'POST',
-        url: 'productcontact.php',
-        data: formData,
-        dataType: 'json',
-        success: function (response) {
-          if (response.success) {
-            $('#response-message').html('<p class="success-message">' + response.message + '</p>');
-            // Trigger file download
-            window.location.href = 'catalogue/DRY HEATER.pdf';
-            form.trigger('reset');
-          } else {
-            $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+        // Send AJAX request
+        $.ajax({
+          type: 'POST',
+          url: 'productcontact.php',
+          data: formData,
+          dataType: 'json',
+          success: function (response) {
+            if (response.success) {
+              $('#response-message').html('<p class="success-message">' + response.message + '</p>');
+              // Trigger file download
+              window.location.href = 'catalogue/DRY HEATER.pdf';
+              form.trigger('reset');
+            } else {
+              $('#response-message').html('<p class="error-message">' + response.message + '</p>');
+            }
+          },
+          error: function () {
+            $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
           }
-        },
-        error: function () {
-          $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
-        }
+        });
       });
     });
-  });
-</script>
+  </script>
 
-<!--Footer Ends-->
+  <!--Footer Ends-->
 </body>
+
 </html>
