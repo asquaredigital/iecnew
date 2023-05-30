@@ -75,7 +75,7 @@
     <title>SWEC</title>
 </head>
 
-
+<body>
 <section class="bg-chlo py-5">
     <div id="header">
 
@@ -351,7 +351,7 @@
             <div class="row py-4">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
-                    <form action="">
+                    <form id="contact-form" method="post" class="contact-form">
 
                         <div class="form-group mt-3">
                             <label for="_name" class=" fs-3 fw-bolder">Name <sup><i
@@ -370,10 +370,16 @@
                             <input type="text" class="form-control    " id="c_Name">
                         </div>
 
+                        <input type="hidden" name="pname" id="pname" value="LeakAbsorption">
                         <div class="form-group mt-3">
-                            <input type="button" style=" border-radius:  14px;height:75px"
-                                class="form-control  fs-3 fw-bolder " value="Download">
+          
+                          <button type="submit" id="my-button2" style=" border-radius:14px;height:75px"
+                            class="form-control  fs-3 fw-bolder ">Download</button>
+          
+          
                         </div>
+          
+                        <div style="text-align: center;" id="response-message"></div>
 
                     </form>
                 </div>
@@ -388,5 +394,5 @@
 <!--Footer-->
 <div id="footer"></div>
 <!--Footer Ends-->
-
+</body>
 </html>
