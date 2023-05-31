@@ -1,47 +1,38 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-   // Collect form data
-   $name = $_POST["u_name"];
-   $email = $_POST["u_email"];
-   $pname = $_POST["pname"];
-   $cname = $_POST["c_Name"];
 
-   // Set recipient email address
-   $recipient = 'alageswaranb2@gmail.com';
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    // Script accessed directly without form submission
+    $response = array('message' => 'Invalid request.');
+    echo json_encode($response);
+    exit;
+}
 
-   // Set subject
-   $subject = 'Brochure Download Nofitication';
+// Get form data
+$u_name = $_POST['u_name'];
+$u_email = $_POST['u_email'];
+$c_Name = $_POST['c_Name'];
+$pname = $_POST['pname'];
 
-   // Build the email content
-   $message = "Name: $name\n";
-   $message .= "Email: $email\n";
-   $message .= "Company Name: $cname\n";
-   $message .= "Downloaded Product: $pname\n";
+// Set up email headers
+// Set up email headers
+$headers = "From: iecfabchem.com" . "\r\n" .
+           "Reply-To: $u_email" . "\r\n" ;
 
-   // Set headers
-   $headers = "From: $name <$email>";
+// Set up email content
+$subject = 'Product Enquiry Form the Website';
+$message = "Name: $u_name\nEmail: $u_email\nEnquired Product: $pname\nCompany Name: $c_Name\n";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-   // Send the email
-   if (mail($recipient, $subject, $message, $headers)) {
-      // Email sent successfully
-      $response = array(
-         'success' => true,
-         'message' => 'Thank you for your submission!'
-      );
-   } else {
-      // Failed to send email
-      $response = array(
-         'success' => false,
-         'message' => 'Sorry, there was an error sending your message. Please try again later.'
-      );
-   }
-
-   // Return the JSON response
-   header('Content-type: application/json');
-   echo json_encode($response);
+if (mail('elavarasan5193@gmail.com', $subject, $message, $headers)) {
+    // Email sent successfully
+    $response = array('message' => 'Email sent successfully!');
+    echo json_encode($response);
 } else {
-   // If the request method is not POST, return an empty response
-   header('Content-type: application/json');
-   echo json_encode(array());
+    // Failed to send email
+    $response = array('message' => 'Failed to send email.');
+    echo json_encode($response);
+    echo "Error: " . error_get_last()['message'];
 }
 ?>
+

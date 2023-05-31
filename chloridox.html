@@ -63,15 +63,6 @@
         table{
             border-color: darkgoldenrod !important;
         }
-        button#my-button2 {
-    color: #f4bd01;
-    background-color: #000;
-}
-
-#response-message p{
-            margin-top: 5px;
-            color: #000;
-        }
 
     </style>
 
@@ -748,7 +739,7 @@ be applied.
              <label for="_name"   >Name <sup><i style="font-size: 15px;" class="fa-sharp fa-solid fa fa-star"></i></sup></label> <span class="text-light placeholder">
         
              </span>
-             <input type="name" class="form-control"  id="u_name">
+             <input type="text" class="form-control"  id="u_name">
            </div>
  
            <div class="form-group mt-3">
@@ -784,40 +775,49 @@ be applied.
            <!--Footer-->
           <div id="footer"></div>
             <!--Footer Ends-->
+<script>
+$(document).ready(function() {
+    $('#contact-form').submit(function(event) {
+        event.preventDefault(); // Prevent form submission
 
-            <script>
-                $(document).ready(function () {
-                  // Contact Form Submission
-                  $('#response-message').html('');
-                  $('#contact-form').submit(function (event) {
-                    event.preventDefault(); // Prevent default form submission
-            
-                    var form = $(this);
-                    var formData = form.serialize();
-            
-                    // Send AJAX request
-                    $.ajax({
-                      type: 'POST',
-                      url: 'productcontact.php',
-                      data: formData,
-                      dataType: 'json',
-                      success: function (response) {
-                        if (response.success) {
-                          $('#response-message').html('<p class="success-message">' + response.message + '</p>');
-                          // Trigger file download
-                          window.location.href = 'catalogue/CHLORIDIOX  ClO2.pdf';
-                          form.trigger('reset');
-                        } else {
-                          $('#response-message').html('<p class="error-message">' + response.message + '</p>');
-                        }
-                      },
-                      error: function () {
-                        $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
-                      }
-                    });
-                  });
-                });
-              </script>
+        // Get form data
+        var formData = {
+            u_name: $('#u_name').val(),
+            u_email: $('#u_email').val(),
+            c_Name: $('#c_Name').val(),
+            pname: $('#pname').val()
+        };
+
+        // Check if form is filled out
+        if (formData.u_name.trim() === '' || formData.u_email.trim() === '' || formData.c_Name.trim() === '') {
+            alert('Please fill out all required fields.');
+            return;
+        }
+
+        // Send AJAX request
+        $.ajax({
+            type: 'POST',
+            url: 'productcontact.php',
+            data: formData,
+            dataType: 'json',
+            encode: true
+        })
+        .done(function(response) {
+            // Display response message
+            $('#response-message').text(response.message);
+
+            // Download the PDF file
+            window.location.href = 'catalogue/CHLORIDIOX  ClO2.pdf';
+        })
+        .fail(function(response) {
+            // Display error message
+            $('#response-message').text('Error occurred while processing the request.');
+        });
+    });
+});
+</script>
+
+           
   
 </body>
 

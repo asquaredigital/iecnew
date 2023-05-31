@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Inter-VariableFont_slnt,wght.ttf">
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
@@ -154,7 +155,7 @@
                 <form id="contact-form" method="post" class="contact-form">
 
                     <div class="form-group ">
-                        <input type="name" class="form-control " placeholder="Name" id="u_name" name="u_name" required>
+                        <input type="text" class="form-control " placeholder="Name" id="u_name" name="u_name" required>
                     </div>
 
                     <div class="form-group mt-3">
@@ -165,13 +166,13 @@
 
                     <div class="form-group mt-3">
 
-                        <input type="number" class="form-control" placeholder="Phone Number" name="p_number"
+                        <input type="text" class="form-control" placeholder="Phone Number" name="p_number"
                             id="p_number" required>
                     </div>
 
 
                     <div class="form-group mt-3">
-                        <input type="number" class="form-control" placeholder="Company Name" name="c_name" id="c_name"
+                        <input type="text" class="form-control" placeholder="Company Name" name="c_name" id="c_name"
                             required>
                     </div>
 
@@ -200,35 +201,38 @@
     <!--Footer Ends-->
 
     <script>
-        $(document).ready(function () {
-            // Contact Form Submission
-            $('#response-message').html('');
-            $('#contact-form').submit(function (event) {
-                event.preventDefault(); // Prevent default form submission
+$(document).ready(function() {
+    $('#contact-form').submit(function(event) {
+        event.preventDefault(); // Prevent form submission
 
-                var form = $(this);
-                var formData = form.serialize();
+        // Get form data
+        var formData = {
+            u_name: $('#u_name').val(),
+            u_email: $('#u_email').val(),
+            p_number: $('#p_number').val(),
+            c_name: $('#c_name').val(),
+            msg: $('#msg').val()
+        };
 
-                // Send AJAX request
-                $.ajax({
-                    type: 'POST',
-                    url: 'contact2.php',
-                    data: formData,
-                    dataType: 'json',
-                    success: function (response) {
-                        if (response.success) {
-                            $('#response-message').html('<p class="success-message">' + response.message + '</p>');
-                            form.trigger('reset');
-                        } else {
-                            $('#response-message').html('<p class="error-message">' + response.message + '</p>');
-                        }
-                    },
-                    error: function () {
-                        $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
-                    }
-                });
-            });
+        // Send AJAX request
+        $.ajax({
+            type: 'POST',
+            url: 'contact2.php',
+            data: formData,
+            dataType: 'json',
+            encode: true
+        })
+        .done(function(response) {
+            // Display response message
+            $('#response-message').text(response.message);
+        })
+        .fail(function(response) {
+            // Display error message
+            $('#response-message').text('Error occurred while processing the request.');
         });
+    });
+});
+
     </script>
 </body>
 

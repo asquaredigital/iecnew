@@ -80,11 +80,6 @@
       color: #f1f1c8 !important;
     }
 
-    #response-message p{
-            margin-top: 5px;
-            color: #000;
-        }
-
     td {
       padding: 5px;
     }
@@ -446,37 +441,46 @@
 
   </div>
   <script>
-    $(document).ready(function () {
-      // Contact Form Submission
-      $('#response-message').html('');
-      $('#contact-form').submit(function (event) {
-        event.preventDefault(); // Prevent default form submission
+$(document).ready(function() {
+    $('#contact-form').submit(function(event) {
+        event.preventDefault(); // Prevent form submission
 
-        var form = $(this);
-        var formData = form.serialize();
+        // Get form data
+        var formData = {
+            u_name: $('#u_name').val(),
+            u_email: $('#u_email').val(),
+            c_Name: $('#c_Name').val(),
+            pname: $('#pname').val()
+        };
+
+        // Check if form is filled out
+        if (formData.u_name.trim() === '' || formData.u_email.trim() === '' || formData.c_Name.trim() === '') {
+            alert('Please fill out all required fields.');
+            return;
+        }
 
         // Send AJAX request
         $.ajax({
-          type: 'POST',
-          url: 'productcontact.php',
-          data: formData,
-          dataType: 'json',
-          success: function (response) {
-            if (response.success) {
-              $('#response-message').html('<p class="success-message">' + response.message + '</p>');
-              // Trigger file download
-              form.trigger('reset');
-            } else {
-              $('#response-message').html('<p class="error-message">' + response.message + '</p>');
-            }
-          },
-          error: function () {
-            $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
-          }
+            type: 'POST',
+            url: 'productcontact.php',
+            data: formData,
+            dataType: 'json',
+            encode: true
+        })
+        .done(function(response) {
+            // Display response message
+            $('#response-message').text(response.message);
+
+            // Download the PDF file
+        })
+        .fail(function(response) {
+            // Display error message
+            $('#response-message').text('Error occurred while processing the request.');
         });
-      });
     });
-  </script>
+});
+</script>
+
 </body>
 
 </html>
