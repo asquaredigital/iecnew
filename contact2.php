@@ -24,7 +24,7 @@ $message = "Name: $u_name\nEmail: $u_email\nPhone Number: $p_number\nCompany Nam
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-if (mail('alageswaranb2@gmail.com', $subject, $message, $headers)) {
+if (mail('iecfabchemwebsite@gmail.com', $subject, $message, $headers)) {
     // Email sent successfully
     $response = array('message' => 'Email sent successfully!');
     echo json_encode($response);
