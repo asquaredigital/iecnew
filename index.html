@@ -819,17 +819,66 @@
       </div>
       <div class="row py-5">
          <div class="col-lg-4">
-            <h1>60+</h1>
-            <p> Years Experience</p>
+            <h1><span id="countdown">0</span>+</h1>
+            <p> Years Experience</p>   
+            
+            <script>
+               var count = 0;
+               var countdownElement = document.getElementById("countdown");
+       
+               function startCountdown() {
+                   countdownElement.textContent = count;
+                   count++;
+       
+                   if (count <= 60) {
+                       setTimeout(startCountdown, 180); // Change the delay here if needed (in milliseconds)
+                   }
+               }
+       
+               startCountdown();
+           </script>
+
          </div>
          <div class="col-lg-4">
-            <h1>2,257+ </h1>
+            <h1><span id="countdown1">0</span>+</h1>
             <p> Projects Completed
             </p>
+
+            <script>
+               var count1 = 0;
+               var countdownElement1 = document.getElementById("countdown1");
+       
+               function startCountdown1() {
+                   countdownElement1.textContent = count1;
+                   count1++;
+       
+                   if (count1 <= 2257) {
+                       setTimeout(startCountdown1, 2); // Change the delay here if needed (in milliseconds)
+                   }
+               }
+       
+               startCountdown1();
+           </script>
          </div>
          <div class="col-lg-4">
-            <h1>2,196+ </h1>
+            <h1><span id="countdown2">0</span>+</h1>
             <p> Satisfied Customers</p>
+
+            <script>
+               var count2 = 0;
+               var countdownElement2 = document.getElementById("countdown2");
+       
+               function startCountdown2() {
+                   countdownElement2.textContent = count2;
+                   count2++;
+       
+                   if (count2 <= 2196) {
+                       setTimeout(startCountdown2, 2); // Change the delay here if needed (in milliseconds)
+                   }
+               }
+       
+               startCountdown2();
+           </script>
          </div>
       </div>
    </div>
