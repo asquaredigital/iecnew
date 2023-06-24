@@ -97,6 +97,16 @@ body{
   a.navbar-brand {
     margin-left: 6rem;
   }
+  @media  only screen and (min-width: 400px){
+    
+    .navbar-nav .nav-item {
+      margin-right: 40px; /* Adjust the value to increase or decrease the space */
+    }
+  
+    a.navbar-brand {
+      margin-left: 0;
+  }
+  }
   
   @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
@@ -248,7 +258,7 @@ body{
   
   .carousel-item img{
         width: 600px!important;
-        height:600px !important;
+        height:410px !important;
   }
 
 

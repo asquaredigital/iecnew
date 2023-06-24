@@ -88,8 +88,10 @@ body{
   }
 
   a.navbar-brand {
-    margin-left: 6rem;
+    margin-left: 0;
   }
+
+  
   
   @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
@@ -253,15 +255,15 @@ body{
     }
 
   .carousel-item img{
-        width: 550px!important;
-        height:600px !important;
+    width: 757px!important;
+    height: 492px !important;
   }
 
 
   @media only screen and (max-width: 745px) {
     .carousel-item img{
         width: 350px!important;
-        height:400px !important;
+        height:330px !important;
   }
 
   }
@@ -315,7 +317,7 @@ body{
   }
 
   .construction img{
-    height: 550px;
+    height: 610px;
   }
 
 

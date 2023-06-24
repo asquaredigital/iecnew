@@ -39,7 +39,7 @@
     
 }
 .navbar-nav .nav-item {
-  margin-right: 40px; /* Adjust the value to increase or decrease the space */
+  margin-right: 0px; /* Adjust the value to increase or decrease the space */
 }
 
 .navbar-nav .nav-item:last-child {
@@ -58,6 +58,21 @@
   
   }
 
+  a.navbar-brand {
+    margin-left: 0;
+  }
+
+  @media  only screen and (min-width: 400px){
+    
+    .navbar-nav .nav-item {
+      margin-right: 40px; /* Adjust the value to increase or decrease the space */
+    }
+
+    a.navbar-brand {
+      margin-left: 6rem;
+  }
+  
+  }
   .navbar-nav .dropdown-menu {
     position: absolute !important;
     float: none;

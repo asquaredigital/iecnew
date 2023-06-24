@@ -1,4 +1,12 @@
 
+
+.navbar-brand img {
+  height: 110px;
+  width: 110px;
+  
+  background-color: #fff;
+  border-radius: 7px;
+}
   /* Carousel */
 
   .prev-btn img{
@@ -34,3 +42,7 @@ height: 50px;
       font-weight: 600;
       margin-top: 0.5rem ;
   }
+
+  td {
+    vertical-align: middle !important;
+}
