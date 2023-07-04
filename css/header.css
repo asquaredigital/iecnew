@@ -11,6 +11,7 @@
   .navbar-brand img {
     height: 110px;
     width: 110px;
+    border-radius: 0 !important;
   }
   .navbar-nav {
     display: flex;
