@@ -1421,3 +1421,11 @@ color: #fff;
 }
 
 }
+
+
+
+@media (min-width:1650px) {
+  .headerdesign {
+    height: 754px;
+}
+}
