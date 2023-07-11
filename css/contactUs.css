@@ -187,14 +187,14 @@ a.navbar-brand {
 /* Home */
 
 .home img {
-  height: 650px;
+  height: 725px;
   width: 100%;
   filter: brightness(50%);
 }
 
 .home h1 {
   position: absolute;
-  left: 10%;
+  left: 12%;
   padding-top: 10%;
   font-size: 220px;
   font-weight: 700;
@@ -205,7 +205,7 @@ a.navbar-brand {
 @media only screen and (max-width: 1200px) {
   .home h1 {
     position: absolute;
-    left: 10%;
+    left: 18%;
     padding-top: 10%;
     font-size: 135px;
     font-weight: 700;
@@ -219,7 +219,7 @@ a.navbar-brand {
 @media only screen and (max-width: 800px) {
   .home h1 {
     position: absolute;
-    left: 10%;
+    left: 12%;
     padding-top: 10%;
     font-size: 80px;
     font-weight: 700;
@@ -227,7 +227,8 @@ a.navbar-brand {
     z-index: 1;
   }
   .home img {
-    height: 300px;
+    height: 550px;
+    width: 800px;
   }
 }
 
@@ -243,6 +244,7 @@ a.navbar-brand {
   }
   .home img {
     height: 200px;
+    width: 650px;
   }
 }
 
@@ -372,4 +374,81 @@ input:-moz-placeholder {
   width: fit-content;
   border-bottom-width: thick;
   border-color: #fff !important;
+}
+
+
+
+@media (max-width: 500px) {
+ 
+  .py-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .pt-5{
+    padding-top: 0.5rem !important;
+  }
+  
+  .px-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem!important;
+  }
+  .fw-bolder{
+    font-weight: 500 !important;
+  }
+
+  .m-5 {
+    margin: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 0.5rem!important;
+}
+.mt-5{
+  margin-top: 0.5rem !important;
+}
+
+.corporate  h1{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.corporate  p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.p-5 {
+  padding: 0.5rem!important;
+}
+.py-3 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.pt-3 {
+  padding-top: 0!important;
+}
+.px-4 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.px-2 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.icon {
+  height: 100px;
+  width: 100px;
+}
+.forms img {
+  height: 500px;
+}
+
+form {
+  padding-top: 10px;
+  padding: 9px;
+}
 }

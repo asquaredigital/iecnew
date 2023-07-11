@@ -99,20 +99,7 @@ body {
     font-size: 16px;
   }
   
-  a.navbar-brand {
-    margin-left: 6rem;
-}
 
-@media  only screen and (min-width: 400px){
-    
-  .navbar-nav .nav-item {
-    margin-right: 40px; /* Adjust the value to increase or decrease the space */
-  }
-
-  a.navbar-brand {
-    margin-left: 0;
-}
-}
 
   @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
@@ -346,4 +333,68 @@ body {
   border-bottom-style: groove;
   border-color: #f4bd01;
   width: fit-content;
+}
+
+
+
+
+@media (max-width: 500px) {
+  .carousel-item img {
+  height: 224px;
+  width: 415px;
+}
+  .carousel-item h3 {
+  font-size: calc(1.3rem + -1.4vw);
+}
+
+}
+
+@media (max-width: 992px) {
+  .ico {
+    width: 60px;
+    background-color: #f4bd01 !important;
+    text-align: center;
+  }
+  
+  .ico img {
+    height: 50px;
+    padding: 2px;
+  }
+  }
+
+
+@media (max-width: 500px) {
+ 
+.py-5{
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.pt-5{
+  padding-top: 0.5rem !important;
+}
+
+.px-5{
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+.p-4 {
+  padding: 0.5rem!important;
+}
+.ico {
+  width: 60px;
+  background-color: #f4bd01 !important;
+  text-align: center;
+}
+
+.ico img {
+  height: 50px;
+  padding: 2px;
+}
+
+.title {
+  font-size: 300%;
+  font-weight: 700;
+  padding-top: 1%;
+}
 }

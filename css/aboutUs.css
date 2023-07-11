@@ -131,7 +131,8 @@ a.navbar-brand {
         z-index: 1;
     }
     .home img{
-        height: 400px;
+      height: 510px;
+      width: 1000px;
         }
 }
 @media only screen and (max-width: 800px) {
@@ -145,7 +146,8 @@ a.navbar-brand {
         z-index: 1;
     }
     .home img{
-    height: 300px;
+    height: 550px;
+    width: 800px;
     }
 }
 
@@ -161,6 +163,7 @@ a.navbar-brand {
     }
     .home img{
         height: 200px;
+        width: 650px;
         }
 }
 
@@ -204,6 +207,7 @@ a.navbar-brand {
     font-weight: 600;
     color: #fad91d;
     margin-bottom: initial;
+    text-align: center;
   }
 
 /* achievement */
@@ -309,4 +313,125 @@ a.navbar-brand {
     width: fit-content;
     border-bottom-width: thick;
     border-color: #fad91d !important;
+}
+
+
+
+@media (max-width: 500px) {
+ 
+  .py-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .pt-5{
+    padding-top: 0.5rem !important;
+  }
+  
+  .px-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem!important;
+  }
+  .fw-bolder{
+    font-weight: 500 !important;
+  }
+
+  .m-5 {
+    margin: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 0.5rem!important;
+}
+.mt-5{
+  margin-top: 0.5rem !important;
+}
+
+#avgf1 h2{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+#avgf1 p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.p-5 {
+  padding: 0.5rem!important;
+}
+.py-3 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.pt-3 {
+  padding-top: 0!important;
+}
+.px-4 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.px-2 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.welcome h2 {
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+  margin-top: 5px;
+}
+
+
+.welcome p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.welcome h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile img {
+  height: 260px;
+  width: 265px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fad91d;
+  margin-top: 10px;
+}
+.achievement h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.achievementsIEC span {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500;
+}
+
+.achievementsIEC h1 {
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.mission h1 {
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+.mission p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.mission img {
+  height: 250px;
+  width: 230px;
+}
 }

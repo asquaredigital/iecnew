@@ -343,6 +343,7 @@ a.navbar-brand {
   font-weight: 600!important;
   color:rgb(15 49 115) !important;
   padding-top: 0.5rem;
+  text-align: center;
 }
 
 .features img{
@@ -536,3 +537,160 @@ h2.purer_lg {
 }
 
 /* bottomLine */
+
+
+@media (min-width: 500px) {
+ 
+  .py-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .pt-5{
+    padding-top: 0.5rem !important;
+  }
+  
+  .px-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem!important;
+  }
+  .fw-bolder{
+    font-weight: 500 !important;
+  }
+
+  .m-5 {
+    margin: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 0.5rem!important;
+}
+.mt-5{
+  margin-top: 0.5rem !important;
+}
+
+#avgf1 h2{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+#avgf1 p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.p-5 {
+  padding: 0.5rem!important;
+}
+.py-3 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.pt-3 {
+  padding-top: 0!important;
+}
+.carousel-item img {
+  width: 400px!important;
+  height: 300px !important;
+}
+
+.purerProcess h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw);
+}
+
+.purerProcess p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+.purerProcess1 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw);
+}
+
+.purerProcess1 p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+.purerProcess2 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw);
+}
+.purerProcess2 p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+#featureMob img{
+  height: 50px;
+}
+.industrialApps img {
+  width: 50px !important;
+  height: 50px !important;
+}
+#featureDesk{
+  display: none;
+}
+#featureMob{
+  display: block;
+}
+.features img{
+  height: 36px !important;
+  width: 36px !important;
+  margin-top: 5px;
+}
+
+.features p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+  text-align: justify;
+}
+
+.industrialApps p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+  text-align: center;
+}
+.industrialApps img {
+  width: 40px !important;
+  height: 40px !important;
+  margin: 10px;
+}
+.construction h1 {
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw);
+  text-align: center;
+  position: inherit;
+}
+.construction p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+
+}
+
+
+
+@media (min-width: 500px) {
+  #featureDesk{
+    display: block;
+  }
+  #featureMob{
+    display: none;
+  }
+}
+
+
+.purerProcess{
+  height: 780px; width: 610px;position: absolute;
+      right: 0;
+      z-index: -1;
+}

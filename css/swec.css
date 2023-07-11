@@ -402,3 +402,39 @@ body{
         border-bottom-width: thick;
         border-color: #f5f512;
     }
+
+    @media (max-width: 500px) {
+ 
+      .py-5{
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      
+      .pt-5{
+        padding-top: 0.5rem !important;
+      }
+      
+      .px-5{
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+      .p-4 {
+        padding: 0.5rem!important;
+      }
+     
+.carousel-item img {
+  height: 200px !important;
+}
+
+.productDescription img{
+  display: none;
+}
+
+.productDescription h1 {
+  font-size: calc(1.325rem + .9vw) !important;
+}
+.productDescription p {
+  font-size: calc(1.275rem + -0.7vw)!important;
+  font-weight: 500!important;
+}
+      }

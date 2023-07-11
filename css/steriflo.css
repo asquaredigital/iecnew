@@ -47,8 +47,8 @@ body {
   color: #ffff;
 }
 
-.bg-blue{
-background-color: rgb(0 46 137);
+.bg-blue {
+  background-color: rgb(0 46 137);
 }
 
 .bg-navColor {
@@ -87,7 +87,6 @@ background-color: rgb(0 46 137);
   font-weight: bold;
   font-size: 16px;
 }
-
 
 a.navbar-brand {
   margin-left: 6rem;
@@ -227,117 +226,109 @@ a.navbar-brand {
   max-width: 98%;
 }
 
+/* Carousel */
 
-
-
-  /* Carousel */
-
-  @media only screen and (max-width: 900px) {
-    .prev-btn img{
-      height: 50px;
-      width: 50px;
-    }
-  
-    .next-btn img{
-      height: 50px;
-      width: 50px;
-    }
-    }
-  .carousel-item img{
-        width: 800px;
-        height:510px ;
-  }
-
-  @media only screen and (max-width: 400px) {
-    .carousel-item img{
-      height:400px ;
-      width: 340px;
-    }
-  }
-
-
-  /* Water Tank */
-
-  .waterTank p{
-    font-size: 20px;
-    font-weight: 600!important;
-    color:#fff;
-  }
-  
-  .waterTank h1{
-    --bs-text-opacity: 1;
-    color:#fff;
-    font-weight: 700;
-    font-size: x-large;
-    padding-top: 10px;
-  }
-  @media only screen and (max-width: 400px) {
-    .waterTank img{
-      width: 340px;
-    }
-  }
-
-
-  /* Apps */
-
-  .apps p{
-    font-size: 20px;
-    font-weight: 600!important;
-    color:#003aac;
-  }
-  
-  .apps h1{
-    --bs-text-opacity: 1;
-    color:#003aac;
-    font-weight: 700;
-    font-size: x-large;
-    padding-top: 10px;
-  }
-
-  /* ELECTROLYSIS */
-
-
-  .electrolysis p{
-    font-size: 20px;
-    font-weight: 600!important;
-    color:#fff;
-  }
-  
-  .electrolysis h1{
-    --bs-text-opacity: 1;
-    color:#fff;
-    font-weight: 700;
-    font-size: 20px;
-    font-size: x-large;
-  }
-
-  .electrolysis img{
-    height: 600px;
-  }
-
-  @media only screen and (max-width: 400px) {
-    .electrolysis img{
-      width: 340px;
-    }
-  }
-
-
-  /* Features */
-  .features p{
-    font-size: 1.5rem!important;
-    font-weight: 600!important;
-    color:#003aac;
-  }
-
-  .features img{
+@media only screen and (max-width: 900px) {
+  .prev-btn img {
     height: 50px;
-    padding-right: 10px;
+    width: 50px;
   }
 
+  .next-btn img {
+    height: 50px;
+    width: 50px;
+  }
+}
+.carousel-item img {
+  width: 800px;
+  height: 510px;
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel-item img {
+    height: 400px;
+    width: 340px;
+  }
+}
+
+/* Water Tank */
+
+.waterTank p {
+  font-size: 20px;
+  font-weight: 600 !important;
+  color: #fff;
+}
+
+.waterTank h1 {
+  --bs-text-opacity: 1;
+  color: #fff;
+  font-weight: 700;
+  font-size: x-large;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 400px) {
+  .waterTank img {
+    width: 340px;
+  }
+}
+
+/* Apps */
+
+.apps p {
+  font-size: 20px;
+  font-weight: 600 !important;
+  color: #003aac;
+}
+
+.apps h1 {
+  --bs-text-opacity: 1;
+  color: #003aac;
+  font-weight: 700;
+  font-size: x-large;
+  padding-top: 10px;
+}
+
+/* ELECTROLYSIS */
+
+.electrolysis p {
+  font-size: 20px;
+  font-weight: 600 !important;
+  color: #fff;
+}
+
+.electrolysis h1 {
+  --bs-text-opacity: 1;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  font-size: x-large;
+}
+
+.electrolysis img {
+  height: 600px;
+}
+
+@media only screen and (max-width: 400px) {
+  .electrolysis img {
+    width: 340px;
+  }
+}
+
+/* Features */
+.features p {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #003aac;
+}
+
+.features img {
+  height: 50px;
+  padding-right: 10px;
+}
 
 /* tableSteriflo */
 
-  /* @media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     .tableSteriflo img{
       height: 400px !important;
     }
@@ -357,77 +348,241 @@ a.navbar-brand {
     }
   } */
 
-  .tableSteriflo table {
-    border-color: #fff;
-    border-style: solid;
-    border-width: 10px;
-  }
+.tableSteriflo table {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 10px;
+}
 
-    .tableSteriflo tr {
-      color: #fff;
-      border-color: #fff;
-      font-size: 1.5rem!important;
-      font-weight: 600!important;
-    }
-    
+.tableSteriflo tr {
+  color: #fff;
+  border-color: #fff;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
 
-    .tableSteriflo td{
-      padding: 7px;
-    }
+.tableSteriflo td {
+  padding: 7px;
+}
 
-  
-  
-  /* Technicla Details */
+/* Technicla Details */
 
-  .techDetails p{
-    font-size: 20px;
-    font-weight: 600!important;
-    color:#fff;
-    padding: 15px;
-  }
-  
-  .techDetails h1{
-    --bs-text-opacity: 1;
-    color:#fff;
-    font-weight: 700;
-    font-size: x-large;
-    padding: 15px;
-  }
+.techDetails p {
+  font-size: 20px;
+  font-weight: 600 !important;
+  color: #fff;
+  padding: 15px;
+}
 
+.techDetails h1 {
+  --bs-text-opacity: 1;
+  color: #fff;
+  font-weight: 700;
+  font-size: x-large;
+  padding: 15px;
+}
 
-
-  /* Form */
+/* Form */
 
 .bg-chlo1 {
-    background-color: #003aac;
+  background-color: #003aac;
+}
+
+.form label {
+  font-size: 1.75rem !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+  font-weight: bolder !important;
+}
+
+.form input {
+  border-radius: 14px;
+  height: 75px;
+  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 1;
+  background-color: #fff !important;
+}
+
+.form-control:focus {
+  color: #003aac;
+}
+.form-control {
+  color: #003aac;
+}
+
+/* Footer */
+
+.bottom_line {
+  border-bottom-style: groove;
+  border-color: #003aac;
+  width: fit-content;
+}
+
+.features img {
+  height: 50px;
+  padding-right: 10px;
+  margin: 10px;
+}
+
+.features p {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .carousel-item img {
+    width: 800px;
+    height: 251px;
   }
-  
-  .form label {
-    font-size: 1.75rem !important;
+}
+
+@media (max-width: 500px) {
+  .py-5 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .pt-5 {
+    padding-top: 0.5rem !important;
+  }
+
+  .px-5 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem !important;
+  }
+  .apps h1 {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
-    font-weight: bolder !important;
+    color: #003aac;
+    font-weight: 700;
+    font-size: x-large;
+    padding-top: 10px;
   }
-  
-  .form input {
-    border-radius: 14px;
-    height: 75px;
-    --bs-bg-opacity: 1;
-    --bs-bg-opacity: 1;
-    background-color:#fff !important;
+}
+
+
+@media (max-width: 700px) {
+  .tableSteriflo td {
+    padding: 7px;
+}
+.tableSteriflo tr {
+  color: #fff;
+  border-color: #fff;
+  font-size: 10px!important;
+  font-weight: 600 !important;
+}
+.tableSteriflo table {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 5px;
+}
+.w-75{
+  width: 85% !important
+}
+
+}
+
+@media (max-width: 500px) {
+  .apps h1 {
+    --bs-text-opacity: 1;
+    color: #003aac;
+    font-weight: 600;
+    font-size: calc(1.325rem + -0.1vw);
+    padding-top: 5px;
   }
 
-  .form-control:focus {
-    color:#003aac;
+  .apps p {
+    font-size: calc(1.275rem + -0.7vw) !important;
+    font-weight: 500 !important;
+    color: #003aac;
   }
-  .form-control {
-    color:#003aac;
-  }
-  
-  /* Footer */
 
-  .bottom_line {
-    border-bottom-style: groove;
-    border-color: #003aac;
-    width: fit-content;
+  .waterTank h1 {
+    --bs-text-opacity: 1;
+    font-weight: 600;
+    font-size: calc(1.325rem + -0.1vw);
+    padding-top: 5px;
   }
+
+  .waterTank p {
+    font-size: calc(1.275rem + -0.7vw) !important;
+    font-weight: 500 !important;
+  }
+  .electrolysis img {
+    height: 250px;
+    width: 240px;
+  }
+  .waterTank img {
+    height: 300px;
+    width: 250px;
+}
+
+  .electrolysis h1 {
+    --bs-text-opacity: 1;
+    font-weight: 600;
+    font-size: calc(1.325rem + -0.1vw);
+    padding-top: 5px;
+  }
+
+  .electrolysis p {
+    font-size: calc(1.275rem + -0.7vw) !important;
+    font-weight: 500 !important;
+  }
+
+  .features h1 {
+    --bs-text-opacity: 1;
+    font-weight: 600;
+    font-size: calc(1.325rem + -0.1vw);
+    padding-top: 5px;
+  }
+
+  .features p {
+    font-size: calc(1.275rem + -0.7vw) !important;
+    font-weight: 500 !important;
+  }
+
+  .features img {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .features p {
+    padding: 0;
+  }
+
+  .card-body.bg-chlo {
+    height: 68px;
+  }
+
+  .mt-5 {
+    margin-top: 0.5rem !important;
+  }
+
+  .techDetails h1 {
+    --bs-text-opacity: 1;
+    color: #fff;
+    font-weight: 600;
+    font-size: calc(1.325rem + -0.1vw);
+    padding: 7px;
+}
+.techDetails p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+
+.py-5 {
+    padding-top: 0.5rem!important;
+    padding-bottom: 0.5rem!important;
+}
+.carousel-item img {
+  width: 275px;
+  height: 245px;
+}
+.form .form-group .fs-3 {
+  font-size:1rem !important;
+}
+}

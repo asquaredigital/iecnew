@@ -275,12 +275,6 @@ body {
 }
 
 
-@media only screen and (max-width: 400px) {
-  .carousel-item img{
-    height:260px !important;
-  }
-}
-
 
   /* Description */
 
@@ -392,4 +386,131 @@ body {
   
   ::-webkit-input-placeholder {
     color:#ffff;
+  }
+
+
+.avail h1{
+  font-size: 400%;
+}
+
+#chlorGas h1{
+  font-size: 400%;
+}
+#chlorGas1 h1{
+  font-size: 400%;
+}
+
+@media only screen and (min-width: 1500px) {
+  .bgg .col-lg-12 {
+    width: 97% !important;
+  }
+
+  /* .bgg .col-lg-12 {
+    flex: 0 0 auto;
+    width: 90%;
+  } */
+}
+
+
+  @media (max-width: 500px) {
+ 
+    .py-5{
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    
+    .pt-5{
+      padding-top: 0.5rem !important;
+    }
+    
+    .px-5{
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    .p-4 {
+      padding: 0.5rem!important;
+    }
+    .fw-bolder{
+      font-weight: 500 !important;
+    }
+    .bggM h2{
+      font-weight: 600 !important;
+    }
+
+    #const  h1 {
+      font-size: calc(1.325rem + .9vw) !important;
+      font-weight: 600 !important;
+  }
+  #const .avail h1{
+  font-size: 200%;
+}
+.avail .mt-5{
+margin-top: 0 !important;
+}
+
+.title {
+  font-size: 300%;
+  font-weight: 700;
+  padding-top: 5%;
+}
+
+.carousel-item img {
+  height: 172px !important;
+}
+
+#const .c_img{
+display: none;
+}
+
+.pic_443 img{
+  text-align: center;
+  height: 250px;
+}
+
+.features_mobile  h3 {
+  font-size: calc(1.275rem + .3vw)!important;
+}
+
+.features_mobile img{
+  height: 50px !important;
+    }
+
+    .features h1 {
+      text-align: center;
+      font-size: calc(1.325rem + .9vw) !important;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 5px;
+  }
+  .fs-2 {
+    font-size: calc(1.275rem + -0.7vw)!important;
+}
+#chlorGas h1{
+  font-size: 200%;
+  font-weight: 600 !important;
+}
+#chlorGas img{
+  height: 250px;
+}
+
+#chlorGas1 h1{
+  font-size: 200%;
+  font-weight: 600 !important;
+}
+#chlorGas1 img{
+  height: 250px !important;
+}
+#chlorGas1 .fw-bolder{
+  font-weight: 600 !important;
+}
+
+
+.mt-2 {
+  margin-top: 0!important;
+}
+.pt-4 {
+  padding-top: 0!important;
+}
+
+
   }

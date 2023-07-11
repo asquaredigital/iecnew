@@ -123,6 +123,7 @@ body{
       font-size: 300%;
       font-weight: 700;
       padding-top: 8%;
+      z-index: 1;
     }
     .title1 {
         font-size: 300%;
@@ -484,3 +485,118 @@ thead{
   border-color: #000;
 }
 
+
+
+
+
+@media (max-width: 500px) {
+ 
+  .py-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .pt-5{
+    padding-top: 0.5rem !important;
+  }
+  
+  .px-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem!important;
+  }
+  .fw-bolder{
+    font-weight: 500 !important;
+  }
+
+  .m-5 {
+    margin: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 0.5rem!important;
+}
+.mt-5{
+  margin-top: 0.5rem !important;
+}
+.p-5 {
+  padding: 0!important;
+}
+
+.card-body.bg-chlo {
+  height: 45px;
+}
+
+.carousel-item img {
+  width: 600px!important;
+  height: 250px !important;
+}
+
+.carousel-inner .py-5{
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.directStream h1 {
+  font-size: 37px;
+  font-weight: 600;
+  color: #ed1b33;
+}
+
+.directStream p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.benefits h1 {
+  font-weight: 600;
+  font-size: calc(1.325rem + .9vw);
+}
+
+.benefits p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+#benfitsM img{
+  height: 40px !important;
+}
+
+.features p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.features span {
+  background-color: #ed1b33;
+  padding: 0.5rem;
+  margin: 2px;
+}
+.majorApps h1 {
+  font-weight: 600;
+  font-size: calc(1.325rem + .9vw);
+}
+.majorApps p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.majorApps img {
+  height: 245px;
+  width: 285px;
+  background-color: #000;
+}
+.variants h1 {
+  font-weight: 600;
+  font-size: calc(1.325rem + .9vw);
+  padding-top: 5px;
+}
+
+.form-group .fs-3 {
+  font-size: 1rem !important;
+  --bs-text-opacity: 1;
+  font-weight: bolder !important;
+}
+
+.tableVariant {
+  padding-left: 0%;
+}
+}

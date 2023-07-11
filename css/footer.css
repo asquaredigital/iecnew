@@ -78,3 +78,37 @@ h5.bottom_line {
   display: none;
 }
 
+
+
+@media (max-width: 450px) {
+.footerproducts li h4 a {
+  /* color: #fad91d; */
+  text-decoration: none;
+  font-size: 1rem !important;
+}
+.fw-bolder {
+  font-weight: 500!important;
+}
+.fw-bold {
+  font-weight: 500!important;
+}
+ul {
+  padding-left: 0rem;
+}
+.footermenus li h4 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 0px;
+}
+h4.bottom_line {
+  font-size: 1rem;
+}
+h5.bottom_line {
+  font-size: 1rem;
+}
+
+.contactUs h5{
+  font-size: 1rem;
+}
+}

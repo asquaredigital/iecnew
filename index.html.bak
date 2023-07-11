@@ -1513,7 +1513,7 @@
 	<script>
       $(document).ready(function() {
          $('#whatsapp-icon').click(function() {
-            var phone = '+91 9786360344'; // Replace with your phone number
+            var phone = '+91 9840088220'; // Replace with your phone number
             var message = 'Hello'; // Replace with your message
             var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
             window.open(url);

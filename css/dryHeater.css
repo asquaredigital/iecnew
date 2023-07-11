@@ -552,3 +552,107 @@ body{
   border-bottom-style: groove;
   border-color: #63ff99;
 }
+
+
+
+
+@media (max-width: 500px) {
+ 
+  .py-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .pt-5{
+    padding-top: 0.5rem !important;
+  }
+  
+  .px-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem!important;
+  }
+  .fw-bolder{
+    font-weight: 500 !important;
+  }
+
+  .m-5 {
+    margin: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 0.5rem!important;
+}
+.mt-5{
+  margin-top: 0.5rem !important;
+}
+
+.dryHeater01 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + .9vw) !important;
+}
+
+.dryHeater01 p {
+  font-size: calc(1.275rem + -0.7vw)!important;
+  font-weight: 500!important;
+}
+
+.dryHeater03 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + .9vw) !important;
+}
+
+.dryHeater03 p {
+  font-size: calc(1.275rem + -0.7vw)!important;
+  font-weight: 500!important;
+}
+.dryHeater03 li {
+  margin-top: 0 ;
+  margin-bottom: 0;
+}
+
+.industrialApps h2 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + .9vw) !important;
+}
+
+.dryHeater1_5 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.dryHeater3 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.dryHeater10_5 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.dryHeater10_5 h2 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.dryHeater20 h1 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.dryHeater20 h2 {
+  --bs-text-opacity: 1;
+  font-weight: 600;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+}

@@ -63,7 +63,7 @@
     margin-left: 0;
   }
 
-  @media  only screen and (min-width: 400px){
+  @media  only screen and (min-width: 450px){
     
     .navbar-nav .nav-item {
       margin-right: 40px; /* Adjust the value to increase or decrease the space */

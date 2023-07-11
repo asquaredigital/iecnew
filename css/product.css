@@ -184,11 +184,11 @@ a.navbar-brand {
 
 /* Home */
 
-.home img {
+/* .home img {
   height: 650px;
   width: 100%;
   filter: brightness(50%);
-}
+} */
 
 .home h1 {
   position: absolute;
@@ -232,8 +232,8 @@ a.navbar-brand {
 @media only screen and (max-width: 500px) {
   .home h1 {
     position: absolute;
-    left: 20%;
-    padding-top: 10%;
+    left: 22%;
+    padding-top: 12%;
     font-size: 50px;
     font-weight: 700;
     color: #fff;
@@ -366,4 +366,147 @@ a.navbar-brand {
   width: fit-content;
   border-bottom-width: thick;
   border-color: #fff !important;
+}
+
+
+
+@media (max-width: 500px) {
+ 
+  .py-5{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .pt-5{
+    padding-top: 0.5rem !important;
+  }
+  
+  .px-5{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .p-4 {
+    padding: 0.5rem!important;
+  }
+  .fw-bolder{
+    font-weight: 500 !important;
+  }
+
+  .m-5 {
+    margin: 0 !important;
+}
+.pb-5 {
+  padding-bottom: 0.5rem!important;
+}
+.mt-5{
+  margin-top: 0.5rem !important;
+}
+
+.sebac h1{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.sebac  p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.p-5 {
+  padding: 0.5rem!important;
+}
+.py-3 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.pt-3 {
+  padding-top: 0!important;
+}
+.px-4 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.px-2 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.home img {
+  height: 200px !important;
+  width: 100% !important;
+  filter: brightness(50%);
+}
+.sebac img {
+  height: 310px;
+  width: 320px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.state img {
+  height: 400px;
+  width: 300px;
+  margin-left: 20%;
+}
+
+.state h1{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.state  p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+.steam  h1{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.steam   p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+.steam img {
+  height: 400px;
+  width: 300px;
+  margin: 20%;
+}
+
+.brine img {
+  height: 400px;
+  width: 300px;
+}
+
+.brine  h1{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.brine   p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+.steam2  h1{
+  font-weight: 600 !important;
+  font-size: calc(1.325rem + -0.1vw) !important;
+}
+
+.steam2 p {
+  font-size: calc(1.275rem + -0.7vw) !important;
+  font-weight: 500 !important;
+}
+
+.steam2 img {
+  height: 400px;
+  width: 300px;
+}
+
+.footermenus li h4 a {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 0px;
+}
 }
