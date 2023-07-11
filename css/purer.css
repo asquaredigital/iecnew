@@ -262,7 +262,7 @@ a.navbar-brand {
 
 .purer_lg h2 {
   position: absolute;
-  right: 100px;
+  right: 75px;
   font-size: 126px;
   font-weight: 700;
   color: #fff;
@@ -539,7 +539,7 @@ h2.purer_lg {
 /* bottomLine */
 
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
  
   .py-5{
     padding-top: 0 !important;
@@ -688,9 +688,9 @@ h2.purer_lg {
   }
 }
 
-
+/* 
 .purerProcess{
   height: 780px; width: 610px;position: absolute;
       right: 0;
       z-index: -1;
-}
+} */
