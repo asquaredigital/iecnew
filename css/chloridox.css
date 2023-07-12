@@ -397,4 +397,9 @@ body {
   font-weight: 700;
   padding-top: 1%;
 }
+
+#equation h1{
+  font-size: calc(1.25rem + -0.5vw) !important;
+  font-weight: 600 !important;
+}
 }

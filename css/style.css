@@ -160,4 +160,9 @@ img.logo_f {
 .form .form-group .fs-3 {
   font-size: 1rem !important;
 }
+
+.py-5 {
+  padding-top: 0.5rem!important;
+  padding-bottom: 0.5rem!important;
+}
 }

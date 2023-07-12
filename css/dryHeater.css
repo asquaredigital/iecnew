@@ -553,7 +553,9 @@ body{
   border-color: #63ff99;
 }
 
-
+.dh_r img{
+  height: 450px;
+}
 
 
 @media (max-width: 500px) {
@@ -616,7 +618,7 @@ body{
 
 .industrialApps h2 {
   --bs-text-opacity: 1;
-  font-weight: 600;
+  font-weight: 500;
   font-size: calc(1.325rem + .9vw) !important;
 }
 
@@ -655,4 +657,8 @@ body{
   font-weight: 600;
   font-size: calc(1.325rem + -0.1vw) !important;
 }
+.dh_r img{
+  height: 150px;
 }
+}
+
