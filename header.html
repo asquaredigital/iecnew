@@ -1,13 +1,38 @@
 <!-- Navigation bar -->
 <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    //jquery for toggle sub menus
+    $('.sub-btn').click(function(){
+      $(this).next('.sub-menu').slideToggle();
+      $(this).find('.dropdown').toggleClass('rotate');
+    });
+
+    //jquery for expand and collapse the sidebar
+    $('.menu-btn').click(function(){
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+
+    $('.close-btn').click(function(){
+      $('.side-bar').removeClass('active');
+      $('.menu-btn').css("visibility", "visible");
+    });
+  });
+  </script>
 
 <div id="nav-bar">
   <nav class="navbar navbar-expand-lg navbar-light " style="background-color:transparent;">
     <a class="navbar-brand" href="index.html"><img src="img/Products/Cholrination/IEC_logo.png"></a>
-    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="menu-btn">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+   </button>
+   </div>
 
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav bg-navColor ml-auto p-2 py-3">
@@ -63,6 +88,40 @@
       </ul>
     </div>
   </nav>
+</div>
+
+<div class="side-bar">
+
+  <header>
+   <div class="close-btn">
+
+    <i class="fas fa-times"></i>
+
+  </div>
+     </header>
+  <div class="menu">
+    <div class="item"><a href="index.html">HOME</a></div>
+    <div class="item">
+      <a class="sub-btn">SOLUTIONS<i class="fas fa-angle-right dropdown"></i></a>
+      <div class="sub-menu">
+        <a class="sub-item " href="chloridox.html">CHLORIDIOX</a>
+        <a class="sub-item" href="steriflo.html">STERIFLO</a>
+        <a class="sub-item" href="chlorination.html">GAS CHLORINATION</a>
+        <a class="sub-item" href="swec.html">SWEC</a>
+        <a class="sub-item" href="vapourizer.html">BAYONET VAPORIZER</a>
+        <a class="sub-item" href="dryHeater.html">DRY HEATER</a>
+        <a class="sub-item" href="machHeater.html">MACH HEATER</a>
+        <a class="sub-item" href="avgf.html">AVGF</a>
+        <a class="sub-item" href="purer.html">PURER</a>
+        <a class="sub-item" href="leakAbsorption.html">LEAK ABSORPTION</a>
+      </div>
+    </div>
+    <div class="item"><a href="project.html">PROJECTS</a></div>
+   
+    <div class="item"><a href="aboutUs.html">ABOUT</a></div>
+    
+    <div class="item"><a href="contactUs.html">CONTACT</a></div>
+  </div>
 </div>
 
 

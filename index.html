@@ -13,7 +13,7 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
    <style>
       html {
@@ -130,7 +130,113 @@
          border-radius: 4px;
       }
 
-  
+
+
+
+.side-bar{
+ /* background: #1b1a1b;
+ backdrop-filter: blur(15px); */
+
+ background: rgba(19, 39, 57, 0.8);
+ width: 250px;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ left: -250px;
+ overflow-y: auto;
+ transition: 0.6s ease;
+ transition-property: left;
+ z-index: 9;
+}
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+button.navbar-toggler {
+    background-color: #fff;
+}
+.side-bar.active{
+ left: 0;
+}
+.side-bar h1{
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.side-bar .menu{
+ width: 100%;
+ margin-top: 45px;
+}
+
+.side-bar .menu .item{
+ position: relative;
+ cursor: pointer;
+}
+
+.side-bar .menu .item a{
+ color: #fff;
+ font-size: 13px;
+ text-decoration: none;
+ display: block;
+ padding: 1px 20px;
+ line-height: 30px;
+}
+
+
+
+.side-bar .menu .item a:hover{
+ background: rgba(19, 39, 57, 0.8);
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+ margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+ position: absolute;
+ right: 0;
+ margin: 8px 16px 15px 13px;
+ transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+ background: rgba(19, 39, 57, 0.8);
+ display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+ padding-left: 39px;
+}
+
+.rotate{
+ transform: rotate(90deg);
+}
+
+.close-btn{
+ position: absolute;
+ color: #fff;
+
+ font-size: 23px;
+ right:  0px;
+ margin: 15px;
+ cursor: pointer;
+}
+.fas {
+    font-size: 18px;
+    line-height: 0;
+}
+@media (min-width:992px) {
+   .side-bar{
+      display: none;
+   }
+}
    </style>
 
    <script>
@@ -154,6 +260,26 @@
 
    </script>
 
+<script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
 
       
 
@@ -166,10 +292,13 @@
       <div id="nav-bar">
          <nav class="navbar navbar-expand-lg navbar-light" style="background-color:transparent;">
             <a class="navbar-brand" href="#"><img src="img/Products/Cholrination//IEC_logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           
+            <div class="menu-btn">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ml-auto">
@@ -228,6 +357,40 @@
 
          </nav>
       </div>
+
+      <div class="side-bar">
+
+         <header>
+          <div class="close-btn">
+    
+           <i class="fas fa-times"></i>
+
+         </div>
+            </header>
+         <div class="menu">
+           <div class="item"><a href="index.html">HOME</a></div>
+           <div class="item">
+             <a class="sub-btn">SOLUTIONS<i class="fas fa-angle-right dropdown"></i></a>
+             <div class="sub-menu">
+               <a class="sub-item " href="chloridox.html">CHLORIDIOX</a>
+               <a class="sub-item" href="steriflo.html">STERIFLO</a>
+               <a class="sub-item" href="chlorination.html">GAS CHLORINATION</a>
+               <a class="sub-item" href="swec.html">SWEC</a>
+               <a class="sub-item" href="vapourizer.html">BAYONET VAPORIZER</a>
+               <a class="sub-item" href="dryHeater.html">DRY HEATER</a>
+               <a class="sub-item" href="machHeater.html">MACH HEATER</a>
+               <a class="sub-item" href="avgf.html">AVGF</a>
+               <a class="sub-item" href="purer.html">PURER</a>
+               <a class="sub-item" href="leakAbsorption.html">LEAK ABSORPTION</a>
+             </div>
+           </div>
+           <div class="item"><a href="project.html">PROJECTS</a></div>
+          
+           <div class="item"><a href="aboutUs.html">ABOUT</a></div>
+           
+           <div class="item"><a href="contactUs.html">CONTACT</a></div>
+         </div>
+       </div>
 
       <!--Header Slider-->
 
