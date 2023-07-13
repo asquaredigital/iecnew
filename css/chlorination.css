@@ -400,17 +400,32 @@ body {
   font-size: 400%;
 }
 
-@media only screen and (min-width: 1500px) {
+/* @media only screen and (min-width: 1500px) {
   .bgg .col-lg-12 {
     width: 97% !important;
   }
+} */
 
-  /* .bgg .col-lg-12 {
-    flex: 0 0 auto;
-    width: 90%;
-  } */
+@media only screen and (min-width: 1500px){
+.bgg .col-lg-12 {
+    width: 82% !important;
+}
+.home h1 {
+  position: absolute;
+  left: 16%;
+  padding-top: 10%;
+  font-size: 220px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+}
 }
 
+@media only screen and (max-width: 1500px){
+  .bgg .col-lg-12 {
+      width: 100% !important;
+  }
+}
 
   @media (max-width: 500px) {
  
