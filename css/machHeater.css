@@ -13,19 +13,19 @@ body{
   /* Color  */
 
   .bg-chlo {
-    background-color: #ed1b33;
+    background-color: #d8d3c4;
   }
 .bg-dh{
     background-color: #081e34;
 }
     .btn-chlo{
-      background-color: #ed1b33;
+      background-color: #d8d3c4;
     }
   .text-chlo {
     color: #081e34;
   }
   .text-chlo1{
-    color: #ed1b33;
+    color: #d8d3c4;
   }
   .card-body.bg-chlo {
     height: 81px;
@@ -36,14 +36,14 @@ body{
   }
 
   .text-color{
-    color:#ed1b33
+    color:#d8d3c4
   }
   .text-headColor{
-    color:#ed1b33
+    color:#d8d3c4
   }
 
   .bg-copyRight{
-    background-color:#ed1b33!important;
+    background-color:#d8d3c4!important;
     padding: 1rem!important;
 
   }
@@ -129,7 +129,7 @@ body{
         font-size: 300%;
         font-weight: 700;
         padding-top: 8%;
-        color: #ed1b33;
+        color: #d8d3c4;
       }
     .bg-title {
       font-size: 300%;
@@ -157,7 +157,7 @@ body{
       font-size: 1028%;
       font-weight: 700;
       padding-top: 8%;
-      color: #ed1b33;
+      color: #d8d3c4;
     }
 
     .title {
@@ -281,7 +281,7 @@ body{
     .directStream h1{
       font-size: 125px;
       font-weight: 600;
-      color: #ed1b33;
+      color: #d8d3c4;
     }
   }
     
@@ -289,7 +289,7 @@ body{
     .directStream h1{
       font-size: 80px;
       font-weight: 600;
-      color: #ed1b33;
+      color: #d8d3c4;
     }
     
   }
@@ -318,7 +318,7 @@ body{
   .features p{
     font-size: x-large;
     font-weight: 600;
-    color: #ed1b33;
+    color: #d8d3c4;
     padding-top: 0.5rem!important;
     padding-left: 3rem!important;
   }
@@ -326,7 +326,7 @@ body{
 
   @media only screen and (min-width: 550px) {
   .features span{
-    background-color: #ed1b33;
+    background-color: #d8d3c4;
     padding-top: 0.5rem!important;
     padding-bottom: 0.5rem!important;
     padding-right: 3rem!important;
@@ -336,7 +336,7 @@ body{
 
   @media only screen and (max-width: 550px) {
     .features span{
-        background-color: #ed1b33;
+        background-color: #d8d3c4;
         padding-top: 0.5rem!important;
         padding-bottom: 0.5rem!important;
       }
@@ -387,7 +387,7 @@ body{
 .variants td{
   font-size: larger;
   font-weight: 600;
-  color: #ed1b33;
+  color: #d8d3c4;
   background-color: #000;
 }
 
@@ -447,25 +447,25 @@ body{
       --bs-bg-opacity: 1;
       --bs-bg-opacity: 1;
       background-color:#000 !important;
-      color: #ed1b33;
+      color: #d8d3c4;
     }
     .form-control:focus {
-      color:#ed1b33;
+      color:#d8d3c4;
     }
     .form-control {
-      border:#ed1b33;
+      border:#d8d3c4;
     }
       /* all */
-::-webkit-input-placeholder { color:#ed1b33; font-weight: bolder;}
-::-moz-placeholder { color:#ed1b33; font-weight: bolder;} /* firefox 19+ */
-:-ms-input-placeholder { color:#ed1b33; font-weight: bolder;} /* ie */
-input:-moz-placeholder { color:#ed1b33;font-weight: bolder; }
+::-webkit-input-placeholder { color:#d8d3c4; font-weight: bolder;}
+::-moz-placeholder { color:#d8d3c4; font-weight: bolder;} /* firefox 19+ */
+:-ms-input-placeholder { color:#d8d3c4; font-weight: bolder;} /* ie */
+input:-moz-placeholder { color:#d8d3c4;font-weight: bolder; }
 
 /* individual: webkit */
-.form::-webkit-input-placeholder { color:#ed1b33; font-weight: bolder;}
+.form::-webkit-input-placeholder { color:#d8d3c4; font-weight: bolder;}
 
 /* individual: mozilla */
-.form::-moz-placeholder { color:#ed1b33;font-weight: bolder; }
+.form::-moz-placeholder { color:#d8d3c4;font-weight: bolder; }
 
   /* footer */
 
@@ -473,12 +473,12 @@ input:-moz-placeholder { color:#ed1b33;font-weight: bolder; }
     border-bottom-style: solid;
     width: fit-content;
     border-bottom-width: thick;
-    border-color: #ed1b33 !important;
+    border-color: #d8d3c4 !important;
 }
 
 
 tbody tr,td{
-  border-color: #ed1b33;
+  border-color: #d8d3c4;
 }
 
 thead{
@@ -541,7 +541,7 @@ thead{
 .directStream h1 {
   font-size: 37px;
   font-weight: 600;
-  color: #ed1b33;
+  color: #d8d3c4;
 }
 
 .directStream p {
@@ -567,7 +567,7 @@ thead{
   font-weight: 500 !important;
 }
 .features span {
-  background-color: #ed1b33;
+  background-color: #d8d3c4;
   padding: 0.5rem;
   margin: 2px;
 }

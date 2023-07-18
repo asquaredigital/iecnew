@@ -194,7 +194,7 @@ a.navbar-brand {
 
 .home h1 {
   position: absolute;
-  left: 12%;
+  left: 14%;
   padding-top: 10%;
   font-size: 220px;
   font-weight: 700;
@@ -219,8 +219,8 @@ a.navbar-brand {
 @media only screen and (max-width: 800px) {
   .home h1 {
     position: absolute;
-    left: 12%;
-    padding-top: 10%;
+    left: 19%;
+    padding-top: 18%;
     font-size: 80px;
     font-weight: 700;
     color: #fff;

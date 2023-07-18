@@ -1091,7 +1091,7 @@ body {
     font-size: 10px;
   }
   .carousel5-class .carousel-item p {
-    font-weight: bold;
+    font-weight: 500;
     margin-right: 10px;
     font-size: 15px;
   }
@@ -1144,7 +1144,7 @@ body {
 }
 
 #carousel-list a {
-  font-size: 30px;
+  font-size: 24px;
   text-decoration: none;
   color: #666666;
   font-weight: 700;
@@ -1153,6 +1153,12 @@ body {
 }
 
 #carousel-list .active a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+#carousel-list :hover {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
@@ -1291,7 +1297,7 @@ body {
 .about .row .col-lg-6 p {
   margin-top: 20px;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 500;
   color: #000;
   margin-right: 20px;
   margin-left: 20px;
@@ -1349,7 +1355,7 @@ color: #fff;
   font-size: 15px;
   
   margin-top: -25px;
-  font-weight: bold;
+  font-weight: 500;
   color: #000;
 }
 

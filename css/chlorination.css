@@ -296,7 +296,7 @@ body {
 
 @media only screen and (max-width: 443px) {
     .pic_443 {
-      display: none;
+      height: 250px;
     }
   }
 
@@ -490,6 +490,7 @@ display: none;
 
 .features_mobile img{
   height: 50px !important;
+  margin-top: 6px;
     }
 
     .features h1 {
