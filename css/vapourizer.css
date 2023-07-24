@@ -354,6 +354,8 @@ body{
     font-size: 20px!important;
     font-weight: 800!important;
     color: #000;
+    
+    text-align: initial !important;
   }
 
 .features .card{
@@ -435,7 +437,7 @@ body{
     @media only screen and (max-width: 500px) {
       .carousel-item img {
         width: 490px!important;
-        height: 330px !important;
+        height: 275px !important;
     }
     }
 
@@ -481,6 +483,9 @@ body{
   .mt-5 {
     margin-top: 0!important;
 }
+.p-5{
+  padding: 0 !important;
+} 
     .vapourizers  h1 {
       font-size: calc(1.325rem + .9vw) !important;
     }
@@ -532,6 +537,8 @@ body{
 .features  p {
   font-size: calc(1.275rem + -0.7vw)!important;
   font-weight: 500!important;
+  
+  text-align: initial !important;
 }
 .table_vapour p {
   font-size: calc(1.275rem + -0.7vw)!important;

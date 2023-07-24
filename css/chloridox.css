@@ -395,11 +395,15 @@ body {
 .title {
   font-size: 300%;
   font-weight: 700;
-  padding-top: 1%;
+  padding-top: 7%;
 }
 
 #equation h1{
   font-size: calc(1.25rem + -0.5vw) !important;
   font-weight: 600 !important;
+}
+
+.p-5 {
+  padding: 0!important;
 }
 }

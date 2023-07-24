@@ -250,7 +250,13 @@ body{
 
 
   /* Carousel */
-
+  @media only screen and (min-width: 500px) {
+    .carousel-item img{
+      width: 790px!important;
+      /* height:600px !important; */
+      margin-left: 23px;
+}
+  }
 
   @media only screen and (max-width: 900px) {
     .prev-btn img{
@@ -400,9 +406,9 @@ body{
         vertical-align: middle;
         height: 400px;
         padding-top: 100px;
-        display:none;
     }
 }
+
 
 
 
@@ -433,7 +439,7 @@ body{
         vertical-align: middle;
         height: 400px;
         padding-top: 60px;
-        display:none;
+        /* display:none; */
     }
 }
 
@@ -558,7 +564,7 @@ body{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
  
   .py-5{
     padding-top: 0 !important;
@@ -588,6 +594,9 @@ body{
 }
 .mt-5{
   margin-top: 0.5rem !important;
+}
+.p-5 {
+  padding: 0!important;
 }
 
 .dryHeater01 h1 {
@@ -619,46 +628,70 @@ body{
 .industrialApps h2 {
   --bs-text-opacity: 1;
   font-weight: 500;
-  font-size: calc(1.325rem + .9vw) !important;
+  font-size: calc(1.275rem + -0.7vw)!important;
 }
 
 .dryHeater1_5 h1 {
   --bs-text-opacity: 1;
   font-weight: 600;
-  font-size: calc(1.325rem + -0.1vw) !important;
+  font-size: calc(1rem + -0.1vw)!important;
+}
+
+.dryHeater1_5 h2{
+  display: none;
+}
+.dryHeater3 h2{
+  display: none;
+}
+
+.dryHeater10_5 img{
+  vertical-align:auto;
+  height: 400px;
+  padding-top: 100px;
 }
 
 .dryHeater3 h1 {
   --bs-text-opacity: 1;
   font-weight: 600;
-  font-size: calc(1.325rem + -0.1vw) !important;
+  font-size: calc(1rem + -0.1vw) !important;
 }
 
 .dryHeater10_5 h1 {
   --bs-text-opacity: 1;
   font-weight: 600;
-  font-size: calc(1.325rem + -0.1vw) !important;
+  font-size: calc(1rem + -0.1vw) !important;
 }
 
 .dryHeater10_5 h2 {
   --bs-text-opacity: 1;
   font-weight: 600;
-  font-size: calc(1.325rem + -0.1vw) !important;
+  font-size: calc(1rem + -0.1vw) !important;
+  /* display: none; */
 }
-
+.dryHeater10_5 img{
+  height: 165px;
+  width: 150px;
+  padding-top: 10px;
+}
 .dryHeater20 h1 {
   --bs-text-opacity: 1;
   font-weight: 600;
-  font-size: calc(1.325rem + -0.1vw) !important;
+  font-size: calc(1rem + -0.1vw) !important;
 }
 
 .dryHeater20 h2 {
   --bs-text-opacity: 1;
   font-weight: 600;
-  font-size: calc(1.325rem + -0.1vw) !important;
+  font-size: calc(1rem + -0.1vw) !important;
 }
 .dh_r img{
   height: 150px;
+}
+
+.dryHeater20 img{
+  height: 160px;
+  width: 150px;
+  padding-top: 0px;
 }
 }
 

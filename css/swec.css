@@ -330,6 +330,7 @@ body{
     font-size: 1.5rem!important;
     font-weight: 600!important;
     color: #f5f512;
+    text-align: initial;
   }
   
 
@@ -441,7 +442,9 @@ body{
         padding-top: 0!important;
         padding-bottom: 0!important;
     }
-     
+    .p-5{
+      padding: 0 !important;
+    } 
 .carousel-item img {
   height: 200px !important;
 }

@@ -146,7 +146,7 @@ button.navbar-toggler {
   /* background: #1b1a1b;
   backdrop-filter: blur(15px); */
  
-  background: rgba(19, 39, 57, 0.8);
+  background: #434549;
   width: 250px;
   height: 100vh;
   position: fixed;
@@ -200,7 +200,7 @@ button.navbar-toggler {
  }
  
  .side-bar .menu .item a:hover{
-  background: rgba(19, 39, 57, 0.8);
+  background: #434549;
   transition: 0.3s ease;
  }
  
@@ -216,7 +216,7 @@ button.navbar-toggler {
  }
  
  .side-bar .menu .item .sub-menu{
-  background: rgba(19, 39, 57, 0.8);
+  background: #434549;
   display: none;
  }
  
@@ -241,8 +241,31 @@ button.navbar-toggler {
      font-size: 18px;
      line-height: 0;
  }
+
+ .navbar-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 30px;
+  background-color: #2f6b31;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
  @media (min-width:992px) {
     .side-bar{
        display: none;
     }
+   
+    .menu-btn{
+      display: none;
+    }
+    
  }

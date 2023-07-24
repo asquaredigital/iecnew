@@ -442,8 +442,8 @@ a.navbar-brand {
     padding-top: 0!important;
   }
   .carousel-item img {
-    width: 400px!important;
-    height: 315px !important;
+    width: 350px!important;
+    height: 195px !important;
 }
 .description p {
   font-size: calc(1.275rem + -0.7vw) !important;
