@@ -283,7 +283,7 @@ body {
 .about .row .col-lg-6 .img2 {
   margin-top: 100px;
   margin-left: 100px;
-  width: 60%;
+  width: 70%;
 }
 .about .row .col-lg-6 p {
   margin-top: 100px;
@@ -1424,9 +1424,9 @@ color: #fff;
 
 .about .row .col-lg-6 .img2 {
   margin-top: 25px;
-  margin-left: 23%;
-  margin-right: 0;
-  width: 50%;
+  /* margin-left: 23%;
+  margin-right: 0; */
+  width: 70%;
 }
 
 .aboutUs h5 {
