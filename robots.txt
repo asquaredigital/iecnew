@@ -1,0 +1,7 @@
+# robots.txt for https://iecfabchem.in/
+
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.iecfabchem.in/sitemap.xml
