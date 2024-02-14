@@ -14,24 +14,25 @@ $p_number = $_POST['p_number'];
 $c_name = $_POST['c_name'];
 $msg = $_POST['msg'];
 
-// Set up email headers
-$headers = "From: iecfabchem.com" . "\r\n" .
-           "Reply-To: $u_email" . "\r\n" ;
-
-// Set up email content
-$subject = 'Enquiry Form the Website';
+error_reporting( E_ALL );
+$to = "iecfabchemwebsite@gmail.com";
+$subject = "Enquiry Form the Website";
 $message = "Name: $u_name\nEmail: $u_email\nPhone Number: $p_number\nCompany Name: $c_name\nMessage: $msg";
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-if (mail('marketing@iecfabchem.in', $subject, $message, $headers)) {
-    // Email sent successfully
+$headers = 'From: website@iecfabchem.in' . "\r\n" .
+    'Reply-To:' . $u_email . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    
+if ( mail($to,$subject,$message, $headers))
+{
     $response = array('message' => 'Email sent successfully!');
     echo json_encode($response);
-} else {
-    // Failed to send email
-    $response = array('message' => 'Failed to send email.');
-    echo json_encode($response);
-    echo "Error: " . error_get_last()['message'];
 }
+else {
+// Failed to send email
+$response = array('message' => 'Failed to send email.');
+echo json_encode($response);
+echo "Error: " . error_get_last()['message'];
+}
+
+
 ?>
