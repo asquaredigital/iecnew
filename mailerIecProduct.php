@@ -31,7 +31,7 @@ $sesClient = new SesClient([
 $u_name = $_POST['u_name'];
 $p_number = $_POST['p_number'];
 $u_email = $_POST['u_email']; 
-$c_name = $_POST['c_name'];
+$c_name = $_POST['c_Name'];
 $pname = $_POST['pname'];
 
 // Set up email headers
