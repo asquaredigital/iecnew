@@ -661,6 +661,7 @@
                 <input type="hidden" name="pname" id="pname" value="Steriflo">
                 
                 <div class="form-group mt-3">
+
                   <button type="submit" id="my-button2" 
                     class="form-control  fs-3 fw-bolder ">Download</button>
                 </div>
@@ -696,7 +697,8 @@
                    success: function(response){
                        $('#responseMessage').text(response.message); // Corrected accessing the message key
                        $('#contactForm')[0].reset();
-                       window.location.href = 'catalogue/STERIFLO.pdf';
+                       //window.location.href = 'catalogue/STERIFLO.pdf';
+
                    }
                });
            });
