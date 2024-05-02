@@ -16,7 +16,7 @@ $pname = $_POST['pname'];
 
 
 error_reporting( E_ALL );
-$to = "iecfabchemwebsite@gmail.com";
+$to = "marketing@iecfabchem.in";
 $subject = "Product Enquiry Form the Website";
 $message = "Name: $u_name\nEmail: $u_email\nEnquired Product: $pname\nCompany Name: $c_Name\n";
 $headers = 'From: website@iecfabchem.in' . "\r\n" .
