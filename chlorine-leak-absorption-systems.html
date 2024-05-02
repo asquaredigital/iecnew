@@ -454,13 +454,13 @@
               <form id="contactForm" method="post" class="contact-form">
 
                 <div class="form-group mt-3">
-                  <label for="_name" class="text-light  fs-3 fw-bolder">Name <sup><i
+                  <label for="u_name" class="text-light  fs-3 fw-bolder">Name <sup><i
                         class="fa-sharp fa-solid fa fa-star"></i></sup></label>
                   <input type="name" class="form-control" name="u_name" id="u_name" required>
                 </div>
 
                 <div class="form-group mt-3">
-                  <label for="exampleInputEmail1" class="text-light  fs-3 fw-bolder">Email <sup><i
+                  <label for="u_email" class="text-light  fs-3 fw-bolder">Email <sup><i
                         class="fa-sharp fa-solid fa fa-star"></i></sup></label>
                   <input type="email" class="form-control" name="u_email" id="u_email" aria-describedby="emailHelp"
                     required>
@@ -512,6 +512,7 @@
                    data: formData,
                    dataType: 'json', // Corrected data type to JSON
                    success: function(response){
+                    
                        $('#responseMessage').text(response.message); // Corrected accessing the message key
                        $('#contactForm')[0].reset();
                    }
