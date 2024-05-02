@@ -798,7 +798,7 @@
           <div class="row py-4 mb-2">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
-              <form id="contact-form" method="post" class="contact-form">
+              <form id="contactForm" method="post" class="contact-form">
   
                 <div class="form-group mt-3">
                   <label for="_name">Name <sup><i style="font-size: 15px;"
@@ -827,7 +827,7 @@
                   <button type="submit" id="my-button2" style=" border-radius:14px;"
                     class="form-control  fs-3 fw-bolder ">Download</button>
                 </div>
-                <div style="text-align: center;" id="response-message"></div>
+                <div style="text-align: center;" id="responseMessage"></div>
   
   
               </form>
@@ -843,46 +843,27 @@
 
   <!--Footer-->
   <div id="footer"></div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('#contact-form').submit(function (event) {
-        event.preventDefault(); // Prevent form submission
+      $(document).ready(function(){
+          $('#contactForm').submit(function(e){
+              e.preventDefault();
+              var formData = $(this).serialize();
+              $.ajax({
+                  type: 'POST',
+                  url: 'mailerIecProduct.php',
+                  data: formData,
+                  dataType: 'json', // Corrected data type to JSON
+                  success: function(response){
+                      $('#responseMessage').text(response.message); // Corrected accessing the message key
+                      $('#contactForm')[0].reset();
+                      window.location.href = 'catalogue/DRY HEATER.pdf';
 
-        // Get form data
-        var formData = {
-          u_name: $('#u_name').val(),
-          u_email: $('#u_email').val(),
-          c_Name: $('#c_Name').val(),
-          pname: $('#pname').val()
-        };
-
-        // Check if form is filled out
-        if (formData.u_name.trim() === '' || formData.u_email.trim() === '' || formData.c_Name.trim() === '') {
-          alert('Please fill out all required fields.');
-          return;
-        }
-
-        // Send AJAX request
-        $.ajax({
-          type: 'POST',
-          url: 'productcontact.php',
-          data: formData,
-          dataType: 'json',
-          encode: true
-        })
-          .done(function (response) {
-            // Display response message
-            $('#response-message').text(response.message);
-
-            // Download the PDF file
-            window.location.href = 'catalogue/DRY HEATER.pdf';
-          })
-          .fail(function (response) {
-            // Display error message
-            $('#response-message').text('Error occurred while processing the request.');
+                  }
+              });
           });
       });
-    });
   </script>
 
   <!--Footer Ends-->

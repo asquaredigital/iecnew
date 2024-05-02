@@ -19,6 +19,26 @@
    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <link rel="canonical" href="https://www.iecfabchem.in/">
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       $(document).ready(function(){
+           $('#contactForm').submit(function(e){
+               e.preventDefault();
+               var formData = $(this).serialize();
+               $.ajax({
+                   type: 'POST',
+                   url: 'mailerIecIndex.php',
+                   data: formData,
+                   dataType: 'json', // Corrected data type to JSON
+                   success: function(response){
+                       $('#responseMessage').text(response.message); // Corrected accessing the message key
+                       $('#contactForm')[0].reset();
+                   }
+               });
+           });
+       });
+   </script>
    <style>
       html {
          scroll-behavior: smooth;
@@ -1679,7 +1699,7 @@
                      GET IN TOUCH
                   </strong></h2>
 
-               <form id="contact-form" method="post" class="contact-form">
+               <form id="contactForm" method="post" class="contact-form">
 
 
                   <div class="form-group mt-5">
@@ -1705,7 +1725,7 @@
                      <button type="submit" id="my-button2" class="form-control  fs-3 fw-bolder btn btn-dark text-light"
                         style="width: 50%;">Submit</button>
                   </div>
-                  <div style="text-align: center;" id="response-message"></div>
+                  <div style="text-align: center;" id="responseMessage"></div>
 
                </form>
             </div>
@@ -1734,7 +1754,7 @@
                <h2 class="fw-bolder"><strong>
                      GET IN TOUCH
                   </strong></h2>
-               <form id="contact-form" method="post" class="contact-form">
+               <form id="contactForm" method="post" class="contact-form">
 
 
                   <div class="form-group mt-5">
@@ -1760,7 +1780,7 @@
                      <button type="submit" id="my-button2" class="form-control  fs-3 fw-bolder btn btn-dark text-light"
                         style="width: 50%;">Submit</button>
                   </div>
-                  <div style="text-align: center;" id="response-message"></div>
+                  <div style="text-align: center;" id="responseMessage"></div>
 
                </form>
             </div>
@@ -2135,39 +2155,7 @@
          });
       });
    </script>
-
-   <script>
-      $(document).ready(function () {
-         $('#contact-form').submit(function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Get form data
-            var formData = {
-               u_name: $('#u_name').val(),
-               u_email: $('#u_email').val(),
-               p_number: $('#p_number').val(),
-               c_name: $('#c_name').val(),
-            };
-
-            // Send AJAX request
-            $.ajax({
-               type: 'POST',
-               url: 'homecontact.php',
-               data: formData,
-               dataType: 'json',
-               encode: true
-            })
-               .done(function (response) {
-                  // Display response message
-                  $('#response-message').text(response.message);
-               })
-               .fail(function (response) {
-                  // Display error message
-                  $('#response-message').text('Error occurred while processing the request.');
-               });
-         });
-      });
-   </script>
+ 
 
 </body>
 

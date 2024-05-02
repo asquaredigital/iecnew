@@ -84,7 +84,7 @@
          <div class="col-lg-3 mt-5 contact px-0 d-none d-md-none d-sm-none d-lg-block d-xl-block">
             <div class="card-body bg-white">
                <h2 class="fw-bolder"><strong>GET IN TOUCH</strong></h2>
-               <form id="contact-form" method="post" class="contact-form">
+               <form id="contactForm" method="post" class="contact-form">
                   <div class="form-group mt-5">
                      <input type="text" class="form-control1" id="name" name="name" placeholder="Name" required>
                   </div>
@@ -101,7 +101,7 @@
                      <button  type="submit" id="my-button" class="form-control fs-3 fw-bolder btn btn-dark text-light" style="width: 50%;">Submit</button>
                   </div>
                </form>
-               <div style="text-align: center;" id="response-message"></div>
+               <div style="text-align: center;" id="responseMessage"></div>
             </div>
          </div>
 
@@ -109,39 +109,25 @@
       
    </section>
 
- 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
-         $(document).ready(function() {
-         // Contact Form Submission
-         $('#response-message').html('');
-         $('#contact-form').submit(function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            var form = $(this);
-            var formData = form.serialize();
-
-            // Send AJAX request
-            $.ajax({
-               type: 'POST',
-               url: 'contact.php',
-               data: formData,
-               dataType: 'json',
-               success: function(response) {
-                  if (response.success) {
-                     $('#response-message').html('<p class="success-message">' + response.message + '</p>');
-                     form.trigger('reset');
-                  } else {
-                     $('#response-message').html('<p class="error-message">' + response.message + '</p>');
-                  }
-               },
-               error: function() {
-                  $('#response-message').html('<p class="error-message">An error occurred. Please try again later.</p>');
-               }
-            });
-         });
-      });
+       $(document).ready(function(){
+           $('#contactForm').submit(function(e){
+               e.preventDefault();
+               var formData = $(this).serialize();
+               $.ajax({
+                   type: 'POST',
+                   url: 'mailerIecIndex.php',
+                   data: formData,
+                   dataType: 'json', // Corrected data type to JSON
+                   success: function(response){
+                       $('#responseMessage').text(response.message); // Corrected accessing the message key
+                       $('#contactForm')[0].reset();
+                   }
+               });
+           });
+       });
    </script>
-
 
 </body>
 
