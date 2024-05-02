@@ -1,7 +1,5 @@
 <?php
-
 require '../vendor/vendor/autoload.php';
-
 use Aws\Ses\SesClient;
 use Aws\Exception\AwsException;
 
@@ -41,7 +39,8 @@ $headers = "From: website@iecfabchem.in" . "\r\n" .
 $subject = 'Product Enquiry Form the Website';
 $message = "Name: $u_name\nPhone: $p_number\nEmail: $u_email\nCompany: $c_name\nProduct Name: $pname";
 $senderEmail = 'asquaremailer@gmail.com';
-$recipientEmail = 'marketing@iecfabchem.in';
+//$recipientEmail = 'marketing@iecfabchem.in';
+$recipientEmail = 'elavarasan5193@iecfabchem.in';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
