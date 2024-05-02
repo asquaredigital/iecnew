@@ -33,6 +33,7 @@ $p_number = $_POST['p_number'];
 $u_email = $_POST['u_email']; 
 $c_name = $_POST['c_name'];
 $pname = $_POST['pname'];
+
 // Set up email headers
 $headers = "From: website@iecfabchem.in" . "\r\n" .
            "Reply-To: $u_email" . "\r\n" ;
