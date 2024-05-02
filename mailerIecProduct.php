@@ -40,7 +40,7 @@ $headers = "From: website@iecfabchem.in" . "\r\n" .
 
 // Set up email content
 $subject = 'Product Enquiry Form the Website';
-$message = "Name: $u_name\nPhone: $p_number\nEmail: $u_email\nCompany: $c_name\nProduct Name: $pname";
+$message = "Name: $u_name\nEmail: $u_email\nEnquired Product: $pname\nCompany Name: $c_Name\n";
 $senderEmail = 'asquaremailer@gmail.com';
 //$recipientEmail = 'marketing@iecfabchem.in';
 $recipientEmail = 'elavarasan5193@gmail.com';
