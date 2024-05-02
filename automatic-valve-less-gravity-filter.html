@@ -703,7 +703,7 @@
                     success: function(response){
                         $('#responseMessage').text(response.message); // Corrected accessing the message key
                         $('#contactForm')[0].reset();
-                        if (response.message === 'Email Sent Successfully') {
+                        if (response.message === 'Email sent successfully') {
                             window.location.href = 'catalogue/AVGF BROCHURE.pdf';
                     }
                     }
