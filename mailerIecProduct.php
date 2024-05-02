@@ -27,7 +27,6 @@ $sesClient = new SesClient([
 
 // Get form data
 $u_name = $_POST['u_name'];
-$p_number = $_POST['p_number'];
 $u_email = $_POST['u_email']; 
 $c_name = $_POST['c_name'];
 $pname = $_POST['pname'];
@@ -37,10 +36,10 @@ $headers = "From: website@iecfabchem.in" . "\r\n" .
 
 // Set up email content
 $subject = 'Product Enquiry Form the Website';
-$message = "Name: $u_name\nPhone: $p_number\nEmail: $u_email\nCompany: $c_name\nProduct Name: $pname";
+$message = "Name: $u_name\nEmail: $u_email\nCompany: $c_name\nProduct Name: $pname";
 $senderEmail = 'asquaremailer@gmail.com';
 //$recipientEmail = 'marketing@iecfabchem.in';
-$recipientEmail = 'elavarasan5193@iecfabchem.in';
+$recipientEmail = 'elavarasan5193@gmail.com';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);

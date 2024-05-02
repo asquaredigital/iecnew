@@ -684,7 +684,26 @@
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
+   <script>
+       $(document).ready(function(){
+           $('#contactForm').submit(function(e){
+               e.preventDefault();
+               var formData = $(this).serialize();
+               $.ajax({
+                   type: 'POST',
+                   url: 'mailerIecProduct.php',
+                   data: formData,
+                   dataType: 'json', // Corrected data type to JSON
+                   success: function(response){
+                       $('#responseMessage').text(response.message); // Corrected accessing the message key
+                       $('#contactForm')[0].reset();
+                       window.location.href = 'catalogue/STERIFLO.pdf';
+
+                   }
+               });
+           });
+       });
+   </script>
 </body>
 
 </html>
