@@ -659,8 +659,8 @@
                   <input type="text" class="form-control" name="c_Name" id="c_Name">
                 </div>
                 <input type="hidden" name="pname" id="pname" value="Steriflo">
+                
                 <div class="form-group mt-3">
-  
                   <button type="submit" id="my-button2" 
                     class="form-control  fs-3 fw-bolder ">Download</button>
                 </div>
@@ -683,26 +683,28 @@
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script>
-       $(document).ready(function(){
-           $('#contactForm').submit(function(e){
-               e.preventDefault();
-               var formData = $(this).serialize();
-               $.ajax({
-                   type: 'POST',
-                   url: 'mailerIecProduct.php',
-                   data: formData,
-                   dataType: 'json', // Corrected data type to JSON
-                   success: function(response){
-                       $('#responseMessage').text(response.message); // Corrected accessing the message key
-                       $('#contactForm')[0].reset();
-                       //window.location.href = 'catalogue/STERIFLO.pdf';
+  <script>
+    $(document).ready(function(){
+        $('#contactForm').submit(function(e){
+            e.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                type: 'POST',
+                url: 'mailerIecProduct.php',
+                data: formData,
+                dataType: 'json',
+                success: function(response){
+                    $('#responseMessage').text(response.message);
+                    $('#contactForm')[0].reset();
+                    if (response.message === 'Email Sent Successfully') {
+                        window.location.href = 'catalogue/STERIFLO.pdf';
+                    }
+                }
+            });
+        });
+    });
+</script>
 
-                   }
-               });
-           });
-       });
-   </script>
 </body>
 
 </html>
