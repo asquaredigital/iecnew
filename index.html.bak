@@ -152,7 +152,7 @@
          cursor: pointer;
          font-size: 20px;
          /* background-color: #fad91d; */
-         padding: 2px;
+         padding: 20px;
          border-radius: 4px;
       }
 
@@ -168,7 +168,7 @@
 
       @media (max-width:450px) {
          .carousel-control-prev img {
-            height: 30px;
+            height: 300px;
             width: 30px;
          }
 
@@ -206,7 +206,7 @@
       }
 
       .side-bar.active {
-         left: 0;
+         left: 10;
       }
 
       .side-bar h1 {
